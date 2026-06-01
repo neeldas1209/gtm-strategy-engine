@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Messaging Framework",
+  "description": "Output schema for Agent 4. Covers market narrative, positioning angles, and competitive differentiation across 9 questions. Strategic direction only, not finished copy.",
+  "type": "object",
+  "required": ["agent", "company", "scenario_type", "generated_at", "section_a_narrative", "section_b_angles", "section_c_differentiation", "metadata"],
+  "properties": {
+    "agent": { "type": "string", "const": "messaging_framework" },
+    "company": { "type": "string" },
+    "scenario_type": {
+      "type": "string",
+      "enum": ["new_product_launch", "new_market_entry", "segment_expansion", "product_repositioning", "competitive_response"]
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "section_a_narrative": {
+      "type": "object",
+      "required": ["category_recommendation", "market_narrative", "positioning_statement"],
+      "properties": {
+        "category_recommendation": {
+          "type": "object",
+          "required": ["decision", "category_name", "reasoning"],
+          "properties": {
+            "decision": { "type": "string", "enum": ["join_existing", "create_new"] },
+            "category_name": { "type": "string" },
+            "reasoning": { "type": "string" }
+          }
+        },
+        "market_narrative": {
+          "type": "string",
+          "description": "One paragraph why-now story connecting macro trend to product value"
+        },
+        "positioning_statement": {
+          "type": "string",
+          "description": "Structured For/Who/Is/That/Unlike/Our statement. Must pass the so-what test: differentiator cannot be claimed by top 3 competitors."
+        }
+      }
+    },
+    "section_b_angles": {
+      "type": "object",
+      "required": ["positioning_angles", "persona_messaging_map", "messaging_hierarchy"],
+      "properties": {
+        "positioning_angles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["angle_name", "value_prop", "target_persona", "competitive_gap", "proof_points", "designation"],
+            "properties": {
+              "angle_name": { "type": "string" },
+              "value_prop": { "type": "string" },
+              "target_persona": { "type": "string" },
+              "competitive_gap": { "type": "string", "description": "Must reference a specific competitor weakness. An angle without a competitive gap is just a feature description." },
+              "proof_points": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "designation": { "type": "string", "enum": ["primary", "secondary"] }
+            }
+          },
+          "minItems": 3,
+          "maxItems": 4
+        },
+        "persona_messaging_map": {
+          "type": "array",
+          "description": "Must cover all buying committee members from the ICP Definition.",
+          "items": {
+            "type": "object",
+            "required": ["persona", "angle", "messaging_direction"],
+            "properties": {
+              "persona": { "type": "string" },
+              "angle": { "type": "string" },
+              "messaging_direction": { "type": "string" }
+            }
+          },
+          "minItems": 4
+        },
+        "messaging_hierarchy": {
+          "type": "object",
+          "required": ["brand_promise", "pillars"],
+          "properties": {
+            "brand_promise": { "type": "string" },
+            "pillars": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["pillar", "proof_points"],
+                "properties": {
+                  "pillar": { "type": "string" },
+                  "proof_points": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+                }
+              },
+              "minItems": 3,
+              "maxItems": 4
+            }
+          }
+        }
+      }
+    },
+    "section_c_differentiation": {
+      "type": "object",
+      "required": ["competitor_matrix", "substitute_arguments", "guardrails", "objection_handling"],
+      "properties": {
+        "competitor_matrix": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["competitor", "differentiation", "competitor_advantage", "handling"],
+            "properties": {
+              "competitor": { "type": "string" },
+              "differentiation": { "type": "string" },
+              "competitor_advantage": { "type": "string", "description": "Honest assessment of where they win" },
+              "handling": { "type": "string" }
+            }
+          },
+          "minItems": 1
+        },
+        "substitute_arguments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["substitute", "argument_against"],
+            "properties": {
+              "substitute": { "type": "string" },
+              "argument_against": { "type": "string" }
+            }
+          },
+          "minItems": 1
+        },
+        "guardrails": {
+          "type": "array",
+          "items": { "type": "string", "description": "Claim to avoid + reason" },
+          "minItems": 3
+        },
+        "objection_handling": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["objection", "reframe", "evidence", "when_to_concede"],
+            "properties": {
+              "objection": { "type": "string", "description": "As the buyer would state it" },
+              "reframe": { "type": "string" },
+              "evidence": { "type": "string" },
+              "when_to_concede": { "type": "string", "description": "Required. Objection handling without concession is not credible." }
+            }
+          },
+          "minItems": 3,
+          "maxItems": 5
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["search_queries_used", "sources_cited", "scenario_emphasis_applied"],
+      "properties": {
+        "search_queries_used": { "type": "integer" },
+        "sources_cited": { "type": "integer" },
+        "scenario_emphasis_applied": { "type": "string" }
+      }
+    }
+  }
+}

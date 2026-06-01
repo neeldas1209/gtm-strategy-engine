@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "90-Day Plan",
+  "description": "Output schema for Agent 5. Converts all upstream agent outputs into a phased execution plan with specific action items, milestones, and metrics across 11 questions. Every action item must pass the Monday Morning Test.",
+  "type": "object",
+  "required": ["agent", "company", "scenario_type", "generated_at", "section_a_month1", "section_b_execution", "section_c_measurement", "metadata"],
+  "properties": {
+    "agent": { "type": "string", "const": "ninety_day_plan" },
+    "company": { "type": "string" },
+    "scenario_type": {
+      "type": "string",
+      "enum": ["new_product_launch", "new_market_entry", "segment_expansion", "product_repositioning", "competitive_response"]
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "section_a_month1": {
+      "type": "object",
+      "required": ["infrastructure", "target_accounts", "experiments", "quick_wins"],
+      "properties": {
+        "infrastructure": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["item", "owner", "deadline"],
+            "properties": {
+              "item": { "type": "string" },
+              "owner": { "type": "string", "description": "Role, not name" },
+              "deadline": { "type": "string", "description": "Week number" },
+              "dependency": { "type": "string" }
+            }
+          },
+          "minItems": 1
+        },
+        "target_accounts": {
+          "type": "object",
+          "required": ["count", "sourcing_method", "prioritization"],
+          "properties": {
+            "count": { "type": ["number", "string"], "description": "Specific number, justified by team capacity" },
+            "sourcing_method": { "type": "string" },
+            "prioritization": { "type": "string" }
+          }
+        },
+        "experiments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "hypothesis", "test_design", "success_criteria", "decision_trigger", "timeline"],
+            "properties": {
+              "name": { "type": "string" },
+              "hypothesis": { "type": "string" },
+              "test_design": { "type": "string" },
+              "success_criteria": { "type": "string", "description": "Specific metric threshold" },
+              "decision_trigger": { "type": "string", "description": "What result triggers double down, pivot, or kill" },
+              "timeline": { "type": "string" }
+            }
+          },
+          "minItems": 2
+        },
+        "quick_wins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["action", "timeline", "expected_result"],
+            "properties": {
+              "action": { "type": "string", "description": "Must be completable in under 1 week" },
+              "timeline": { "type": "string" },
+              "expected_result": { "type": "string", "description": "Visible and communicable outcome" }
+            }
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "section_b_execution": {
+      "type": "object",
+      "required": ["weekly_timeline", "content_plan"],
+      "properties": {
+        "weekly_timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["week", "channel", "actions"],
+            "properties": {
+              "week": { "type": "string" },
+              "channel": { "type": "string", "description": "Must reference a channel from Agent 3 Channel Strategy" },
+              "actions": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+            }
+          },
+          "minItems": 1
+        },
+        "content_plan": {
+          "type": "object",
+          "required": ["pieces_per_week", "formats", "topic_priorities", "distribution"],
+          "properties": {
+            "pieces_per_week": { "type": ["number", "string"], "description": "Must be realistic for stated team size" },
+            "formats": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+            "topic_priorities": {
+              "type": "array",
+              "items": { "type": "string", "description": "Positioning angle + topic" },
+              "minItems": 1
+            },
+            "distribution": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+          }
+        },
+        "campaign_sequences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["channel", "touches", "cadence", "messaging_angle_progression", "handoff_criteria"],
+            "properties": {
+              "channel": { "type": "string" },
+              "touches": { "type": ["number", "string"] },
+              "cadence": { "type": "string" },
+              "messaging_angle_progression": {
+                "type": "array",
+                "items": { "type": "string", "description": "Must reference Agent 4 positioning angles" },
+                "minItems": 1
+              },
+              "handoff_criteria": { "type": "string" }
+            }
+          }
+        },
+        "partnership_activation": {
+          "type": "object",
+          "properties": {
+            "outreach_targets": { "type": ["number", "string"] },
+            "pitch_approach": { "type": "string" },
+            "first_co_marketing": { "type": "string" }
+          }
+        }
+      }
+    },
+    "section_c_measurement": {
+      "type": "object",
+      "required": ["metrics", "decision_points", "month4_direction"],
+      "properties": {
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["metric", "month1_target", "month3_target"],
+            "properties": {
+              "metric": { "type": "string" },
+              "month1_target": { "type": "string", "description": "Specific number, not a range" },
+              "month3_target": { "type": "string", "description": "Specific number, not a range" },
+              "benchmark_source": { "type": "string" }
+            }
+          },
+          "minItems": 3
+        },
+        "decision_points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["when", "question", "criteria", "if_yes", "if_no"],
+            "properties": {
+              "when": { "type": "string" },
+              "question": { "type": "string" },
+              "criteria": { "type": "string", "description": "Specific threshold, not 'review performance'" },
+              "if_yes": { "type": "string" },
+              "if_no": { "type": "string" }
+            }
+          },
+          "minItems": 3
+        },
+        "month4_direction": {
+          "type": "object",
+          "required": ["scaling_candidates", "new_capabilities_needed", "open_questions"],
+          "properties": {
+            "scaling_candidates": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+            "new_capabilities_needed": { "type": "array", "items": { "type": "string" } },
+            "open_questions": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["search_queries_used", "sources_cited", "scenario_emphasis_applied"],
+      "properties": {
+        "search_queries_used": { "type": "integer" },
+        "sources_cited": { "type": "integer" },
+        "scenario_emphasis_applied": { "type": "string" }
+      }
+    }
+  }
+}

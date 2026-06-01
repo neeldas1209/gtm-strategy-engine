@@ -1,0 +1,163 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Channel Strategy",
+  "description": "Output schema for Agent 3. Covers GTM motion design, channel prioritization, and partnership/ecosystem strategy across 10 questions.",
+  "type": "object",
+  "required": ["agent", "company", "scenario_type", "generated_at", "section_a_gtm_motion", "section_b_channels", "section_c_partnerships", "upstream_references", "metadata"],
+  "properties": {
+    "agent": { "type": "string", "const": "channel_strategy" },
+    "company": { "type": "string" },
+    "scenario_type": {
+      "type": "string",
+      "enum": ["new_product_launch", "new_market_entry", "segment_expansion", "product_repositioning", "competitive_response"]
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "section_a_gtm_motion": {
+      "type": "object",
+      "required": ["recommended_motion", "justification", "buying_journey", "team_structure"],
+      "properties": {
+        "recommended_motion": { "type": "string" },
+        "justification": {
+          "type": "object",
+          "required": ["deal_size_factor", "committee_complexity", "market_maturity", "competitive_pattern"],
+          "properties": {
+            "deal_size_factor": { "type": "string" },
+            "committee_complexity": { "type": "string" },
+            "market_maturity": { "type": "string" },
+            "competitive_pattern": { "type": "string", "description": "Must reference MI Brief Q5" }
+          }
+        },
+        "buying_journey": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["stage", "actions", "content_needed", "drop_off_risk"],
+            "properties": {
+              "stage": { "type": "string" },
+              "actions": { "type": "string" },
+              "content_needed": { "type": "string" },
+              "drop_off_risk": { "type": "string" }
+            }
+          },
+          "minItems": 1
+        },
+        "team_structure": {
+          "type": "object",
+          "required": ["required_roles"],
+          "properties": {
+            "required_roles": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+            "constraint_gaps": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Gaps between required team and existing_assets_constraints"
+            }
+          }
+        }
+      }
+    },
+    "section_b_channels": {
+      "type": "object",
+      "required": ["primary_channels", "channels_to_avoid"],
+      "properties": {
+        "primary_channels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["channel", "why_this_icp", "effort", "timeline_to_results", "success_metrics", "content_strategy", "phase"],
+            "properties": {
+              "channel": { "type": "string", "description": "Must be specific, not generic. 'LinkedIn thought leadership targeting VP of Marketing' not 'use social media'" },
+              "why_this_icp": { "type": "string" },
+              "effort": {
+                "type": "object",
+                "required": ["time", "budget"],
+                "properties": {
+                  "time": { "type": "string", "enum": ["High", "Med", "Low"] },
+                  "budget": { "type": "string", "enum": ["High", "Med", "Low"] }
+                }
+              },
+              "timeline_to_results": { "type": "string" },
+              "success_metrics": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "content_strategy": { "type": "string", "description": "Format-specific content approach, not just 'create content'" },
+              "phase": { "type": "string", "enum": ["immediate", "month_2_3", "quarter_2"] }
+            }
+          },
+          "minItems": 3,
+          "maxItems": 5
+        },
+        "channels_to_avoid": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["channel", "reason"],
+            "properties": {
+              "channel": { "type": "string" },
+              "reason": { "type": "string" }
+            }
+          },
+          "minItems": 2
+        }
+      }
+    },
+    "section_c_partnerships": {
+      "type": "object",
+      "required": ["partnership_types", "integration_priorities", "ecosystem_presence"],
+      "properties": {
+        "partnership_types": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["category", "model", "why", "priority"],
+            "properties": {
+              "category": { "type": "string" },
+              "model": { "type": "string" },
+              "why": { "type": "string", "description": "Must reference MI Brief Q7 and Q5" },
+              "priority": { "type": "string", "enum": ["must_have", "nice_to_have"] }
+            }
+          },
+          "minItems": 1
+        },
+        "integration_priorities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["platform", "reason", "effort"],
+            "properties": {
+              "platform": { "type": "string" },
+              "reason": { "type": "string" },
+              "effort": { "type": "string", "enum": ["High", "Med", "Low"] }
+            }
+          },
+          "minItems": 1
+        },
+        "ecosystem_presence": {
+          "type": "array",
+          "items": { "type": "string", "description": "Specific event, community, or channel + why" },
+          "minItems": 1
+        }
+      }
+    },
+    "upstream_references": {
+      "type": "array",
+      "description": "Each primary channel must reference upstream ICP or MI findings.",
+      "items": {
+        "type": "object",
+        "required": ["recommendation", "source_agent", "finding"],
+        "properties": {
+          "recommendation": { "type": "string" },
+          "source_agent": { "type": "string" },
+          "finding": { "type": "string" }
+        }
+      },
+      "minItems": 3
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["search_queries_used", "sources_cited", "scenario_emphasis_applied"],
+      "properties": {
+        "search_queries_used": { "type": "integer" },
+        "sources_cited": { "type": "integer" },
+        "scenario_emphasis_applied": { "type": "string" }
+      }
+    }
+  }
+}

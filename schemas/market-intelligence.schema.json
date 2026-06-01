@@ -1,0 +1,409 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Market Intelligence Brief",
+  "description": "Combined output schema for Agent 1. The orchestrator synthesizes all 4 sub-agent outputs (market-sizing, geography, competitive-landscape, market-structure) into this single brief covering Q1-Q10.",
+  "type": "object",
+  "required": ["agent", "company", "scenario_type", "generated_at", "executive_summary", "questions", "metadata"],
+  "properties": {
+    "agent": { "type": "string", "const": "market_intelligence" },
+    "company": { "type": "string" },
+    "scenario_type": {
+      "type": "string",
+      "enum": ["new_product_launch", "new_market_entry", "segment_expansion", "product_repositioning", "competitive_response"]
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "executive_summary": {
+      "type": "string",
+      "description": "5-8 sentence summary covering TAM/growth, maturity stage, competitive density, key geographic insight, dominant buying pattern, and macro trend. A VP should be able to read only this and understand the market."
+    },
+    "questions": {
+      "type": "object",
+      "required": ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10"],
+      "properties": {
+        "Q1": {
+          "type": "object",
+          "description": "Market State and Trajectory",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q1" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["market_size", "growth_rate", "maturity_stage", "growth_signals"],
+              "properties": {
+                "market_size": {
+                  "type": "object",
+                  "required": ["tam", "tam_source", "discrepancy_flag"],
+                  "properties": {
+                    "tam": { "type": "string" },
+                    "tam_source": { "type": "string" },
+                    "sam": { "type": "string" },
+                    "sam_source": { "type": "string" },
+                    "discrepancy_flag": { "type": "boolean" },
+                    "discrepancy_detail": { "type": "string" }
+                  }
+                },
+                "growth_rate": {
+                  "type": "object",
+                  "required": ["rate", "period", "source"],
+                  "properties": {
+                    "rate": { "type": "string" },
+                    "period": { "type": "string" },
+                    "source": { "type": "string" }
+                  }
+                },
+                "maturity_stage": {
+                  "type": "object",
+                  "required": ["classification", "evidence"],
+                  "properties": {
+                    "classification": { "type": "string", "enum": ["Emerging", "Growth", "Consolidating", "Mature"] },
+                    "evidence": { "type": "array", "items": { "type": "string" }, "minItems": 3 }
+                  }
+                },
+                "growth_signals": {
+                  "type": "object",
+                  "properties": {
+                    "funding_activity": { "type": "string" },
+                    "job_posting_trends": { "type": "string" },
+                    "new_entrant_rate": { "type": "string" },
+                    "search_interest": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q2": {
+          "type": "object",
+          "description": "Geographic Landscape",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q2" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["primary_markets"],
+              "properties": {
+                "primary_markets": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["region", "market_characteristics"],
+                    "properties": {
+                      "region": { "type": "string" },
+                      "market_characteristics": { "type": "string" },
+                      "key_data_points": { "type": "string" },
+                      "regulatory_considerations": { "type": "string" },
+                      "source": { "type": "string" }
+                    }
+                  },
+                  "minItems": 2
+                },
+                "underserved_geographies": { "type": "array", "items": { "type": "object" } },
+                "regional_competitive_density": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q3": {
+          "type": "object",
+          "description": "Direct Competitors",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q3" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["competitors"],
+              "properties": {
+                "competitors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["name", "website", "key_features", "strengths", "weaknesses"],
+                    "properties": {
+                      "name": { "type": "string" },
+                      "website": { "type": "string" },
+                      "founded": { "type": "string" },
+                      "headcount_estimate": { "type": "string" },
+                      "funding": { "type": "object" },
+                      "key_features": { "type": "array", "items": { "type": "string" } },
+                      "pricing_model": { "type": "string" },
+                      "target_market": { "type": "string" },
+                      "strengths": { "type": "array", "items": { "type": "object" } },
+                      "weaknesses": { "type": "array", "items": { "type": "object" } }
+                    }
+                  },
+                  "minItems": 3
+                },
+                "competitive_density": { "type": "string" },
+                "market_positioning_gaps": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q4": {
+          "type": "object",
+          "description": "Substitutes and Alternatives",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q4" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["substitutes"],
+              "properties": {
+                "substitutes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["substitute", "type", "why_buyers_choose_it", "limitations"],
+                    "properties": {
+                      "substitute": { "type": "string" },
+                      "type": { "type": "string" },
+                      "why_buyers_choose_it": { "type": "string" },
+                      "limitations": { "type": "string" },
+                      "prevalence": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q5": {
+          "type": "object",
+          "description": "Incumbent GTM Patterns",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q5" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["gtm_patterns", "dominant_pattern"],
+              "properties": {
+                "gtm_patterns": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["competitor", "primary_motion", "evidence"],
+                    "properties": {
+                      "competitor": { "type": "string" },
+                      "primary_motion": { "type": "string" },
+                      "evidence": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+                      "secondary_motions": { "type": "array", "items": { "type": "string" } },
+                      "notable_tactics": { "type": "string" }
+                    }
+                  }
+                },
+                "dominant_pattern": { "type": "string" },
+                "pattern_gaps": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q6": {
+          "type": "object",
+          "description": "Pricing Architecture",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q6" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["pricing_models", "dominant_value_metric"],
+              "properties": {
+                "pricing_models": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["competitor", "model", "source"],
+                    "properties": {
+                      "competitor": { "type": "string" },
+                      "model": { "type": "string" },
+                      "price_points": { "type": "string" },
+                      "free_tier": { "type": "string" },
+                      "pricing_page_url": { "type": "string" },
+                      "source": { "type": "string" }
+                    }
+                  }
+                },
+                "dominant_value_metric": { "type": "object" },
+                "pricing_spectrum": { "type": "object" },
+                "positioning_map": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q7": {
+          "type": "object",
+          "description": "Adjacent Ecosystem",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q7" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["ecosystem_map"],
+              "properties": {
+                "ecosystem_map": { "type": "array", "items": { "type": "object" }, "minItems": 1 },
+                "platform_dependencies": { "type": "array", "items": { "type": "object" } },
+                "workflow_position": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q8": {
+          "type": "object",
+          "description": "Macro Trend or Opportunity Window",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q8" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["macro_shift", "opportunity_connection"],
+              "properties": {
+                "macro_shift": {
+                  "type": "object",
+                  "required": ["description", "evidence", "momentum"],
+                  "properties": {
+                    "description": { "type": "string" },
+                    "evidence": { "type": "string" },
+                    "momentum": { "type": "string", "enum": ["Accelerating", "Plateauing", "Early-stage"] },
+                    "enterprise_adoption": { "type": "string" }
+                  }
+                },
+                "opportunity_connection": { "type": "string" },
+                "timeline": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q9": {
+          "type": "object",
+          "description": "Buying Patterns",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q9" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["decision_committee", "decision_process", "sales_cycle"],
+              "properties": {
+                "decision_committee": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["title", "role_in_decision"],
+                    "properties": {
+                      "title": { "type": "string" },
+                      "role_in_decision": { "type": "string" },
+                      "source": { "type": "string" }
+                    }
+                  }
+                },
+                "decision_process": { "type": "object" },
+                "sales_cycle": { "type": "object" },
+                "deal_size": { "type": "object" },
+                "regional_differences": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        },
+        "Q10": {
+          "type": "object",
+          "description": "Disruption Risk Assessment",
+          "required": ["question_id", "question_title", "confidence", "findings", "sources"],
+          "properties": {
+            "question_id": { "type": "string", "const": "Q10" },
+            "question_title": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+            "findings": {
+              "type": "object",
+              "required": ["risks", "big_tech_assessment", "overall_disruption_risk"],
+              "properties": {
+                "risks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["risk_type", "description", "probability", "impact"],
+                    "properties": {
+                      "risk_type": { "type": "string" },
+                      "description": { "type": "string" },
+                      "probability": { "type": "string", "enum": ["High", "Medium", "Low"] },
+                      "impact": { "type": "string", "enum": ["High", "Medium", "Low"] },
+                      "evidence": { "type": "string" },
+                      "timeline": { "type": "string" },
+                      "source": { "type": "string" }
+                    }
+                  }
+                },
+                "big_tech_assessment": { "type": "object" },
+                "overall_disruption_risk": { "type": "string", "enum": ["High", "Medium", "Low"] },
+                "risk_summary": { "type": "string" }
+              }
+            },
+            "sources": { "$ref": "#/definitions/sources_array" },
+            "gaps": { "$ref": "#/definitions/gaps_array" }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["search_queries_used", "sources_cited", "scenario_emphasis_applied"],
+      "properties": {
+        "search_queries_used": { "type": "integer" },
+        "sources_cited": { "type": "integer" },
+        "scenario_emphasis_applied": { "type": "string" }
+      }
+    }
+  },
+  "definitions": {
+    "sources_array": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "relevance"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" },
+          "accessed": { "type": "string" },
+          "relevance": { "type": "string" }
+        }
+      }
+    },
+    "gaps_array": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ICP Definition",
+  "description": "Output schema for Agent 2. Defines the Ideal Customer Profile across 6 dimensions with MI Brief cross-references.",
+  "type": "object",
+  "required": ["agent", "company", "scenario_type", "generated_at", "firmographic_filters", "technographic_signals", "behavioral_triggers", "buying_committee", "pain_points", "anti_icp", "mi_brief_references", "metadata"],
+  "properties": {
+    "agent": { "type": "string", "const": "icp_definition" },
+    "company": { "type": "string" },
+    "scenario_type": {
+      "type": "string",
+      "enum": ["new_product_launch", "new_market_entry", "segment_expansion", "product_repositioning", "competitive_response"]
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "firmographic_filters": {
+      "type": "object",
+      "required": ["industry", "company_size", "growth_stage", "geography", "exclusion_criteria"],
+      "properties": {
+        "industry": {
+          "type": "string",
+          "description": "Specific sub-industry, not just 'technology'. Must be specific enough for LinkedIn Sales Navigator."
+        },
+        "company_size": {
+          "type": "object",
+          "required": ["employee_range", "revenue_range"],
+          "properties": {
+            "employee_range": { "type": "string" },
+            "revenue_range": { "type": "string" }
+          }
+        },
+        "growth_stage": { "type": "string" },
+        "geography": {
+          "type": "array",
+          "items": { "type": "string", "description": "Region + reasoning from MI Brief Q2" },
+          "minItems": 1
+        },
+        "funding_stage": { "type": "string" },
+        "exclusion_criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["excluded", "reason"],
+            "properties": {
+              "excluded": { "type": "string" },
+              "reason": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "technographic_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal", "type", "reason"],
+        "properties": {
+          "signal": { "type": "string" },
+          "type": { "type": "string", "enum": ["required", "complementary", "gap"] },
+          "reason": { "type": "string", "description": "Why this signal matters. No orphan criteria." }
+        }
+      },
+      "minItems": 1
+    },
+    "behavioral_triggers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trigger", "observable_via", "urgency"],
+        "properties": {
+          "trigger": { "type": "string" },
+          "observable_via": { "type": "string", "description": "Must be a real, publicly available data source" },
+          "urgency": { "type": "string", "enum": ["High", "Medium"] }
+        }
+      },
+      "minItems": 1
+    },
+    "buying_committee": {
+      "type": "object",
+      "required": ["budget_owner", "champion", "technical_evaluator", "blocker", "end_users"],
+      "properties": {
+        "budget_owner": {
+          "type": "object",
+          "required": ["title", "level", "cares_about"],
+          "properties": {
+            "title": { "type": "string", "description": "Specific job title, not generic role" },
+            "level": { "type": "string" },
+            "cares_about": { "type": "string" }
+          }
+        },
+        "champion": {
+          "type": "object",
+          "required": ["title", "motivation"],
+          "properties": {
+            "title": { "type": "string" },
+            "motivation": { "type": "string" }
+          }
+        },
+        "technical_evaluator": {
+          "type": "object",
+          "required": ["title", "evaluates"],
+          "properties": {
+            "title": { "type": "string" },
+            "evaluates": { "type": "string" }
+          }
+        },
+        "blocker": {
+          "type": "object",
+          "required": ["title", "typical_objection"],
+          "properties": {
+            "title": { "type": "string" },
+            "typical_objection": { "type": "string" }
+          }
+        },
+        "end_users": {
+          "type": "object",
+          "required": ["titles", "adoption_concern"],
+          "properties": {
+            "titles": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+            "adoption_concern": { "type": "string" }
+          }
+        }
+      }
+    },
+    "pain_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["persona", "pain", "current_workaround", "why_inadequate"],
+        "properties": {
+          "persona": { "type": "string", "description": "Which buying committee member" },
+          "pain": { "type": "string" },
+          "current_workaround": { "type": "string" },
+          "why_inadequate": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "anti_icp": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "reason", "red_flags"],
+        "properties": {
+          "type": { "type": "string" },
+          "reason": { "type": "string" },
+          "red_flags": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        }
+      },
+      "minItems": 3
+    },
+    "mi_brief_references": {
+      "type": "array",
+      "description": "Every ICP dimension must reference at least one specific MI Brief finding.",
+      "items": {
+        "type": "object",
+        "required": ["icp_criterion", "mi_section", "finding"],
+        "properties": {
+          "icp_criterion": { "type": "string" },
+          "mi_section": { "type": "string" },
+          "finding": { "type": "string" }
+        }
+      },
+      "minItems": 6
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["search_queries_used", "sources_cited", "scenario_emphasis_applied"],
+      "properties": {
+        "search_queries_used": { "type": "integer" },
+        "sources_cited": { "type": "integer" },
+        "scenario_emphasis_applied": { "type": "string" }
+      }
+    }
+  }
+}
