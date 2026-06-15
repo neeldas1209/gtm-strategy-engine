@@ -1,0 +1,156 @@
+{
+  "agent": "market-sizing",
+  "company": "docebo-agenthub",
+  "scenario_type": "new_product_launch",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "condensed_summary": "Docebo AgentHub straddles three large, fast-growing software markets: corporate LMS/learning (~USD 14.5-16.3B in 2025, ~20-23% CAGR), enterprise knowledge management software (~USD 13.7-26.4B in 2025, ~14-18% CAGR), and skills intelligence/talent marketplace (~USD 9.6-9.8B in 2024, ~11-19% CAGR), giving a combined adjacent TAM roughly in the USD 40-50B range. The individual markets are in a Growth stage, but the converged 'learning + knowledge + skills with agentic AI' category AgentHub is defining is Emerging and not yet sized by analysts, so the immediate SAM is undefined. The opportunity window is driven by a specific, accelerating macro shift: enterprise agentic AI moving from <5% of enterprise apps in 2025 to a forecast 40% with task-specific AI agents by 2026 (Gartner), colliding with documented knowledge fragmentation (employees lose ~1.8-3.6 hours/day searching across 5+ disconnected systems) and the rise of skills-based organizations. Validation signals are strong: Glean (enterprise AI search/agents) hit ~USD 300M ARR by May 2026 at a USD 7.2B valuation, 61% of orgs have adopted or are testing AI in L&D, and Docebo's own ARR growth reaccelerated to 10.6% in Q1 2026. The main risk is that the category is unproven and AgentHub's agents are not yet live (fall 2026), so the window favors fast category definition over a defensible installed base.",
+  "questions": {
+    "Q1": {
+      "question_id": "Q1",
+      "question_title": "Market State and Trajectory",
+      "confidence": "Medium",
+      "findings": {
+        "market_size": {
+          "tam": "Combined adjacent TAM ~USD 40-50B (2025-2026): Corporate LMS/learning ~USD 14.49-16.33B (2025); Enterprise Knowledge Management software ~USD 13.70-26.4B (2025); Skills intelligence / talent marketplace ~USD 9.6-9.8B (2024). The converged 'learning + knowledge + skills with agentic AI' category that AgentHub defines is not yet sized by analysts.",
+          "tam_source": "Precedence Research / Research and Markets (corporate LMS, https://www.precedenceresearch.com/corporate-learning-management-system-market); Fortune Business Insights / Mordor Intelligence (KM software, https://www.fortunebusinessinsights.com/knowledge-management-software-market-110376); Verified Market Reports / OpenPR (talent marketplace & talent intelligence, https://www.verifiedmarketreports.com/product/talent-marketplace-platform-market/)",
+          "sam": "Not reliably quantifiable. A directional SAM is the mid-market-to-enterprise (500+ employee) segment of the corporate LMS market in North America and EMEA, which represents the majority of the ~USD 14.5-16.3B LMS market; however no analyst breaks out a SAM for the converged agentic-AI learning+knowledge+skills category, which does not yet exist as a tracked segment.",
+          "sam_source": "not available",
+          "discrepancy_flag": true,
+          "discrepancy_detail": "Sources diverge by more than 30% on the enterprise knowledge management market. Estimates for 2025 range from ~USD 13.70B (KM software, Mordor) to ~USD 23.2B (KM software, alternate source) to ~USD 26.4B (2026, alternate source); one outlier defines a broad 'knowledge management' market at ~USD 961B (likely including services/consulting). The software-only KM market is best read as ~USD 13.7-26.4B with ~14-18% CAGR. The corporate LMS market also shows >30% spread in 2025 size (~USD 14.49B Precedence vs ~USD 16.33B Research and Markets) and CAGR (19.65% to 22.9%). Both figures presented rather than a single point estimate."
+        },
+        "growth_rate": {
+          "rate": "Corporate LMS ~20-23% CAGR (mid-point ~22%); Enterprise KM software ~14-18% CAGR (mid-point ~17.7%); Skills intelligence / talent intelligence ~11-19% CAGR (talent marketplace ~10.9%, talent intelligence ~18.7%). Underlying agentic AI agents market ~44-46% CAGR through 2030.",
+          "period": "2025/2026 base year through 2030-2034 depending on report",
+          "source": "natlawreview.com/researchandmarkets (LMS 22.9% / 22.0%), Precedence Research (LMS 19.65% 2025-2034), Mordor/Fortune Business Insights (KM 17.7-18.5%), OpenPR/Verified Market Reports (talent intelligence 18.7%, talent marketplace 10.9%), Gartner / tech-insider.org (agentic AI agents 44-46% CAGR)"
+        },
+        "maturity_stage": {
+          "classification": "Growth",
+          "evidence": [
+            "The three underlying markets are in clear Growth stage with double-digit CAGRs (LMS ~20-23%, KM ~14-18%, skills/talent intelligence ~11-19%) and large established incumbents (Cornerstone, SAP SuccessFactors, Workday, Notion, Guru, Gloat, Eightfold), per Precedence Research, Fortune Business Insights and OpenPR/Verified Market Reports.",
+            "Active consolidation and M&A signal a maturing core but a still-expanding frontier: Docebo acquired Zive (enterprise AI/knowledge) and 365Talents (skills intelligence, ~USD 54.6M, Jan 2026) to bundle learning + knowledge + skills, per businesswire.com and reworked.co.",
+            "Strong new-entrant and funding velocity at the AI-native edge: Glean reached ~USD 300M ARR (May 2026) at a USD 7.2B valuation after a USD 150M Series F, and launched agents powering 100M+ agent actions annually, per CNBC, Glean press and Sacra.",
+            "High and rising demand-side adoption: 61% of organizations have fully/partially adopted or are testing AI in L&D and 52% of L&D teams are increasing AI tool use in 2026, per Synthesia 'AI in L&D Report 2026' and TalentLMS 2026 L&D Report.",
+            "The specific converged category (learning + knowledge + skills + agentic AI) is itself Emerging/undefined - no analyst sizes it yet and AgentHub's agents are not live until fall 2026 - so the overall picture is a Growth market with an Emerging sub-category being created."
+          ]
+        },
+        "growth_signals": {
+          "funding_activity": "Heavy capital flowing into the adjacent enterprise-AI-knowledge space. Glean raised a USD 150M Series F at a USD 7.2B valuation (mid-2025), up from USD 4.6B nine months earlier, and hit ~USD 300M ARR by May 2026 (+89% YoY), per CNBC and Sacra. Docebo (NASDAQ/TSX: DCBO) is publicly traded and deployed M&A capital: 365Talents acquired for ~USD 54.6M (+ up to USD 5.1M earn-out) in Jan 2026 plus the Zive acquisition, per businesswire.com and reworked.co. Docebo's own ARR was USD 248.9M as of Q1 2026, up 10.6% YoY (an acceleration from 8.4% in FY2025), per Docebo Q1 2026 release. Skills intelligence and talent intelligence players (Gloat, Eightfold) continue to attract enterprise budgets.",
+          "job_posting_trends": "Not directly quantified via job-board data in this research pass (gap). Indirect demand signal: HR professionals reportedly spend up to 30% of time searching across systems and only 34% of companies have a formal org-wide reskilling program, indicating large unmet operational need that typically drives L&D/knowledge tooling headcount, per Glean and 15five/imocha HR trends 2026.",
+          "new_entrant_rate": "High at the AI-native frontier (Glean, plus a wave of enterprise AI search/agent startups noted by CNBC competing with Microsoft and Amazon) and active reconfiguration among incumbents via acquisition (Docebo/Zive/365Talents). The converged category specifically has very few direct entrants because Docebo is among the first to bundle all three layers with agentic AI, per businesswire.com and reworked.co.",
+          "search_interest": "Direct Google Trends data not pulled in this pass (gap). Proxy demand signals are strong and current: Gartner forecasts 40% of enterprise apps will feature task-specific AI agents by 2026 (up from <5% in 2025) and agentic AI is the most aggressive adoption curve of any emerging tech in its survey, per Gartner newsroom."
+        }
+      },
+      "sources": [
+        {
+          "name": "Precedence Research / National Law Review / Research and Markets - Corporate LMS market",
+          "url": "https://www.precedenceresearch.com/corporate-learning-management-system-market",
+          "accessed": "2026-06-14",
+          "relevance": "Corporate LMS market size (USD 14.49-16.33B 2025) and CAGR (19.65-22.9%)"
+        },
+        {
+          "name": "Fortune Business Insights / Mordor Intelligence - Knowledge Management Software market",
+          "url": "https://www.fortunebusinessinsights.com/knowledge-management-software-market-110376",
+          "accessed": "2026-06-14",
+          "relevance": "Enterprise KM software market size (USD 13.7-26.4B) and CAGR (14-18.5%); basis for discrepancy flag"
+        },
+        {
+          "name": "Verified Market Reports / OpenPR / Business Research Insights - Talent marketplace & talent intelligence",
+          "url": "https://www.verifiedmarketreports.com/product/talent-marketplace-platform-market/",
+          "accessed": "2026-06-14",
+          "relevance": "Skills intelligence / talent marketplace market size (USD 9.6-9.8B 2024) and CAGR (10.9-18.7%); names Gloat, Eightfold, 365Talents"
+        },
+        {
+          "name": "Glean press / CNBC / Sacra",
+          "url": "https://www.glean.com/press/glean-raises-150m-series-f-at-7-2b-valuation-to-accelerate-enterprise-ai-agent-innovation-globally",
+          "accessed": "2026-06-14",
+          "relevance": "Funding velocity and ARR growth in adjacent enterprise AI search/agent market (validation signal)"
+        },
+        {
+          "name": "Businesswire / Reworked.co - Docebo AgentHub launch & acquisitions",
+          "url": "https://www.businesswire.com/news/home/20260421016608/en/Docebo-Launches-Docebo-AgentHub-and-Unites-Skills-Intelligence-Enterprise-Knowledge-and-Agentic-AI-in-a-Single-Platform",
+          "accessed": "2026-06-14",
+          "relevance": "AgentHub launch details, Zive and 365Talents acquisitions, converged category definition"
+        },
+        {
+          "name": "Docebo Q1 2026 results (Form 6-K) / Investing.com / Motley Fool",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001829959/000162828026032550/docebo2026q1pr.htm",
+          "accessed": "2026-06-14",
+          "relevance": "Docebo financial growth signals: ARR USD 248.9M (+10.6% YoY), revenue +15% YoY to USD 65.6M, reaccelerating growth"
+        },
+        {
+          "name": "Synthesia AI in L&D Report 2026 / TalentLMS 2026 L&D Report",
+          "url": "https://www.synthesia.io/reports/ai-in-learning-and-development-report-2026",
+          "accessed": "2026-06-14",
+          "relevance": "Demand-side AI adoption in L&D (61% adopting/testing; 52% increasing AI tool use)"
+        }
+      ],
+      "gaps": [
+        "No analyst sizes the specific converged 'learning + knowledge + skills with agentic AI' category, so AgentHub's true category-level TAM/SAM cannot be quantified - only the three adjacent markets can be summed, which overlaps and double-counts some demand.",
+        "Direct Google Trends search-interest data and quantified job-posting trend data were not pulled in this pass; growth-signal evidence relies on funding velocity, adoption surveys and analyst forecasts instead.",
+        "Knowledge management market estimates diverge >30% (and one outlier ~USD 961B likely includes services), so the KM TAM is presented as a range rather than a point estimate."
+      ]
+    },
+    "Q8": {
+      "question_id": "Q8",
+      "question_title": "Macro Trend or Opportunity Window",
+      "confidence": "High",
+      "findings": {
+        "macro_shift": {
+          "description": "The convergence of enterprise agentic AI with knowledge fragmentation and the shift to skills-based organizations. Specifically: (1) task-specific AI agents are moving from <5% of enterprise applications in 2025 to a forecast 40% by 2026 (Gartner), pulling AI from chat into autonomous, in-workflow action; (2) employees lose an estimated 1.8-3.6 hours per day searching for information scattered across 5+ disconnected systems, creating acute demand to unify knowledge; and (3) skills-based hiring/workforce strategy is now mainstream (e.g., ~65% of employers adopting skills-based hiring for entry roles) while only 34% of companies have a formal org-wide reskilling program. AgentHub sits at the intersection of these three shifts.",
+          "evidence": "Gartner: 40% of enterprise apps will feature task-specific AI agents by 2026, up from <5% in 2025; agentic AI is the most aggressive adoption curve of any emerging tech Gartner measured, with only ~17% of orgs having deployed agents but >60% expecting to within two years (Gartner newsroom, 2025-08-26). Knowledge fragmentation: employees spend ~1.8 hours/day (McKinsey) to ~3.6 hours/day searching for information, ~21% of work time searching plus ~14% recreating lost info, and 54% of organizations use more than 5 platforms for documenting/sharing information (Glean, Slite Enterprise Search Survey 2025, Bloomfire/HBR 2025). Skills-based org shift: ~65% of employers adopting skills-based hiring for entry-level roles, but only 34% have a formal org-wide reskilling program (NACE / imocha / 15five HR trends 2026). AI in L&D: 61% of orgs have adopted/are testing AI in L&D (Synthesia 2026). Market validation: Glean (enterprise AI search + agents) reached ~USD 300M ARR by May 2026 at a USD 7.2B valuation (CNBC, Sacra).",
+          "momentum": "Accelerating",
+          "enterprise_adoption": "Early-to-mid on the agentic-AI curve and accelerating fast. ~17% of organizations have actually deployed AI agents, but >60% expect to within two years and 43% are actively considering agentic AI in 2026 - the steepest adoption curve Gartner has measured. On the demand side, 61% of organizations have adopted or are testing AI in L&D and 52% are increasing AI tool use in 2026, but execution is uneven (security, accuracy, integration cited as top barriers by 36-58%). Large enterprises are past the experimentation gate and entering scaled deployment, which is precisely AgentHub's mid-market-to-enterprise (500+ employee) target."
+        },
+        "opportunity_connection": "AgentHub is purpose-built for exactly this convergence. Its agentic AI layer (from Zive) connects to 20+ enterprise knowledge sources (Confluence, SharePoint, Slack, Teams, Google Drive, +15 more) to attack knowledge fragmentation directly; its skills intelligence (365Talents) rides the skills-based-organization shift; and its MCP Server makes Docebo data native inside Claude, Copilot and ChatGPT - meeting the agentic-AI-in-flow-of-work trend rather than fighting it. No legacy LMS (Cornerstone, SAP, Workday Learning), standalone KM tool (Notion, Guru, Bloomfire), or skills platform (Gloat, Eightfold) currently closes the full learning-knowledge-skills loop with agentic AI, so the macro shift opens a category-defining window for a credible, publicly-traded incumbent (Docebo, ~USD 249M ARR) with existing enterprise distribution.",
+        "timeline": "The category-definition window is open now and likely sharpest through roughly 2026-2028. Drivers: Gartner's 40%-of-apps-with-agents milestone lands in 2026, agentic-AI enterprise deployment expectations cluster in the next two years, and AgentHub's own agents go live fall 2026 with MCP Server GA in July 2026. Counter-pressure that narrows the window: Gartner forecasts >40% of agentic AI projects will be canceled by end of 2027 due to cost/value/risk concerns, and big-tech enterprise AI (Microsoft Copilot, Glean) plus incumbent LMS/HCM vendors are moving into the same space - so first-mover category framing and proof-of-value in 2026-2027 are critical before consolidation."
+      },
+      "sources": [
+        {
+          "name": "Gartner newsroom - Task-specific AI agents & agentic AI adoption",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025",
+          "accessed": "2026-06-14",
+          "relevance": "Core agentic-AI macro shift quant: 40% of apps by 2026 vs <5% in 2025; adoption curve; project cancellation risk"
+        },
+        {
+          "name": "Glean / Slite Enterprise Search Survey 2025 / Bloomfire (HBR 2025) / McKinsey",
+          "url": "https://www.glean.com/perspectives/what-is-fragmented-knowledge",
+          "accessed": "2026-06-14",
+          "relevance": "Knowledge fragmentation quant: 1.8-3.6 hrs/day searching, 21% time searching, 54% use 5+ platforms"
+        },
+        {
+          "name": "imocha / 15five / NACE - Skills-based organization & HR trends 2026",
+          "url": "https://www.imocha.io/blog/skills-based-hiring-trends",
+          "accessed": "2026-06-14",
+          "relevance": "Skills-based org shift quant: ~65% skills-based hiring adoption; 34% with formal reskilling programs"
+        },
+        {
+          "name": "Synthesia AI in L&D Report 2026 / Josh Bersin Company",
+          "url": "https://www.synthesia.io/reports/ai-in-learning-and-development-report-2026",
+          "accessed": "2026-06-14",
+          "relevance": "AI-in-L&D adoption (61% adopting/testing) and disruption of the ~USD 400B corporate training market"
+        },
+        {
+          "name": "CNBC / Sacra - Glean as enterprise agentic-AI validation",
+          "url": "https://www.cnbc.com/2025/06/10/glean-gen-ai-search-startup-raises-150-million-at-7-billion-value.html",
+          "accessed": "2026-06-14",
+          "relevance": "Market validation of enterprise AI search + agents momentum (ARR, valuation, agent actions)"
+        },
+        {
+          "name": "Businesswire / Reworked.co - Docebo AgentHub & MCP Server",
+          "url": "https://www.reworked.co/learning-development/docebo-agenthub-unifies-learning-knowledge-skills-intelligence/",
+          "accessed": "2026-06-14",
+          "relevance": "How AgentHub maps to the macro shift (Zive knowledge, 365Talents skills, MCP into Claude/Copilot/ChatGPT)"
+        }
+      ],
+      "gaps": [
+        "Time-bound quantification of how long the category window stays open is inferred from analyst forecasts (Gartner agent milestones, project-cancellation prediction) rather than a single authoritative timeline source.",
+        "Enterprise adoption figures for agentic AI specifically within L&D/HR (vs. enterprise-wide) are limited; most agentic-AI adoption data is cross-functional and applied here by extension."
+      ]
+    }
+  },
+  "metadata": {
+    "search_queries_used": 9,
+    "sources_cited": 13,
+    "scenario_emphasis_applied": "new_product_launch: went deeper on TAM/growth by sizing all four relevant markets (corporate LMS/learning, enterprise knowledge management, skills intelligence/talent marketplace, and the emerging converged learning+knowledge+skills+agentic-AI category) with CAGRs and a discrepancy flag where sources diverged >30%; for Q8 went deeper on the macro trends (agentic AI enterprise adoption, knowledge fragmentation, skills-based organizations, AI in L&D, point-tool consolidation) with quantified momentum and enterprise adoption positioning."
+  }
+}

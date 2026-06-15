@@ -1,0 +1,189 @@
+{
+  "agent": "icp_definition",
+  "company": "docebo-agenthub",
+  "scenario_type": "new_product_launch",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "icp_overview": {
+    "summary": "Docebo AgentHub's ICP is a mid-market-to-large enterprise (500+ employees) HR & L&D organization in a knowledge-intensive, compliance-exposed industry (technology/software, financial services & insurance, healthcare, manufacturing, professional services) whose institutional knowledge is fragmented across 20+ disconnected systems (Confluence, SharePoint, Slack, Teams, Google Drive) and that is under top-down pressure to (a) deploy agentic AI on internal knowledge, (b) compress onboarding/time-to-productivity, and (c) operate as a skills-based organization. Because AgentHub is a category-defining product whose AI agents are not GA until fall 2026 and whose pricing is undisclosed, the ICP is split into an EARLY-ADOPTER profile (first ~12-18 months) and an EVENTUAL MAINSTREAM profile (post category-proof). Segment prioritization is explicitly ranked below: existing Docebo LMS customers with acute knowledge fragmentation are the #1 wedge (warm, land-and-expand), AI-forward NA enterprises are #2, and a DACH/EU compliance-led wedge via Zive is #3.",
+    "early_adopter_vs_mainstream": {
+      "early_adopter_icp": "The first ~12-18 months: (1) EXISTING Docebo LMS customers (warm base, already trust the platform, contract/renewal leverage) with documented knowledge fragmentation and an AI mandate; (2) AI-forward / innovation-mandated NA enterprises (technology/software, fintech) that have already deployed Copilot/Glean or stood up a Head of AI / Chief AI Officer and are actively buying agentic AI; (3) design-partner-type accounts willing to co-develop on a pre-GA agent roadmap and act as reference logos. These buyers tolerate an unproven category, an undisclosed price, and agents that ship fall 2026 because the pain (1.8-3.6 hrs/day lost to fragmentation; 8-month time-to-productivity) and the top-down AI directive outweigh the risk. They buy the VISION + the proof points already live (MCP Server GA July 2026, Companion, AI Tutor, Skills Intelligence).",
+      "eventual_mainstream_icp": "Once agents are GA and proven (2027+) and the converged category has analyst recognition and reference customers: risk-averse net-new enterprises that do not yet know Docebo beyond LMS, compliance-led EMEA/DACH buyers waiting on EU AI Act clarity and BSI C5 evidence, and LMS-replacement buyers running formal RFPs against Cornerstone/SAP/Workday. They require proven ROI, peer references, transparent packaging, and full security/compliance attestations before committing. The mainstream buyer buys the PROVEN closed loop, not the vision.",
+      "key_differences": [
+        "Trigger: early adopters are pushed by a top-down AI mandate + acute fragmentation pain; mainstream buyers are pulled by proven ROI, peer references, and an LMS-renewal/RFP event.",
+        "Risk tolerance: early adopters accept pre-GA agents and undisclosed pricing; mainstream buyers require GA agents, published packaging, and case studies.",
+        "Relationship to Docebo: early adopters skew to the existing LMS install base (warm); mainstream expands heavily into net-new buyers who must first be educated that Docebo is more than an LMS.",
+        "Geography: early adopters concentrate in NA (highest AI adoption ~70%, ~74% of Docebo revenue); mainstream unlocks compliance-led EMEA/DACH once BSI C5 / EU AI Act readiness and references exist.",
+        "Committee dynamics: early-adopter deals are champion-led (CLO/Head of AI sponsorship can compress the committee); mainstream deals run the full ~11-person committee with heavier Procurement/CISO/DPO gating."
+      ]
+    },
+    "segment_prioritization": [
+      { "rank": 1, "segment": "Existing Docebo LMS customers (500-10,000+ employees) with fragmented knowledge + an AI mandate", "rationale": "Warm base that already trusts Docebo, has the contract/renewal relationship, and is the lowest-friction land-and-expand motion (Agent 1 Q5: Microsoft-style 'attach to existing footprint' is the open play; assets: existing LMS install base is the explicit upsell asset). Fastest path to early reference logos and revenue before agents are GA.", "motion": "Upsell / expand", "priority_basis": "assets-constraints + Agent 1 Q5 pattern_gaps" },
+      { "rank": 2, "segment": "AI-forward net-new NA enterprises (technology/software, fintech, prof. services) with a Head of AI / Chief AI Officer and active agentic-AI adoption", "rationale": "NA is the commercial center (~40% of LMS spend, ~74% Docebo revenue, ~70% AI adoption - Agent 1 Q2). AI-forward orgs already buying Copilot/Glean are primed to evaluate a converged agentic platform and tolerate category novelty. Higher acquisition cost than the warm base but largest TAM and reference value.", "motion": "Net-new acquisition", "priority_basis": "Agent 1 Q2 + Q8" },
+      { "rank": 3, "segment": "DACH / EU data-residency-sensitive enterprises (financial services, healthcare, manufacturing, public-adjacent) needing EU AI Act-ready HR AI", "rationale": "Underserved by US incumbents lacking BSI C5 / EU residency; Zive's German roots are a genuine defensible wedge (Agent 1 Q2 underserved_geographies). HIGHER PRIORITY for mainstream than early-adopter because (a) compliance-led buyers are risk-averse and want GA + attestations, and (b) the EU AI Act high-risk deadline may be deferred from Aug 2 2026 to Dec 2 2027 (Digital Omnibus), softening near-term urgency. Build the compliance/residency proof now; harvest 2027.", "motion": "Net-new acquisition (compliance-led)", "priority_basis": "Agent 1 Q2 + new enrichment (Digital Omnibus deferral)" },
+      { "rank": 4, "segment": "LMS-replacement buyers running formal RFPs against Cornerstone / SAP SuccessFactors Learning (legacy-dissatisfaction)", "rationale": "SAP SuccessFactors Learning has declining mindshare (7.5%, -8.5% YoY), clunky UI, weak reporting/integration (Agent 1 Q3); G2 3.7/5. These are displaceable, but the buyer is shopping for an LMS, not a converged category - so this is a mainstream/competitive-displacement play, not the category-creation early-adopter motion.", "motion": "Competitive displacement", "priority_basis": "Agent 1 Q3 competitor weaknesses" }
+    ]
+  },
+  "firmographic_filters": {
+    "industry": "Knowledge-intensive, compliance-exposed enterprises in: (1) Technology & Software (incl. SaaS, fintech) - highest AI adoption and Confluence/Slack density; (2) Financial Services & Insurance - regulatory training + Docebo's strongest vertical concentration; (3) Healthcare & Life Sciences - compliance/credentialing + fragmented clinical knowledge; (4) Manufacturing & Industrial - distributed workforce, safety/SOP onboarding, one of Docebo's top concentrations; (5) Professional Services / Consulting - billable time-to-productivity pressure. Exclude pure-academic/K12/higher-ed LMS use.",
+    "company_size": {
+      "employee_range": "500-10,000+ employees. Early-adopter sweet spot 1,000-5,000 (large enough for acute multi-system fragmentation and a real L&D/HRIS budget, nimble enough to buy a pre-GA category). Mainstream extends to 5,000+ true enterprise.",
+      "revenue_range": "~USD 100M-5B+ annual revenue (mid-market ~USD 100M-1B; enterprise USD 1B+). Must support a six-figure annual platform commitment given AgentHub's expected premium positioning."
+    },
+    "growth_stage": "Established mid-market to large enterprise (scale-up through enterprise). Not early-stage startups - the ICP requires an existing multi-system knowledge sprawl, a formal L&D/HR function, and HRIS/identity infrastructure that only exists at 500+ employees.",
+    "geography": [
+      "North America (US & Canada) - PRIMARY commercial center: ~40% of global LMS spend (~USD 13.49B in 2026), highest enterprise AI adoption (~70% actively using AI), and ~74% of Docebo's own FY2025 revenue. SOC 2 / SSO is the de facto procurement bar (Agent 1 Q2). This is where the early-adopter motion lands first.",
+      "EMEA - SECONDARY, fastest-growing but compliance-led (~65% AI adoption). EU AI Act high-risk HR obligations (originally Aug 2 2026, potentially deferred to Dec 2 2027 under the proposed Digital Omnibus) + GDPR make EU data residency, sub-processor disclosure, DPIA/FRIA support deal-gating (Agent 1 Q2).",
+      "DACH (Germany, Austria, Switzerland) - DEFENSIBLE WEDGE via Zive's German roots: BSI C5 attestation + German-language DPAs + EU residency are procurement prerequisites US incumbents lack. Highest barrier, highest differentiation (Agent 1 Q2 underserved_geographies).",
+      "Nordics - efficient EMEA beachhead after residency is established: cloud-first, English-fluent, early AI adopters, less localization friction than DACH (Agent 1 Q2)."
+    ],
+    "funding_stage": "Not a primary filter (target is established enterprises, mostly private PE-backed or public). For net-new AI-forward NA accounts, a recent growth round or strong financial health that funds an 'AI transformation' budget line is a positive secondary signal.",
+    "exclusion_criteria": [
+      { "excluded": "Organizations under ~500 employees / SMB", "reason": "Insufficient multi-system knowledge fragmentation, no formal L&D/HRIS function, and deal economics that cannot support a premium six-figure committee-driven sale with a 6-12 month cycle (Agent 1 Q9 deal size ~$72K-six figures)." },
+      { "excluded": "Academic / K12 / higher-education institutions", "reason": "AgentHub is built for corporate enterprise knowledge-to-learning; academic LMS needs (SIS integration, grading, accreditation) are a different category and product." },
+      { "excluded": "Fully Microsoft-locked enterprises that have already standardized on Copilot + Viva Learning Agent for knowledge and learning", "reason": "Highest-disruption-risk segment (Agent 1 Q10: Microsoft is the most-likely big-tech entrant, High/High). A 'good-enough, already-bought' M365 bundle will resist a separate platform; pursue only where the closed-loop skills/learning-tracking gap is acutely felt." },
+      { "excluded": "Organizations with thin, low-volume, or single-source knowledge (no Confluence/SharePoint/Slack sprawl)", "reason": "The core value (turning 20+ fragmented sources into learning) does not exist without fragmentation; ROI collapses." }
+    ]
+  },
+  "technographic_signals": [
+    { "signal": "Uses 2+ of: Atlassian Confluence, Microsoft SharePoint, Microsoft Teams, Slack, Google Drive as active knowledge repositories", "type": "required", "reason": "These are AgentHub's primary ingestion sources (Agent 1 Q7 ecosystem); the product's core value is converging 20+ live knowledge systems into learning. Multi-source presence is the precondition for fragmentation pain. Detectable via BuiltWith/HG Insights and job-posting tool mentions." },
+    { "signal": "Runs an HRIS system-of-record (Workday, SAP SuccessFactors, ADP, BambooHR) plus an IdP/SSO (Okta, Azure AD/Entra)", "type": "required", "reason": "Skills Intelligence (365Talents) and permissions-aware knowledge require an HRIS system-of-record for roles/permissions, and SSO is the procurement baseline (Agent 1 Q7). Without these, skills mapping and governance cannot function." },
+    { "signal": "Already deploying an enterprise AI assistant / agent platform (Microsoft 365 Copilot, Glean, ChatGPT Enterprise, Claude for Work) or has stood up a Copilot Studio / internal RAG effort", "type": "complementary", "reason": "Signals AI-forward sophistication and an active agentic-AI budget (Agent 1 Q8: agents moving <5%->40% of enterprise apps by 2026). These orgs are primed to evaluate a converged agentic platform and are the early-adopter core - and AgentHub's MCP Server makes Docebo native inside Claude/Copilot/ChatGPT (Agent 1 Q7)." },
+    { "signal": "Existing Docebo LMS customer (current platform tenant / active contract)", "type": "complementary", "reason": "The #1 prioritized segment and lowest-friction land-and-expand (Agent 1 Q5 pattern_gaps; assets: existing LMS install base is the explicit upsell asset). Native expansion path with established trust and renewal leverage." },
+    { "signal": "No closed-loop learning-from-knowledge capability: knowledge tools (Confluence/Guru/Notion) and the LMS are disconnected; content is built manually in SharePoint/docs and tracked in spreadsheets", "type": "gap", "reason": "This is the exact problem AgentHub solves - no incumbent converts 20+ live knowledge sources into trackable learning with a skills loop (Agent 1 Q3 market_positioning_gaps, Q4 substitutes: manual SharePoint/docs + status quo). The gap IS the buying need." },
+    { "signal": "Surfaces knowledge via AI search (Glean/Copilot) but has no completion tracking, learning records, or skills measurement tied to it", "type": "gap", "reason": "AI search answers questions but never closes the loop into structured, trackable learning or skills (Agent 1 Q3 Glean/Copilot weaknesses). An org that bought search and still cannot prove capability uplift has the precise gap AgentHub fills." }
+  ],
+  "behavioral_triggers": [
+    { "trigger": "Top-down AI mandate: company hires a Head of AI / Chief AI Officer / VP of AI, or publicly commits to an 'AI transformation' / agentic-AI strategy in the last 6-12 months", "observable_via": "LinkedIn job postings & new-hire announcements; press releases; executive LinkedIn posts; earnings-call transcripts", "urgency": "High" },
+    { "trigger": "Hiring for AI-forward L&D / learning-technology roles (e.g., 'VP of Learning & Development' with an 'AI-first learning strategy' mandate, 'Director of Learning Technology', 'Learning Operations Manager', 'People Analytics / Skills Strategy Lead')", "observable_via": "LinkedIn Jobs, edtech.com job board, company careers pages (e.g., observed Kisco Senior Living VP L&D 'AI-first enterprise learning strategy' posting)", "urgency": "High" },
+    { "trigger": "LMS renewal window or documented LMS dissatisfaction (esp. SAP SuccessFactors Learning or Cornerstone - clunky UI, weak reporting/integration)", "observable_via": "G2/Capterra negative reviews (SAP SuccessFactors Learning ~3.7/5), renewal timing intel from sales/contract data, RFP listings", "urgency": "High" },
+    { "trigger": "Recent rapid headcount growth or M&A creating an onboarding / time-to-productivity crisis (8-month average to full productivity; $3K-$28K cost per hire)", "observable_via": "LinkedIn headcount-growth charts, hiring-velocity data, M&A press, 'scaling onboarding' job posts", "urgency": "Medium" },
+    { "trigger": "Skills-based organization initiative: public adoption of skills-based hiring/workforce planning, internal talent marketplace, or reskilling program announcement", "observable_via": "Press/blog announcements, LinkedIn exec posts, conference talks; reinforced by 365Talents/Skills Intelligence relevance (Agent 1 Q8: ~65% skills-based hiring, only 34% with formal reskilling)", "urgency": "Medium" },
+    { "trigger": "EMEA/DACH: active EU AI Act / GDPR HR-AI compliance program seeking demonstrably compliant, EU-resident AI tooling ahead of the high-risk deadline (Aug 2 2026, potentially deferred to Dec 2 2027 under the Digital Omnibus)", "observable_via": "Compliance/DPO job postings, RFP/security-questionnaire language requiring BSI C5 / EU residency, regulatory filings, works-council notices", "urgency": "Medium" },
+    { "trigger": "Adopted an enterprise AI search/assistant (Glean/Copilot) but leadership is now asking 'how do we prove learning and capability uplift?' - the closed-loop gap surfacing post-purchase", "observable_via": "Case-study/press mentions of AI search rollouts, LinkedIn posts from L&D leaders, conference panels, Docebo MCP beta usage signals", "urgency": "Medium" }
+  ],
+  "buying_committee": {
+    "budget_owner": {
+      "title": "Chief Human Resources Officer (CHRO) / Chief People Officer; CFO co-signs at six-figure TCV",
+      "level": "C-suite",
+      "cares_about": "Demonstrable ROI on the people/L&D budget (time-to-productivity, content-creation efficiency, retention), strategic alignment of L&D with the skills-based-org and AI agenda, and vendor viability. The CFO/Finance Business Partner gates the ROI business case as a co-decision-maker (Agent 1 Q9)."
+    },
+    "champion": {
+      "title": "Chief Learning Officer (CLO) / VP of Learning & Development - paired in AI-forward accounts with the Head of AI / Chief AI Officer as executive co-sponsor",
+      "motivation": "Wants to modernize L&D into a strategic, AI-first, measurable function; prove capability uplift; eliminate manual content creation; and ride the agentic-AI and skills-based-org mandate rather than be disrupted by it (Agent 1 Q9 Champion; enrichment: 2026 'make-or-break' AI mandate for L&D)."
+    },
+    "technical_evaluator": {
+      "title": "Director of IT / Head of IT Integration, partnered with the L&D Manager / Head of Learning / LMS Administrator on the day-to-day evaluation",
+      "evaluates": "Breadth and reliability of the 20+ knowledge-source connectors (Confluence/SharePoint/Slack/Teams/Drive), HRIS/SSO integration depth, data security/governance, reporting, and admin burden. The LMS Administrator (a secondary champion) judges content-generation quality and ease of administration (Agent 1 Q9 evaluation_criteria)."
+    },
+    "blocker": {
+      "title": "CISO / Head of Information Security (and, in EMEA, the Data Protection Officer / DPO and the works council in DACH)",
+      "typical_objection": "An agentic AI touching employee data across 20+ live sources raises the security/governance/AI-transparency bar - 'How do you handle data residency, sub-processors, permissions-aware access, AI transparency to employees, and EU AI Act high-risk obligations?' In DACH, BSI C5 and works-council consultation can stall or kill the deal (Agent 1 Q9, Q10 regulatory). Procurement is an additional gatekeeper (Forrester 2026: procurement is a decision-maker 53% of the time)."
+    },
+    "end_users": {
+      "titles": ["Business-Unit / Functional Leaders (Sales Enablement, Compliance, Manufacturing Ops)", "Front-line Managers", "Individual employees / new hires (learners)", "L&D content creators / Instructional Designers"],
+      "adoption_concern": "Will employees actually use it in the flow of work (Teams/Slack/Salesforce), is AI-generated content accurate and trustworthy, and does it reduce - not add - work? Change-management and trust are the dominant adoption risks (enrichment: 77% of AI failures are strategy/governance/change-management, not tech; 34% of AI projects abandoned pre-production)."
+    }
+  },
+  "pain_points": [
+    {
+      "persona": "Chief Learning Officer / VP L&D (Champion)",
+      "pain": "Under a board/CEO AI mandate to make L&D AI-first and prove business impact, but the team cannot produce or refresh learning content fast enough - every new-hire cohort and product change requires rebuilding training from scratch, and skills decay outpaces course creation.",
+      "current_workaround": "Manually building courses in SharePoint/docs and off-the-shelf libraries, or commissioning instructional-design consultancies per curriculum (Agent 1 Q4 substitutes).",
+      "why_inadequate": "Labor-intensive, content goes stale fast, generic content isn't grounded in the company's living knowledge, and there is no measurable link to skills or capability uplift - so the CLO cannot prove ROI to the CHRO/CFO (enrichment: 2026 'prove business value' L&D mandate)."
+    },
+    {
+      "persona": "CHRO / Chief People Officer (Budget Owner)",
+      "pain": "New hires take ~8 months to reach full productivity at $3K-$28K onboarding cost per hire, and the org is trying to become skills-based but only ~34% of companies have a formal reskilling program - leaving a visible, expensive workforce-readiness gap.",
+      "current_workaround": "Status quo: let employees self-search across 5+ systems and rebuild onboarding ad hoc each cycle; track skills (if at all) in spreadsheets or a disconnected HRIS module (Agent 1 Q4, Q8).",
+      "why_inadequate": "Employees lose 1.8-3.6 hrs/day searching across systems; onboarding is inconsistent; there is no closed-loop, no skills measurement, and no defensible workforce-capability data to bring to the executive team (Agent 1 Q8)."
+    },
+    {
+      "persona": "Director of IT / Head of IT Integration (Technical Evaluator)",
+      "pain": "Institutional knowledge is fragmented across Confluence, SharePoint, Slack, Teams, and Drive with no governed, permissions-aware way to unify it into learning; IT is fielding either DIY RAG/Copilot Studio build requests or a sprawl of point tools.",
+      "current_workaround": "In-house RAG/agents on Copilot Studio (~$200/tenant/mo) or stitching point tools together (Agent 1 Q4 in-house build substitute).",
+      "why_inadequate": "DIY builds require engineering, governance, and ongoing maintenance, rarely produce structured learning/skills graphs or compliance reporting, and carry high TCO that IT cannot sustain at the 500+ scale (Agent 1 Q4)."
+    },
+    {
+      "persona": "CISO / DPO (Blocker, EMEA-critical)",
+      "pain": "An agentic system reading employee-adjacent data across 20+ sources is a high-risk AI use under the EU AI Act and a GDPR exposure; the org lacks confidence that any vendor can demonstrate residency, transparency, and human-oversight compliance.",
+      "current_workaround": "Blocking or heavily restricting external AI tools; demanding right-to-audit clauses, sub-processor lists, and (in DACH) BSI C5 before any approval (enrichment: compliance as a procurement trust lever).",
+      "why_inadequate": "Most US-headquartered competitors lack BSI C5, EU residency, and German-language DPAs, so the CISO/DPO is stuck between an AI mandate and an un-approvable vendor set - the exact gap Zive's German roots can fill (Agent 1 Q2, Q10)."
+    },
+    {
+      "persona": "L&D Manager / LMS Administrator (secondary Champion / day-to-day end user)",
+      "pain": "Spends hours every week manually compiling, updating, and reconciling training content and completion data because the LMS, the knowledge bases, and the HRIS don't talk to each other.",
+      "current_workaround": "Copy-pasting from Confluence/SharePoint into the LMS, manual completion tracking, and spreadsheet reporting (Agent 1 Q4 manual-process substitute).",
+      "why_inadequate": "Doesn't scale, content drifts out of date immediately, analytics are weak, and the admin has no automated way to keep learning synced with the source-of-truth knowledge."
+    }
+  ],
+  "anti_icp": [
+    {
+      "type": "Microsoft-locked, Copilot/Viva-standardized enterprises",
+      "reason": "Where leadership has already committed to Microsoft 365 Copilot + Viva Learning Agent as the knowledge-and-learning answer, a 'good-enough, already-bought' bundle creates structural resistance to a separate platform - the single biggest disruption threat (Agent 1 Q10: Microsoft most-likely entrant, High/High).",
+      "red_flags": ["All knowledge lives only in SharePoint/Teams (no Confluence/Slack/Drive sprawl)", "Active Copilot Studio / Viva Learning Agent rollout cited as the L&D AI strategy", "IT mandate to consolidate on Microsoft-native tooling only", "No appetite for a non-Microsoft AI vendor in security review"]
+    },
+    {
+      "type": "Low-fragmentation / single-source-of-knowledge organizations",
+      "reason": "AgentHub's ROI is created by converging many fragmented sources; an org with thin, centralized, or low-volume knowledge has no fragmentation pain and the value proposition collapses (Agent 1 Q3, Q4 - the gap is the need).",
+      "red_flags": ["Uses only one knowledge repository", "Small/static knowledge base", "No documented search/productivity loss", "L&D team reports content is already centralized and current"]
+    },
+    {
+      "type": "SMB / sub-500 employee and pure-academic buyers",
+      "reason": "Unit economics fail: a 6-12 month committee-driven enterprise cycle and premium six-figure-leaning TCV cannot be justified for a small contract, and academic/K12 needs are a different product category (Agent 1 Q9 deal size and sales cycle).",
+      "red_flags": ["<500 employees", "No formal L&D/HRIS function", "Wants self-serve/transparent low pricing", "Education-sector LMS requirements (SIS, grading, accreditation)"]
+    },
+    {
+      "type": "Change-resistant / no-mandate organizations (high churn risk even if firmographically a fit)",
+      "reason": "Without an executive AI mandate and change-management capacity, an unproven category-defining product with agents that ship fall 2026 will stall in pilot - 34% of AI projects are abandoned pre-production and 77% of failures are strategy/governance/change-management, not technology (enrichment).",
+      "red_flags": ["No executive sponsor for AI / no Head of AI", "History of shelfware / abandoned tool rollouts", "No change-management or L&D ops capacity", "Wants the tool but cannot name a business outcome or owner", "Buying agents pre-GA with no tolerance for a fall-2026 roadmap"]
+    },
+    {
+      "type": "Bargain / price-anchored LMS-replacement shoppers",
+      "reason": "Buyers running a commodity LMS RFP purely on lowest PEPM will anchor against ~$6-11 LMS pricing and reject AgentHub's premium AI-native positioning (~$30-65 PEPM tier), producing long cycles and poor-fit, high-churn deals (Agent 1 Q6 pricing strata).",
+      "red_flags": ["RFP scored primarily on lowest per-user price", "Wants AgentHub but only at legacy-LMS price points", "No budget line for AI/agentic spend", "Evaluating only against basic LMS feature checklists, not the closed loop"]
+    }
+  ],
+  "confidence_by_dimension": [
+    { "dimension": "firmographic_filters", "confidence": "High", "basis": "Strongly grounded in Agent 1 Q2 (geography, High confidence) and the explicit target-market input; enrichment confirms Docebo's vertical concentration (tech, financial services/insurance, healthcare, manufacturing)." },
+    { "dimension": "technographic_signals", "confidence": "High", "basis": "Grounded in Agent 1 Q7 ecosystem (High confidence) and product brief connectors; enrichment confirms Confluence/SharePoint/Slack enterprise prevalence." },
+    { "dimension": "behavioral_triggers", "confidence": "Medium", "basis": "Trigger types are well-evidenced (Agent 1 Q8/Q9 + enrichment on AI-mandate hiring, onboarding cost, LMS dissatisfaction), but EMEA compliance urgency is now uncertain due to the proposed EU AI Act deferral to Dec 2027 - flagged." },
+    { "dimension": "buying_committee", "confidence": "Medium-High", "basis": "Directly from Agent 1 Q9 (~11-member committee, Medium confidence, titles from vendor guides/job boards) enriched with the Head of AI co-sponsor and Forrester 2026 procurement-as-decision-maker data; titles are specific." },
+    { "dimension": "pain_points", "confidence": "High", "basis": "Each pain mapped to a committee persona and grounded in Agent 1 Q4/Q8 + enrichment (onboarding 8-month/$3K-28K, AI failure causes); specific and cold-email-usable." },
+    { "dimension": "anti_icp", "confidence": "High", "basis": "Grounded in Agent 1 Q10 disruption risk (Microsoft), Q3/Q4 (gap-dependence), Q6 (pricing strata), Q9 (deal economics) and enrichment (AI project abandonment/churn)." }
+  ],
+  "gaps": [
+    "AgentHub pricing is undisclosed (Agent 1 Q6), so the revenue-range firmographic filter and the 'premium tier' anti-ICP logic are inferred from category benchmarks, not confirmed AgentHub packaging.",
+    "EU AI Act high-risk timing is now uncertain: the proposed Digital Omnibus (Nov 2025) would defer the deadline from Aug 2 2026 to Dec 2 2027, and the 28 Apr 2026 trilogue ended without agreement - this materially softens the near-term EMEA compliance trigger urgency and is flagged in the DACH segment and triggers.",
+    "Whether AgentHub/Zive has confirmed EU/German data-center residency and live BSI C5 attestation is not publicly verifiable (Agent 1 Q2 gap) - the DACH wedge is a likely-but-unconfirmed capability and must be verified before compliance-led messaging.",
+    "No firmographic intent data confirms which specific existing Docebo LMS accounts have acute fragmentation + AI mandate; the #1 segment requires Docebo's internal CRM/usage data to operationalize the target list.",
+    "Buying-committee titles are grounded in vendor guides/job-board signals (Agent 1 Q9 Medium confidence), not a primary L&D-category buying-committee study."
+  ],
+  "mi_brief_references": [
+    { "icp_criterion": "Geography (NA primary, EMEA secondary, DACH wedge, Nordics beachhead)", "mi_section": "Q2 Geographic Landscape", "finding": "NA leads global LMS spend (~40% / ~$13.49B 2026), highest AI adoption (~70%), ~74% of Docebo FY2025 revenue; EMEA fastest-growing but compliance-led; DACH underserved by US incumbents lacking BSI C5/EU residency - Zive's German roots are a defensible wedge." },
+    { "icp_criterion": "Company size (500-10,000+, sweet spot 1,000-5,000) & deal economics", "mi_section": "Q9 Buying Patterns", "finding": "Committee-driven (~11 stakeholders), 6-12 month cycles, LMS deals avg ~$72K reaching six figures; AgentHub expected upper-end/above - requires enterprise scale to justify the motion." },
+    { "icp_criterion": "Technographic required signals (Confluence/SharePoint/Slack/Teams/Drive + HRIS/SSO)", "mi_section": "Q7 Adjacent Ecosystem", "finding": "AgentHub ingests 20+ knowledge sources (Confluence, SharePoint, Teams, Slack, Drive) and depends on HRIS (Workday/SuccessFactors) and IdP/SSO (Okta) for skills mapping and permissions-aware governance." },
+    { "icp_criterion": "Technographic gap signals (no closed loop; AI search without learning/skills)", "mi_section": "Q3 Direct Competitors + Q4 Substitutes", "finding": "No vendor owns the full closed loop; Glean/Copilot surface knowledge but don't convert it to trackable learning or close the skills loop; status-quo is manual SharePoint/docs + self-search." },
+    { "icp_criterion": "Behavioral trigger - top-down agentic AI mandate", "mi_section": "Q8 Macro Trend", "finding": "Task-specific AI agents move from <5% (2025) to ~40% of enterprise apps (2026, Gartner); 61% adopting/testing AI in L&D - a top-down AI mandate is the dominant timing driver." },
+    { "icp_criterion": "Behavioral trigger - knowledge fragmentation & onboarding pain", "mi_section": "Q8 Macro Trend + Q9 procurement_trigger", "finding": "Employees lose 1.8-3.6 hrs/day across 5+ systems; procurement triggers include fragmentation across 20+ systems, slow onboarding/time-to-productivity, LMS renewal/dissatisfaction, and AI mandate." },
+    { "icp_criterion": "Buying committee (CHRO budget owner, CLO/VP L&D champion, IT/LMS admin evaluator, CISO/DPO blocker, BU leaders/learners end users)", "mi_section": "Q9 Buying Patterns - decision_committee", "finding": "CLO/VP L&D = Champion; CHRO/VP People & CFO = Decision Makers; L&D Manager/LMS Admin = Champion; Director of IT = Influencer; CISO/DPO (EMEA) & Procurement = Gatekeepers; BU leaders/end users." },
+    { "icp_criterion": "Anti-ICP - Microsoft-locked enterprises", "mi_section": "Q10 Disruption Risk Assessment", "finding": "Microsoft is the most-likely big-tech entrant (High/High): M365 Copilot + Viva Learning Agent could absorb the use case for the M365-standardized base, especially NA." },
+    { "icp_criterion": "Anti-ICP - price-anchored LMS shoppers; premium positioning", "mi_section": "Q6 Pricing Architecture", "finding": "Three pricing strata; AgentHub should sit in the premium AI-native tier (~$30-65 PEPM) - buyers anchored to ~$6-11 LMS pricing are a poor, high-churn fit." },
+    { "icp_criterion": "Segment #1 prioritization - existing LMS install base land-and-expand", "mi_section": "Q5 Incumbent GTM Patterns - pattern_gaps", "finding": "A Microsoft-style 'attach to existing footprint' play is open: AgentHub can land in Docebo's installed LMS base and expand into knowledge+skills - the dominant, lowest-friction motion." },
+    { "icp_criterion": "Early-adopter vs mainstream split (category-creation risk)", "mi_section": "Q10 + Q1 maturity_stage", "finding": "Converged 'learning+knowledge+skills+agentic AI' category is Emerging/unsized and AgentHub's agents are not live until fall 2026; category-establishment risk requires evangelizing to early adopters before mainstream proof." }
+  ],
+  "metadata": {
+    "search_queries_used": 6,
+    "sources_cited": 8,
+    "scenario_emphasis_applied": "new_product_launch: defined a distinct EARLY-ADOPTER ICP (first ~12-18 months) vs EVENTUAL MAINSTREAM ICP with explicit key differences, and ranked four segments (1: existing Docebo LMS upsell base; 2: AI-forward net-new NA enterprises; 3: DACH/EU compliance-led wedge via Zive; 4: legacy-LMS displacement) with rationale tied to Agent 1 findings and the assets/constraints (existing LMS install base as upsell asset + net-new acquisition + sales-assisted enterprise motion). Triggers and anti-ICP emphasize the pre-GA agent risk, undisclosed pricing, and category-establishment risk specific to a category-defining launch. Flagged the proposed EU AI Act deferral (Digital Omnibus, Aug 2026 -> Dec 2027) as it changes near-term EMEA trigger urgency.",
+    "enrichment_sources": [
+      { "name": "EPC Group / PeerSpot / monday.com - enterprise KM stack (Confluence/SharePoint/Slack)", "url": "https://www.epcgroup.net/sharepoint-vs-confluence-enterprise-comparison-2026", "relevance": "Validates multi-source knowledge fragmentation as the enterprise norm (technographic)" },
+      { "name": "AppsRunTheWorld / Talented Learning - Docebo customer base & industries", "url": "https://www.appsruntheworld.com/customers-database/products/view/docebo-lms", "relevance": "Confirms Docebo vertical concentration: tech, manufacturing, financial services/insurance, healthcare (firmographic industry)" },
+      { "name": "i4cp / HCAmag / TalentLMS 2026 - 2026 L&D AI mandate & skills-based org", "url": "https://www.i4cp.com/productivity-blog/4-priorities-for-chief-learning-talent-officers-in-2026", "relevance": "Validates top-down AI mandate and skills-based-org triggers and CLO motivation" },
+      { "name": "edtech.com / Ongig / AIHR - L&D & learning-technology job titles 2026", "url": "https://www.edtech.com/jobs/vp-of-learning-and-development-5056", "relevance": "Validates specific buying-committee titles and AI-first L&D hiring trigger (e.g., Kisco VP L&D AI-first mandate)" },
+      { "name": "Crowell & Moring / DLA Piper / CSA - EU AI Act high-risk HR & Digital Omnibus deferral", "url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/The-Digital-AI-Omnibus-Proposed-deferral-of-high-risk-AI-obligations-under-the-AI-Act", "relevance": "EMEA compliance trigger AND the proposed deadline deferral (Aug 2026 -> Dec 2027) affecting urgency" },
+      { "name": "WRITER / Unframe AI - enterprise AI adoption failure & abandonment 2026", "url": "https://writer.com/blog/enterprise-ai-adoption-2026/", "relevance": "Anti-ICP/churn: 34% of AI projects abandoned pre-production; 77% of failures are strategy/governance/change-management" },
+      { "name": "G2 / Capterra - Cornerstone & SAP SuccessFactors Learning reviews", "url": "https://www.g2.com/products/sap-successfactors-learning/reviews", "relevance": "LMS-dissatisfaction trigger and displacement segment (SAP 3.7/5, clunky UI/reporting)" },
+      { "name": "Yomly / Gartner / WEF - onboarding cost & time-to-productivity 2026", "url": "https://www.yomly.com/employee-onboarding-statistics/", "relevance": "Pain-point quant: ~8 months to full productivity, $3K-$28K per hire, 44% of core skills changing" }
+    ]
+  }
+}

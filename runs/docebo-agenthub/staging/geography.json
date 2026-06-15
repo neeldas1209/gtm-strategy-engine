@@ -1,0 +1,220 @@
+{
+  "agent": "geography",
+  "company": "docebo-agenthub",
+  "scenario_type": "new_product_launch",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "condensed_summary": "North America is the dominant, most mature, and most competitively dense market for AI-powered L&D and enterprise-knowledge tooling: it holds ~40% of the global LMS market (NA LMS ~$13.49B of a ~$31.6-37.1B global market in 2026), leads AI adoption (~70% of NA orgs actively using AI vs ~65% in EMEA), and generated ~74% of Docebo's own US$242.7M FY2025 revenue. EMEA is the fastest-growing region but a fundamentally different, compliance-led buying environment: the EU AI Act classifies employment/HR AI as 'high-risk' (full high-risk obligations apply August 2, 2026), sits ON TOP of GDPR (requiring DPIAs and FRIAs), and makes EU data residency, sub-processor disclosure, and AI-transparency-to-employees gating procurement criteria. Zive's German roots are a genuine EMEA/DACH differentiator because DACH is EMEA's largest and most compliance-conservative enterprise base, where BSI C5 attestation and EU/German data residency have become de facto procurement prerequisites for regulated cloud buyers. Buying is committee-driven (Gartner: ~11 stakeholders; enterprise deals span CLO/CHRO/VP People, L&D leaders, IT/Security/DPO, Procurement, and Finance) with enterprise sales cycles of roughly 6-12 months and reported LMS contract values averaging ~$72K and reaching six figures for large enterprise. AgentHub's three-in-one agentic positioning raises the IT/Security and data-governance bar versus a standalone LMS, lengthening cycles and widening the committee, especially in EMEA.",
+  "questions": {
+    "Q2": {
+      "question_id": "Q2",
+      "question_title": "Geographic Landscape",
+      "confidence": "High",
+      "findings": {
+        "primary_markets": [
+          {
+            "region": "North America (US & Canada)",
+            "market_characteristics": "Most mature and largest market for both corporate LMS and AI-driven L&D, and the global leader in enterprise AI adoption (~70% of NA orgs actively using AI vs ~65% in EMEA). High competitive density: Cornerstone, SAP SuccessFactors, Workday Learning, plus KM tools Notion/Guru/Bloomfire and skills platforms Gloat/Eightfold are all headquartered or heavily present here. Culture of continuous learning, advanced IT infrastructure, distributed/remote-work norms, and early adoption of AI personalization create strong pull for unified knowledge + learning.",
+            "key_data_points": "North America leads the global LMS market with ~40% share, projected to reach ~US$13.49B in 2026 within a global LMS market valued ~US$31.6-37.1B in 2026 growing 16-20% CAGR. Enterprise AI adoption is highest in NA (~70% actively using AI; only ~3% not using). ~74% of Docebo's own US$242.7M FY2025 revenue originates from North America (~US$179.6M), confirming this is the category's commercial center of gravity.",
+            "regulatory_considerations": "Fragmented US state-level AI and privacy laws (state privacy statutes, emerging automated-decision/AI-in-employment rules) rather than a single federal AI regime; SOC 2 / security attestations and SSO/identity integration are the de facto procurement bar. Less prescriptive than the EU AI Act but increasingly scrutinized when AI touches employment/HR data.",
+            "source": "Coherent Market Insights & Fortune Business Insights LMS market reports (https://www.fortunebusinessinsights.com/industry-reports/learning-management-system-market-101376); Netguru AI Adoption Statistics 2026 (https://www.netguru.com/blog/ai-adoption-statistics); Docebo Form 40-F FY2025 (https://www.sec.gov/Archives/edgar/data/0001829959/000162828026012566/doceboaif2025finalv2.htm)"
+          },
+          {
+            "region": "EMEA (with DACH, UK, Nordics sub-regions)",
+            "market_characteristics": "Fastest-growing region for LMS, driven by digital transformation, remote-learning adoption, and government e-learning support, with strong but slightly lower enterprise AI adoption than NA (~65% actively using AI). Structurally a more compliance-led buying environment: more conservative on AI applied to employee data and fragmented across national regimes. DACH is the largest and most security-conservative enterprise base; Nordics strongly favor cloud, ease-of-use and integration; the UK is comparatively faster-moving and English-language native.",
+            "key_data_points": "Europe is consistently cited as the fastest-growing LMS region (vs NA's largest-share position). EMEA enterprise AI adoption ~65% actively using AI. EU AI Act high-risk obligations and EU data-residency are flagged as decisive 2026 procurement criteria for AI-on-enterprise-knowledge tools; BSI C5 attestation has become a de facto procurement prerequisite for regulated cloud buyers in Germany/DACH.",
+            "regulatory_considerations": "The EU AI Act classifies employment & HR AI systems as 'high-risk' (Annex III); full high-risk obligations apply from August 2, 2026, requiring documentation, human oversight, and transparency to affected employees. The AI Act sits ON TOP of GDPR (both apply in parallel; GDPR compliance does not satisfy the AI Act), and HR AI deployments typically require both a GDPR Article 35 DPIA and a Fundamental Rights Impact Assessment (FRIA). Practical gating items: EU/in-region hosting (e.g., AWS Frankfurt, Azure Germany, GCP Frankfurt/Zurich), sub-processor lists, DPAs under local law, deletion timelines, and AI-transparency-to-employees obligations. In Germany specifically, BSI C5 attestation (assessed across 17 domains) and DPO/works-council review are treated as core procurement requirements, not add-ons.",
+            "source": "Crowell & Moring 'AI and HR in the EU: 2026 Legal Overview' (https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-human-resources-in-the-eu-a-2026-legal-overview); europe-hr-solutions EU AI Act HR guide (https://europe-hr-solutions.com/resources/eu-ai-act/); Scytale BSI C5 Attestation guide (https://scytale.ai/resources/c5-attestation/); Netguru AI Adoption Statistics 2026 (https://www.netguru.com/blog/ai-adoption-statistics)"
+          }
+        ],
+        "underserved_geographies": [
+          {
+            "region": "DACH (Germany, Austria, Switzerland) and broader EU data-residency-sensitive buyers",
+            "opportunity_description": "DACH and compliance-sensitive EU enterprises are underserved by US-headquartered LMS/KM/skills vendors that lack credible EU/German hosting, BSI C5 attestation, German-language DPAs, and AI Act readiness for HR data. BSI C5 has effectively become a procurement prerequisite for regulated German enterprise, financial services, healthcare, and public-sector cloud buyers, and many DACH enterprises require EU/German data residency rather than assuming it. Docebo's acquisition of Zive (a German enterprise AI/knowledge platform) is a structural advantage: German roots can underpin EU data residency, local language/DPA posture, and trust with skeptical DACH buyers who expect personal demos and slow, evidence-driven evaluation. This is the clearest 'less-crowded, defensible' geographic wedge for AgentHub.",
+            "source": "Scytale BSI C5 guide (https://scytale.ai/resources/c5-attestation/); Talkdesk/Skyhigh BSI C5 certification announcements as evidence of DACH procurement gating (https://www.skyhighsecurity.com/industry-perspectives/skyhigh-security-achieves-bsi-c5-certification-bringing-the-full-sse-portfolio-to-the-german-market.html); Product brief (Zive German acquisition)"
+          },
+          {
+            "region": "Nordics",
+            "opportunity_description": "Nordic enterprises strongly prefer cloud-based, easy-to-use, well-integrated software and are early AI/ML adopters, but the region receives less dedicated GTM attention from large US LMS incumbents than the US/UK. English-language fluency and cloud-first procurement lower the localization barrier relative to DACH, making it a comparatively efficient EMEA expansion beachhead once EU data-residency is established.",
+            "source": "Statista Nordics enterprise software outlook (https://www.statista.com/outlook/tmo/software/enterprise-software/nordics)"
+          }
+        ],
+        "regional_competitive_density": "Competitive density is highest in North America, where nearly all named competitors (Cornerstone, SAP SuccessFactors, Workday Learning, Notion, Guru, Bloomfire, Gloat, Eightfold) are headquartered or have deep go-to-market presence and where ~40% of LMS spend concentrates. EMEA is less saturated by the full closed-loop learning+knowledge+skills offering and is fragmented by national compliance regimes, leaving room for a compliance-native, EU-data-resident entrant. DACH is the least-served by US incumbents on compliance/residency terms (most lack BSI C5 and German data residency) despite being EMEA's largest enterprise software base, making it both the highest-barrier and highest-differentiation sub-region for AgentHub via Zive."
+      },
+      "sources": [
+        {
+          "name": "Fortune Business Insights / Coherent Market Insights – LMS market reports",
+          "url": "https://www.fortunebusinessinsights.com/industry-reports/learning-management-system-market-101376",
+          "accessed": "2026-06-14",
+          "relevance": "Global LMS market size (~$31.6-37.1B in 2026), North America ~40% share / ~$13.49B, Europe as fastest-growing region."
+        },
+        {
+          "name": "Netguru – AI Adoption Statistics 2026",
+          "url": "https://www.netguru.com/blog/ai-adoption-statistics",
+          "accessed": "2026-06-14",
+          "relevance": "Regional enterprise AI adoption: NA ~70% actively using AI vs EMEA ~65%; enterprise AI budget growth."
+        },
+        {
+          "name": "Docebo Inc. Form 40-F FY2025 (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001829959/000162828026012566/doceboaif2025finalv2.htm",
+          "accessed": "2026-06-14",
+          "relevance": "Docebo FY2025 revenue US$242.7M with ~74% from North America (~$179.6M), remainder primarily Europe."
+        },
+        {
+          "name": "Crowell & Moring – AI and HR in the EU: 2026 Legal Overview",
+          "url": "https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-human-resources-in-the-eu-a-2026-legal-overview",
+          "accessed": "2026-06-14",
+          "relevance": "EU AI Act high-risk HR/employment classification, Aug 2, 2026 high-risk obligation deadline, DPIA + FRIA requirements, AI Act parallel to GDPR."
+        },
+        {
+          "name": "europe-hr-solutions – EU AI Act 2026 HR Compliance guide",
+          "url": "https://europe-hr-solutions.com/resources/eu-ai-act/",
+          "accessed": "2026-06-14",
+          "relevance": "Employment/HR AI as high-risk (Annex III), transparency-to-employees and human-oversight obligations, DPO involvement."
+        },
+        {
+          "name": "Scytale – BSI C5 Attestation guide",
+          "url": "https://scytale.ai/resources/c5-attestation/",
+          "accessed": "2026-06-14",
+          "relevance": "BSI C5 as de facto procurement prerequisite (17 domains) for regulated cloud buyers in Germany/DACH; EU/German data residency expectations."
+        },
+        {
+          "name": "Statista – Nordics Enterprise Software Outlook",
+          "url": "https://www.statista.com/outlook/tmo/software/enterprise-software/nordics",
+          "accessed": "2026-06-14",
+          "relevance": "Nordics cloud-first/integration preference and AI/ML adoption trend; comparatively efficient EMEA beachhead."
+        }
+      ],
+      "gaps": [
+        "Exact AgentHub/Zive EU data center locations and certified residency offerings (e.g., German/EU hosting, BSI C5 attestation status) were not confirmable from public sources; treated as a likely capability given Zive's German origin but should be verified with product/infosec teams before claiming in market messaging.",
+        "No region-specific market size was found for the narrow 'agentic AI knowledge-to-learning' category itself; figures are proxied from LMS, KM software, and general enterprise AI markets, which overstate the addressable category.",
+        "Healthcare and financial-services regional regulatory nuances (sector data-handling rules in EMEA) were not researched in depth here and may add gating criteria for those verticals."
+      ]
+    },
+    "Q9": {
+      "question_id": "Q9",
+      "question_title": "Buying Patterns",
+      "confidence": "Medium",
+      "findings": {
+        "decision_committee": [
+          {
+            "title": "Chief Learning Officer (CLO) / VP of Learning & Development",
+            "role_in_decision": "Champion",
+            "source": "AIHR Chief Learning Officer role description; Essential.co.uk LMS buy-in guide (https://www.aihr.com/blog/chief-learning-officer/)"
+          },
+          {
+            "title": "CHRO / VP People (People Operations)",
+            "role_in_decision": "Decision Maker",
+            "source": "Essential.co.uk LMS stakeholder guide; Cornerstone 'How to Choose an LMS' (https://www.cornerstoneondemand.com/resources/article/how-to-choose-an-lms/)"
+          },
+          {
+            "title": "L&D Manager / Head of Learning / LMS Administrator",
+            "role_in_decision": "Champion",
+            "source": "Essential.co.uk LMS buy-in guide ('L&D in the driving seat'); ZipRecruiter/Indeed LMS-administrator job postings confirming operational owner title (https://www.essential.co.uk/blog/articles/get-buy-in-for-lms/)"
+          },
+          {
+            "title": "Director of IT / Head of IT Integration",
+            "role_in_decision": "Influencer",
+            "source": "Essential.co.uk; 360Learning LMS security guide; Bullseye buying-committee data (mid-level IT managers shape requirements/shortlists) (https://360learning.com/blog/lms-security-features/, https://www.bullseye.so/glossary/buying-committee)"
+          },
+          {
+            "title": "CISO / Head of Information Security (and DPO / Data Protection Officer in EMEA)",
+            "role_in_decision": "Gatekeeper",
+            "source": "360Learning LMS security features; Crowell & Moring EU AI Act HR overview (DPIA/FRIA, DPO involvement); Scytale BSI C5 (security/compliance lead due diligence) (https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-human-resources-in-the-eu-a-2026-legal-overview)"
+          },
+          {
+            "title": "Procurement / Vendor Management Lead",
+            "role_in_decision": "Gatekeeper",
+            "source": "Bullseye buying-committee glossary (procurement enforces budgets/terms, gatekeeps purchase); Essential.co.uk LMS guide (https://www.bullseye.so/glossary/buying-committee)"
+          },
+          {
+            "title": "CFO / Finance Business Partner",
+            "role_in_decision": "Decision Maker",
+            "source": "Bullseye buying-committee glossary (CFO owns ROI math); Essential.co.uk LMS stakeholder guide (Finance owns budget/ROI sign-off) (https://www.essential.co.uk/blog/articles/get-buy-in-for-lms/)"
+          },
+          {
+            "title": "Functional/Business-Unit Leaders (Heads of Sales Enablement, Compliance, Manufacturing) and End Users",
+            "role_in_decision": "End User",
+            "source": "Bullseye buying-committee glossary (end user wants day-one adoption); Essential.co.uk; Abara LMS stakeholder checklist (https://abaralms.com/stakeholders-selecting-your-lms/)"
+          }
+        ],
+        "decision_process": {
+          "typical_path": "Procurement trigger (fragmented knowledge / failed search / compliance or onboarding pain) > L&D/CLO builds business case and shortlist > RFP issued to vendors > vendor demos > technical/security review (IT, CISO, and in EMEA DPO/works council) > proof-of-concept or pilot focused on high-risk areas (integrations to Confluence/SharePoint/Slack, reporting, data handling) > procurement & legal negotiation (DPA, sub-processors, data residency) > Finance/CFO ROI sign-off > contract. EMEA adds a heavier security/data-residency gate and, in DACH, works-council consultation and BSI C5 / DPIA-FRIA review before rollout.",
+          "procurement_trigger": "Knowledge fragmentation across 20+ systems (employees can't find authoritative content), slow/inconsistent onboarding and time-to-productivity, compliance and reskilling pressure, an LMS contract renewal/dissatisfaction event, or a top-down 'AI strategy' mandate to deploy agentic AI on internal knowledge. In EMEA, an additional trigger is needing AI tooling that is demonstrably EU AI Act / GDPR compliant ahead of the August 2026 high-risk obligation deadline.",
+          "evaluation_criteria": [
+            "Breadth and reliability of integrations to enterprise knowledge sources (Confluence, SharePoint, Google Drive, Slack, Teams, +15 more) and unified cross-system search",
+            "Data security, governance, and AI transparency — SOC 2 in NA; GDPR/EU AI Act readiness, EU data residency, sub-processor disclosure, DPIA/FRIA support, and BSI C5 (DACH) in EMEA",
+            "Demonstrable ROI / business case (time-to-productivity, content-creation efficiency, productivity uplift) — the primary consensus-builder in committee buying (the CFO wants ROI math)",
+            "Closed-loop differentiation: learning + knowledge + skills intelligence in one platform vs. point tools (Cornerstone/SuccessFactors/Workday, Notion/Guru/Bloomfire, Gloat/Eightfold)",
+            "Vendor reputation, viability, and roadmap (Docebo as a public, established LMS vendor)",
+            "Integration with existing HCM/identity stack (SuccessFactors/Workday, SSO) and ease-of-use / low admin burden (especially valued in Nordics)"
+          ]
+        },
+        "sales_cycle": {
+          "length": "Approximately 6-12 months for mid-market-to-enterprise deals. Enterprise deals over ~$100K with 8-10 committee members typically take 6-9 months due to coordination, formal procurement, and technical/legal review; enterprise software broadly averages ~9.3 months and is lengthening (Workday's enterprise HR cycle reached ~11.3 months). EMEA/DACH typically runs at the longer end due to compliance, data-residency, DPIA/FRIA, and works-council steps. AgentHub's agentic-AI scope likely pushes cycles toward the longer end versus a standalone LMS because it widens IT/Security and data-governance review.",
+          "source": "Bullseye buying-committee glossary (enterprise >$100K, 8-10 members, 6-9 months) (https://www.bullseye.so/glossary/buying-committee); Andrew Turner 'The 9+ Month Reality of Enterprise Sales' (~9.3 months avg, Workday ~11.3 months) (https://andrewjturner.substack.com/p/the-9-month-reality-of-enterprise)"
+        },
+        "deal_size": {
+          "range": "LMS contract values average ~$72,000 (Vendr benchmark), with smaller platforms around ~$32,000 (Absorb) and large-enterprise deals reaching well into six figures with volume-based/per-active-user pricing; Gartner-class enterprise buying committees of ~11 members are typical for deals of this size. Docebo's specific AgentHub pricing is not publicly disclosed; as a premium multi-product (learning + knowledge + skills) platform layered on the core LMS, total contract value for target enterprise accounts is expected at the upper end of, or above, these LMS benchmarks.",
+          "source": "Vendr LMS pricing benchmark via Disprz LMS Pricing Guide 2026 (https://disprz.ai/blog/lms-pricing); Bullseye buying-committee glossary (Gartner ~11-member committee) (https://www.bullseye.so/glossary/buying-committee); product brief (AgentHub pricing not disclosed)"
+        },
+        "regional_differences": "North America: faster, ROI- and capability-led evaluations; SOC 2 / SSO and integration depth are the key technical gates; committee anchored by CLO/CHRO/VP People with IT and Procurement. EMEA: slower, trust- and compliance-led; data residency, GDPR DPAs, DPIA/FRIA, sub-processor lists, and EU AI Act high-risk obligations become deal-gating, elevating the CISO/DPO and (in DACH) the works council to decisive roles. DACH buyers are the most skeptical, expect personal demos and face-to-face engagement, require BSI C5 attestation and German-language DPAs / EU data residency, and take specialized tools seriously once the business case is proven. Nordics buyers are cloud-first and prioritize ease-of-use and integration, enabling somewhat faster cycles than DACH. UK sits between NA and continental EMEA: English-native, comparatively faster, but still GDPR-gated.",
+        "buying_committee_size": "Gartner reports the average B2B buying committee at ~11 members; LMS/enterprise-software committees commonly run 6-12 stakeholders spanning end users, champions, technical evaluators, security/IT, finance, procurement, and executive decision-makers (source: Bullseye buying-committee glossary citing Gartner 2025)."
+      },
+      "sources": [
+        {
+          "name": "Essential.co.uk – LMS Stakeholder Buy-In Guide",
+          "url": "https://www.essential.co.uk/blog/articles/get-buy-in-for-lms/",
+          "accessed": "2026-06-14",
+          "relevance": "Identifies the LMS buying committee (L&D champion, HR, IT, Finance, functional leaders, end users) and consensus dynamics."
+        },
+        {
+          "name": "AIHR – Chief Learning Officer role",
+          "url": "https://www.aihr.com/blog/chief-learning-officer/",
+          "accessed": "2026-06-14",
+          "relevance": "Confirms CLO as senior L&D buyer/champion title and remit."
+        },
+        {
+          "name": "Bullseye – Buying Committee (Roles, Size & How to Sell) 2026 (cites Gartner)",
+          "url": "https://www.bullseye.so/glossary/buying-committee",
+          "accessed": "2026-06-14",
+          "relevance": "Gartner ~11-member B2B buying committee; role definitions (champion, technical evaluator, IT/security, finance/CFO, procurement gatekeeper, end user); enterprise >$100K deals 6-9 months."
+        },
+        {
+          "name": "360Learning – LMS Security Features for Enterprise L&D",
+          "url": "https://360learning.com/blog/lms-security-features/",
+          "accessed": "2026-06-14",
+          "relevance": "IT/Security evaluation criteria (integration, SSO/identity, data security) and gatekeeper role."
+        },
+        {
+          "name": "Andrew Turner – The 9+ Month Reality of Enterprise Sales",
+          "url": "https://andrewjturner.substack.com/p/the-9-month-reality-of-enterprise",
+          "accessed": "2026-06-14",
+          "relevance": "Enterprise sales-cycle benchmarks (~9.3 months avg, Workday ~11.3 months) supporting the 6-12 month range."
+        },
+        {
+          "name": "Disprz – LMS Pricing Guide 2026 (cites Vendr)",
+          "url": "https://disprz.ai/blog/lms-pricing",
+          "accessed": "2026-06-14",
+          "relevance": "LMS deal-size benchmarks (~$72K avg, Absorb ~$32K) and pricing models (per-user/per-active-user, subscription)."
+        },
+        {
+          "name": "Crowell & Moring – AI and HR in the EU: 2026 Legal Overview",
+          "url": "https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-human-resources-in-the-eu-a-2026-legal-overview",
+          "accessed": "2026-06-14",
+          "relevance": "EMEA evaluation gates: HR AI high-risk, DPIA + FRIA, transparency/human-oversight, raising CISO/DPO role in the committee."
+        }
+      ],
+      "gaps": [
+        "No L&D/LMS-category-specific published sales-cycle figure was found; the 6-12 month range is inferred from general enterprise-software, enterprise-HR (Workday), and >$100K enterprise-deal benchmarks and should be treated as directional, not category-exact.",
+        "AgentHub-specific deal sizes and pricing are not publicly disclosed; deal-size range relies on third-party LMS contract benchmarks (Vendr) that may not reflect AgentHub's premium multi-product positioning.",
+        "No Gartner/Forrester primary report on L&D/knowledge-platform buying committees was directly accessed; the ~11-member committee figure is Gartner data reported via a secondary source, and specific committee titles come from vendor buyer guides, role descriptions, and job-board signals rather than analyst survey data, hence Medium confidence.",
+        "Quantified regional split of buying-committee composition (e.g., how often DPO/works council appears) is qualitative; no survey data quantifying EMEA vs NA committee differences was located."
+      ]
+    }
+  },
+  "metadata": {
+    "search_queries_used": 6,
+    "sources_cited": 12,
+    "scenario_emphasis_applied": "new_product_launch emphasis: mapped NA vs EMEA (with DACH/UK/Nordics sub-regions) maturity, AI-adoption rates, and competitive density; emphasized EU AI Act (Aug 2026 high-risk deadline) + GDPR (DPIA/FRIA) + EU data residency + BSI C5 as deal-gating regulatory factors for AI-on-enterprise-knowledge; surfaced Zive's German roots as an EMEA/DACH residency advantage and underserved-geography wedge; detailed regional buying-pattern differences (committee composition, cycle length, security/compliance expectations) for HR/L&D buyers."
+  }
+}

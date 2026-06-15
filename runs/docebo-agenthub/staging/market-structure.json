@@ -1,0 +1,304 @@
+{
+  "agent": "market-structure",
+  "company": "docebo-agenthub",
+  "scenario_type": "new_product_launch",
+  "generated_at": "2026-06-14T23:42:49Z",
+  "condensed_summary": "AgentHub's pricing is undisclosed, but its three source markets converge on a per-user/per-employee-per-month (PEPM) value metric: LMS vendors price ~$6-11 PEPM (SAP SuccessFactors ~$6.30, Cornerstone ~$8-11, Docebo LMS ~$7-10), KM tools ~$8-30 PEPM, and AI-search/agent tools the premium tier (Glean ~$45-50+ base plus ~$15 AI add-on; Microsoft 365 Copilot $30 add-on). Inferred likely architecture: a Docebo platform-tier base license (PEPM) plus a consumption/AI-credit layer for agentic actions, mirroring the market's shift from seats to AI usage. The adjacent ecosystem is dense and dual-sided: Docebo integrates natively with 20+ knowledge sources (Confluence, SharePoint, Drive, Slack, Teams) and HRIS/CRM (Salesforce, ADP, BambooHR, Okta), while the MCP Server makes Docebo a knowledge source inside Claude/Copilot/ChatGPT, simultaneously creating reach and platform dependency on those AI assistants. Overall disruption risk is HIGH: Microsoft (Copilot + Viva Learning Agent), Glean ($7.2B, $200M ARR, 100M+ agent actions), and AI-native HR moves (Workday+Sana, Gloat Agentic HR, SAP Joule) are all converging on the same 'agentic knowledge + learning' space AgentHub is creating, while AgentHub's own AI agents are not live until fall 2026.",
+  "questions": {
+    "Q6": {
+      "question_id": "Q6",
+      "question_title": "Pricing Architecture and Competitive Positioning",
+      "confidence": "Medium",
+      "findings": {
+        "pricing_models": [
+          {
+            "competitor": "Docebo (existing LMS / AgentHub)",
+            "model": "Tiered platform subscription, per-employee-per-month (PEPM), modular add-ons; quote-based / custom",
+            "price_points": "Existing Docebo LMS ~$7-10 PEPM (~$84-120/user/yr), often a setup fee plus active-user fee; 1,000-2,000 users typically mid-five-figures annually, tens of thousands of learners reach six figures. Two primary tiers (Elevate, Enterprise). AgentHub list pricing NOT public (behind contact sales wall); pricing explicitly undisclosed in launch materials.",
+            "free_tier": "No (enterprise sales-led; demo only)",
+            "pricing_page_url": "no public pricing page (custom quote)",
+            "source": "ITQlick Docebo pricing 2026 (itqlick.com/docebo-lms/pricing); educate-me.co Docebo pricing guide; product brief (AgentHub pricing undisclosed)"
+          },
+          {
+            "competitor": "Cornerstone OnDemand (Learn)",
+            "model": "Per-user, tiered; relatively transparent for category",
+            "price_points": "~$8-11 per user/month reported; total cost of ownership notably lower than SAP per third-party comparisons",
+            "free_tier": "No",
+            "pricing_page_url": "no public price list (quote-based, ranges from review sites)",
+            "source": "ITQlick SAP SuccessFactors vs Cornerstone comparison (itqlick.com); PeerSpot comparison"
+          },
+          {
+            "competitor": "SAP SuccessFactors (Learning)",
+            "model": "Per-user, custom enterprise; bundled within HCM suite",
+            "price_points": "Starts ~$6.30 per user/month (review-site inferred); some sources cite ~$10; high implementation/support TCO (~3x Cornerstone per comparison). Pricing lacks transparency, custom quotes required.",
+            "free_tier": "No",
+            "pricing_page_url": "no public price list (contact sales wall)",
+            "source": "ITQlick SAP SuccessFactors pricing 2026 (itqlick.com/sap-successfactors/pricing)"
+          },
+          {
+            "competitor": "Notion (KM, incl. AI)",
+            "model": "Per-user tiered; self-serve + freemium",
+            "price_points": "Plus ~$10/user/mo; Business ~$20/user/mo (required for full AI access)",
+            "free_tier": "Yes (free personal/small-team tier)",
+            "pricing_page_url": "public pricing page (notion.so/pricing)",
+            "source": "Docsie Guru vs Notion / Bloomfire vs Notion pricing 2026 (docsie.io)"
+          },
+          {
+            "competitor": "Guru (KM)",
+            "model": "Per-seat tiered; published pricing with seat minimum",
+            "price_points": "~$10-30 per user/month; 10-seat minimum (~$25/seat) = ~$250/mo floor; enterprise custom",
+            "free_tier": "Limited free/trial",
+            "pricing_page_url": "public pricing page (getguru.com/pricing)",
+            "source": "Docsie Bloomfire vs Guru pricing 2026 (docsie.io/vs/bloomfire-vs-guru-pricing)"
+          },
+          {
+            "competitor": "Bloomfire (KM)",
+            "model": "Per-user tiered with high seat minimum; quote-based for enterprise",
+            "price_points": "~$8-15 per user/month listed; ~50-user minimum (~$25/user) = ~$1,250/mo floor",
+            "free_tier": "No",
+            "pricing_page_url": "no fully public price list (ranges from review sites)",
+            "source": "Vendr / ITQlick Bloomfire pricing 2026 (vendr.com/marketplace/bloomfire)"
+          },
+          {
+            "competitor": "Glean (enterprise AI search/agents)",
+            "model": "Per-user base license + AI add-on; consumption-influenced; quote-based enterprise-first",
+            "price_points": "Base Enterprise Search ~$45-50+ per user/mo; Work AI/Advanced AI add-on ~$15 per user/mo; deployment-model variation (SaaS ~$40 vs customer-hosted ~$35); ~$50-60K minimum annual / 100+ seats; reported enterprise contracts $200K-$240K+ base, fully-loaded TCO $350-480K.",
+            "free_tier": "No",
+            "pricing_page_url": "no public price list (contact sales wall)",
+            "source": "Coworker AI / GoSearch / Vendr Glean pricing 2026 (coworker.ai/blog/glean-pricing)"
+          },
+          {
+            "competitor": "Microsoft 365 Copilot (AI assistant/knowledge)",
+            "model": "Per-user add-on to existing M365 license (seat-based); Copilot Studio uses consumption/credits",
+            "price_points": "Enterprise $30/user/mo (annual) on top of qualifying base license (all-in ~$24-60+); Business $18/user/mo promo (std $21) for orgs up to 300 users; Copilot Studio priced in message/credit packs.",
+            "free_tier": "Limited free Copilot chat; paid for M365 grounding",
+            "pricing_page_url": "public pricing (microsoft.com/microsoft-365/copilot)",
+            "source": "eesel AI / EPC Group / Velosio Copilot pricing 2026; CloudZero Copilot Studio pricing"
+          }
+        ],
+        "dominant_value_metric": {
+          "metric": "Per-user / per-employee-per-month (PEPM) seat licensing, increasingly paired with a consumption/AI-credit layer for agentic actions",
+          "evidence": "7 of 8 benchmarked vendors price primarily per-user/seat (Docebo, Cornerstone, SAP, Notion, Guru, Bloomfire, Microsoft Copilot base). The AI-native tier is shifting toward usage: Glean charges a separate AI add-on and references agent-action volume (100M+ agent actions/yr; 1B target), and Microsoft Copilot Studio meters by message/credit. This signals a market-wide migration from pure seats toward seat-plus-consumption for agentic AI."
+        },
+        "pricing_spectrum": {
+          "lowest": "SAP SuccessFactors Learning ~$6.30/user/mo (review-inferred) and Notion Plus ~$10/user/mo (lowest self-serve)",
+          "highest": "Glean ~$45-50+ base plus ~$15 AI add-on (~$60+/user/mo); enterprise contracts $200K-$240K+ base, fully-loaded TCO up to ~$480K/yr",
+          "typical_range": "Core LMS/KM: ~$6-15 PEPM. AI-search/agent tier: ~$30-65 PEPM. Enterprise annual contracts: LMS ~$72K-six figures (per geography summary); AI-search ~$50K floor to $200K+."
+        },
+        "positioning_map": "Three pricing strata: (1) Low-cost / self-serve KM (Notion, Guru, Bloomfire, ~$8-30 PEPM, freemium present). (2) Mid-priced enterprise LMS/HCM (SAP, Cornerstone, Docebo LMS, ~$6-11 PEPM, sales-led, no freemium). (3) Premium AI-native search/agents (Glean ~$60+ PEPM, Copilot $30 add-on, consumption-influenced). AgentHub should position in the premium AI-native tier on value (closed-loop learning+knowledge+skills+agentic AI) but can anchor price credibility to its existing LMS base. INFERRED likely architecture: a Docebo platform-tier base license (PEPM, bundling LMS + Enterprise Knowledge + Skills Intelligence) plus an AI-credit / agentic-consumption layer and per-source connector packaging - allowing land on platform seats and expand on AI usage, which both defends against per-seat-only LMS pricing pressure and matches the consumption direction set by Glean and Copilot Studio. This is INFERRED; Docebo has not disclosed AgentHub pricing."
+      },
+      "sources": [
+        {"name": "ITQlick - Docebo LMS Pricing 2026", "url": "https://www.itqlick.com/docebo-lms/pricing", "accessed": "2026-06-14", "relevance": "Docebo PEPM range and modular/tier structure"},
+        {"name": "ITQlick - SAP SuccessFactors Pricing / Cornerstone comparison", "url": "https://www.itqlick.com/sap-successfactors/pricing", "accessed": "2026-06-14", "relevance": "SAP and Cornerstone learning per-user price points and TCO"},
+        {"name": "Coworker AI - Glean Pricing 2026", "url": "https://coworker.ai/blog/glean-pricing", "accessed": "2026-06-14", "relevance": "Glean base + AI add-on pricing, minimums, contract values"},
+        {"name": "eesel AI - Microsoft Copilot Pricing 2026", "url": "https://www.eesel.ai/blog/copilot-pricing", "accessed": "2026-06-14", "relevance": "Copilot Business ($18) vs Enterprise ($30) add-on model"},
+        {"name": "Docsie - Guru/Bloomfire/Notion Pricing 2026", "url": "https://www.docsie.io/vs/bloomfire-vs-guru-pricing/", "accessed": "2026-06-14", "relevance": "KM tool per-user pricing and seat minimums"},
+        {"name": "CloudZero - Copilot Studio Pricing 2026", "url": "https://www.cloudzero.com/blog/copilot-studio-pricing/", "accessed": "2026-06-14", "relevance": "Consumption/credit pricing model for agent building"}
+      ],
+      "gaps": [
+        "AgentHub actual list pricing and packaging are undisclosed (behind contact sales wall); all AgentHub pricing here is INFERRED from category benchmarks.",
+        "No public detail on whether Docebo will meter agentic AI actions/credits or bundle them into platform tiers.",
+        "Regional (NA vs EMEA) price differentials for these vendors not separately published; LMS contracts avg ~$72K per geography summary but vendor-level EU pricing not isolated.",
+        "Per-user prices for SAP/Cornerstone are review-site inferred, not official price lists."
+      ]
+    },
+    "Q7": {
+      "question_id": "Q7",
+      "question_title": "Adjacent Ecosystem",
+      "confidence": "High",
+      "findings": {
+        "ecosystem_map": [
+          {
+            "platform_or_tool": "Atlassian Confluence",
+            "category": "Knowledge base / wiki",
+            "relevance": "A primary fragmented-knowledge source AgentHub ingests; buyers store SOPs, runbooks, and docs here that must become learning content",
+            "integration_status": "Native (Docebo Connect / Confluence connector; one of the 20+ AgentHub knowledge sources)",
+            "source": "docebo.com/integration/confluence; AgentHub launch (reworked.co)"
+          },
+          {
+            "platform_or_tool": "Microsoft SharePoint / Teams",
+            "category": "Document management / collaboration",
+            "relevance": "Where enterprise knowledge and workflows live; Teams is also a delivery surface (flow-of-work learning); also the home turf of Microsoft Copilot competitor",
+            "integration_status": "Native (Docebo Companion searches SharePoint/Teams; native Teams integration)",
+            "source": "docebo.com/products/companion; Docebo integrations marketplace"
+          },
+          {
+            "platform_or_tool": "Google Drive / Slack",
+            "category": "File storage / messaging",
+            "relevance": "Additional fragmented knowledge repositories ingested by AgentHub; Slack is a flow-of-work surface",
+            "integration_status": "Native (among 20-25+ connected sources)",
+            "source": "Docebo Companion / AgentHub knowledge sources (docebo.com)"
+          },
+          {
+            "platform_or_tool": "Salesforce",
+            "category": "CRM",
+            "relevance": "Embeds Docebo learning inside Salesforce (extended enterprise / partner & customer training); active Technology Partnership; CRM data informs skills/role context",
+            "integration_status": "Native app (Docebo for Salesforce embeds AI-powered learning in Salesforce)",
+            "source": "help.docebo.com Docebo for Salesforce; partnerbase.com/docebo/salesforce"
+          },
+          {
+            "platform_or_tool": "HRIS - Workday, SAP SuccessFactors, ADP, BambooHR; Okta (SSO)",
+            "category": "HRIS / identity",
+            "relevance": "Core system of record for employees/roles that gates AgentHub skills intelligence and permissions-aware knowledge; SSO/provisioning baseline for enterprise procurement",
+            "integration_status": "Native pre-built connectors (HRIS, IdP/SSO)",
+            "source": "Docebo integrations marketplace (docebo.com/products/integrations/marketplace); Tray.ai Docebo connectors"
+          },
+          {
+            "platform_or_tool": "Claude, Microsoft Copilot, ChatGPT (via Docebo MCP Server)",
+            "category": "AI assistants / agentic interface (MCP ecosystem)",
+            "relevance": "MCP Server makes Docebo a native knowledge source inside these AI tools - lets assistants look up learner progress, recommend courses, check certifications. This is both a distribution channel and the emerging agentic interface layer.",
+            "integration_status": "Native via MCP (public beta now, GA July 2026)",
+            "source": "docebo.com/products/mcp; reworked.co AgentHub coverage"
+          },
+          {
+            "platform_or_tool": "iPaaS - Zapier / Tray.ai / Docebo Connect API",
+            "category": "Integration / automation middleware",
+            "relevance": "Long-tail connectivity beyond native connectors; how buyers wire Docebo into bespoke stacks",
+            "integration_status": "API / iPaaS (hundreds of pre-built + custom integrations)",
+            "source": "Tray.ai Docebo integrations; Docebo integrations marketplace"
+          },
+          {
+            "platform_or_tool": "Content providers (LinkedIn Learning, Coursera, Pluralsight, Skillsoft)",
+            "category": "Off-the-shelf learning content",
+            "relevance": "Adjacent content layer; AgentHub's premise (turn internal knowledge into content) complements/competes with packaged courseware; SI and content partners drive adoption",
+            "integration_status": "Native/marketplace content integrations (standard in LMS category)",
+            "source": "Docebo integrations marketplace; Microsoft Viva Learning content connectors (epcgroup.net)"
+          }
+        ],
+        "platform_dependencies": [
+          {
+            "dependency": "MCP / AI-assistant ecosystem dependency: AgentHub's distribution via the MCP Server depends on Anthropic (Claude), Microsoft (Copilot), and OpenAI (ChatGPT) continuing to support third-party MCP knowledge sources. Microsoft and OpenAI are also competitors building native enterprise knowledge/learning agents, so they could deprioritize, gate, or out-compete external sources inside their own assistants.",
+            "risk_level": "Medium",
+            "affected_competitors": ["Docebo AgentHub", "Glean", "any KM/LMS vendor relying on being a knowledge source inside Copilot/ChatGPT"],
+            "source": "docebo.com/products/mcp; Microsoft Copilot Studio knowledge sources (learn.microsoft.com)"
+          },
+          {
+            "dependency": "Microsoft 365 surface dependency: SharePoint/Teams are simultaneously key data sources, delivery surfaces, and the home of Copilot + Viva Learning Agent. Microsoft controls the data-access terms (Graph/Work IQ API) and the in-workflow surface where AgentHub wants to live.",
+            "risk_level": "Medium",
+            "affected_competitors": ["Docebo AgentHub", "Glean", "Notion", "Guru", "Bloomfire"],
+            "source": "Microsoft Work IQ API / Copilot Studio 2026 wave 1 (learn.microsoft.com); microsoft.com Copilot blog"
+          },
+          {
+            "dependency": "HRIS system-of-record dependency: Skills Intelligence and permissions-aware knowledge rely on Workday/SuccessFactors data and permissions. These vendors are building competing native AI agents (Workday+Sana, SAP Joule, Gloat Agentic HR on Workday/Oracle/SAP), and could restrict or out-feature external skills layers.",
+            "risk_level": "Medium",
+            "affected_competitors": ["Docebo AgentHub", "Gloat", "Eightfold"],
+            "source": "Josh Bersin - Workday+Sana, Gloat Agentic HR (joshbersin.com)"
+          }
+        ],
+        "workflow_position": "AgentHub sits at the convergence point of three stacks. Upstream/input: enterprise knowledge repositories (Confluence, SharePoint, Drive, Slack, Teams) and HRIS systems of record (Workday, SuccessFactors) feed it knowledge, roles, and permissions. Core: it turns that knowledge into learning content, maps it to skills, and applies agentic AI in a closed loop. Downstream/delivery: it surfaces in the flow of work (Teams, Slack, Salesforce) and, via the MCP Server, inside AI assistants (Claude/Copilot/ChatGPT). It therefore sits alongside - and partly competes with - both the LMS it grew from and the enterprise AI-search/assistant layer (Glean, Copilot)."
+      },
+      "sources": [
+        {"name": "Docebo Integrations Marketplace", "url": "https://www.docebo.com/products/integrations/marketplace", "accessed": "2026-06-14", "relevance": "Native connector breadth (HRIS, CRM, SSO, comms, content)"},
+        {"name": "Docebo MCP Server product page", "url": "https://www.docebo.com/products/mcp/", "accessed": "2026-06-14", "relevance": "Native knowledge source inside Claude/Copilot/ChatGPT; beta now, GA July 2026"},
+        {"name": "Docebo for Salesforce (Docebo Help)", "url": "https://help.docebo.com/hc/en-us/articles/360020081720-Introduction-to-Docebo-for-Salesforce", "accessed": "2026-06-14", "relevance": "Native Salesforce-embedded learning + technology partnership"},
+        {"name": "Docebo + Confluence integration", "url": "https://www.docebo.com/integration/confluence/", "accessed": "2026-06-14", "relevance": "Native Confluence knowledge ingestion"},
+        {"name": "Reworked - Docebo AgentHub coverage", "url": "https://www.reworked.co/learning-development/docebo-agenthub-unifies-learning-knowledge-skills-intelligence/", "accessed": "2026-06-14", "relevance": "20+ knowledge sources, Zive basis, MCP context"},
+        {"name": "Microsoft Learn - Copilot Studio knowledge sources / 2026 wave 1", "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio", "accessed": "2026-06-14", "relevance": "Microsoft control of knowledge-source access and Work IQ API"}
+      ],
+      "gaps": [
+        "Docebo's formal SI / consulting / implementation partner roster (named GSIs or boutique L&D consultancies) not enumerated in available sources (55 companies cited in Docebo partner ecosystem via Partnerbase, but breakdown by type unclear).",
+        "Whether AgentHub knowledge connectors are read-only or bidirectional, and data-residency handling per connector (relevant to EU AI Act/GDPR procurement) not detailed.",
+        "Revenue/strategic weight of channel vs direct in EMEA not confirmed."
+      ]
+    },
+    "Q10": {
+      "question_id": "Q10",
+      "question_title": "Disruption Risk Assessment",
+      "confidence": "Medium",
+      "findings": {
+        "risks": [
+          {
+            "risk_type": "Big-tech entry",
+            "description": "Microsoft folds the same value proposition into Microsoft 365 - Copilot for enterprise knowledge across SharePoint/Teams plus the Viva Learning Agent (in public preview) for personalized learning, grounded by the Work IQ API. A 'good-enough, already-bought' Microsoft bundle could absorb the AgentHub use case for the large M365-standardized installed base, especially in NA.",
+            "probability": "High",
+            "impact": "High",
+            "evidence": "Microsoft 365 Copilot ($30 add-on) is GA at scale; Microsoft launched a Learning Agent in public preview delivering AI-powered personalized learning; Copilot Studio 2026 wave 1 adds new knowledge types and agent governance; Work IQ API (public preview) exposes Copilot's org-grounded intelligence to custom agents. Viva Learning already integrates Cornerstone/SuccessFactors/Workday content.",
+            "timeline": "Already underway (2026); intensifies through 2026-2027",
+            "source": "learn.microsoft.com Copilot Studio 2026 wave 1; microsoft.com Copilot blog; epcgroup.net Viva Learning"
+          },
+          {
+            "risk_type": "Technology shift",
+            "description": "AI-native enterprise knowledge agents (Glean) expand from search into the agentic, multi-source knowledge-graph platform layer AgentHub is creating - and could add learning/skills adjacencies faster than Docebo can ship its agents (not live until fall 2026).",
+            "probability": "High",
+            "impact": "High",
+            "evidence": "Glean doubled ARR to ~$200M in ~9 months at a $7.2B valuation (Series F June 2025), powers 100M+ agent actions annually targeting 1B by end of 2026, and has moved 'beyond search' with Agentic Engine 2 and Canvas co-authoring. It already covers the multi-source, permissions-aware knowledge graph AgentHub depends on.",
+            "timeline": "Now through 2027",
+            "source": "futurumgroup.com / agentmarketcap.ai Glean $7.2B coverage"
+          },
+          {
+            "risk_type": "Big-tech entry",
+            "description": "HCM suite owners build native agentic learning+skills, eliminating the need for a separate platform. Workday (with Sana), SAP (Joule agent across SuccessFactors), and skills-platform Gloat (Agentic HR) are all launching AI agents using the HRIS system-of-record and permissions - exactly the skills-intelligence layer AgentHub differentiates on.",
+            "probability": "Medium",
+            "impact": "High",
+            "evidence": "Josh Bersin (Mar 2026): Workday+Sana unveiled a new AI strategy; Gloat launched Gloat Agentic HR running in Copilot/Teams/Slack using Workday/Oracle/SuccessFactors rules; SAP Joule accesses SuccessFactors. These incumbents own the employee/role data AgentHub's Skills Intelligence needs.",
+            "timeline": "2026-2027",
+            "source": "joshbersin.com Workday+Sana and Gloat Agentic HR articles; SAP Joule (search results)"
+          },
+          {
+            "risk_type": "Market consolidation",
+            "description": "Rapid M&A and portfolio reshaping in corporate learning could compress the category before AgentHub's converged category is established, and large suite acquirers could bundle away point value.",
+            "probability": "Medium",
+            "impact": "Medium",
+            "evidence": "Coursera/Udemy consolidation activity (Jan 2026); Skillsoft selling Global Knowledge (May 2026) to refocus on an AI-native skills platform; Docebo itself acquired Zive and 365Talents. Active rollups signal a consolidating competitive set.",
+            "timeline": "Ongoing 2025-2027",
+            "source": "openpr.com LMS market 2026; SEC Skillsoft 8-K FY2026 (sec.gov)"
+          },
+          {
+            "risk_type": "Other",
+            "description": "Category-establishment risk: the converged 'learning + knowledge + skills with agentic AI' category is unproven and unsized, and AgentHub's own AI agents are not live until fall 2026. Buyers may default to category-native point tools (LMS, Glean, Copilot) rather than adopt a new converged category, leaving Docebo to evangelize a category competitors then capture.",
+            "probability": "Medium",
+            "impact": "High",
+            "evidence": "Stage 1 market-sizing: converged category Emerging/unsized; product brief: agents not live until fall 2026 and category not yet established. Meanwhile every adjacent vendor is shipping agentic features now.",
+            "timeline": "2026-2027 (window before category matures)",
+            "source": "Stage 1 market-sizing summary; product brief"
+          },
+          {
+            "risk_type": "Regulatory",
+            "description": "EU AI Act (HR uses classified high-risk; obligations from Aug 2, 2026) plus GDPR raise the governance/transparency/data-residency bar for an agentic system touching employee data across 20+ sources. This is more a barrier-to-adoption/cost than an obsolescence threat - and Zive's German roots (BSI C5, EU residency) can turn it into a differentiator.",
+            "probability": "Medium",
+            "impact": "Medium",
+            "evidence": "Stage 1 geography: EU AI Act HR-AI high-risk obligations Aug 2, 2026; GDPR data-residency/sub-processor disclosure now gating EMEA procurement; agentic three-in-one raises IT/Security/DPO bar.",
+            "timeline": "EU AI Act obligations from Aug 2, 2026",
+            "source": "Stage 1 geography summary (EU AI Act / GDPR)"
+          },
+          {
+            "risk_type": "Open-source",
+            "description": "Open-source RAG/agent frameworks (LangChain, LlamaIndex, open MCP connectors) plus open LLMs let well-resourced enterprises build internal knowledge+learning agents over their own repositories, undercutting paid platforms at the high-IT-maturity end.",
+            "probability": "Low",
+            "impact": "Medium",
+            "evidence": "MCP itself is an open protocol (Docebo exposes via MCP Server), lowering build-vs-buy friction. However, enterprise needs permissions-aware governance, HRIS/skills mapping, and L&D workflows that DIY rarely sustains - limiting probability for the 500+ employee target.",
+            "timeline": "2026-2028 (gradual)",
+            "source": "docebo.com/products/mcp (MCP as open protocol); general framework landscape"
+          }
+        ],
+        "big_tech_assessment": {
+          "most_likely_entrant": "Microsoft",
+          "signals": "Microsoft has the strongest convergence of signals: Microsoft 365 Copilot at enterprise scale ($30 add-on), a Viva Learning Agent in public preview for personalized learning, Copilot Studio 2026 wave 1 adding new knowledge types and governance, the Work IQ API exposing org-grounded intelligence to custom agents, and Viva Learning content integrations with Cornerstone/SuccessFactors/Workday. Microsoft owns the SharePoint/Teams surfaces and data that AgentHub both ingests and delivers into. Google is a weaker entrant in HR/L&D specifically (Gemini/Workspace lacks an L&D motion), and Salesforce is more CRM-adjacent (Agentforce) than learning-focused.",
+          "likelihood": "High",
+          "source": "learn.microsoft.com Copilot Studio 2026 wave 1; microsoft.com Copilot blog; epcgroup.net Viva Learning"
+        },
+        "overall_disruption_risk": "High",
+        "risk_summary": "AgentHub is launching into a space being simultaneously attacked from three directions - big tech (Microsoft Copilot + Viva Learning Agent), AI-native challengers (Glean at $7.2B), and HCM incumbents adding agents (Workday+Sana, SAP Joule, Gloat) - while its own AI agents are not live until fall 2026 and the converged category is unproven. Docebo's defensibility rests on its installed LMS base, the closed-loop learning+knowledge+skills combination, the MCP distribution play, and Zive's EU-compliance edge; speed to GA and category evangelization are the decisive variables."
+      },
+      "sources": [
+        {"name": "Microsoft Learn - Copilot Studio 2026 release wave 1", "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/", "accessed": "2026-06-14", "relevance": "Microsoft agent/knowledge roadmap signals"},
+        {"name": "Microsoft Copilot Blog - agent governance & connected apps (Apr 2026)", "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/", "accessed": "2026-06-14", "relevance": "Work IQ API, Learning Agent preview, governance"},
+        {"name": "Futurum Group - Glean $200M ARR vs Copilot", "url": "https://futurumgroup.com/insights/glean-doubles-arr-to-200m-can-its-knowledge-graph-beat-copilot/", "accessed": "2026-06-14", "relevance": "Glean ARR/valuation and platform expansion beyond search"},
+        {"name": "AgentMarketCap - Glean at $7.2B", "url": "https://agentmarketcap.ai/blog/2026/04/05/glean-7b-enterprise-knowledge-graph-agent-microsoft-365-copilot", "accessed": "2026-06-14", "relevance": "Agent-action volume and competitive trajectory vs Copilot"},
+        {"name": "Josh Bersin - Gloat Agentic HR / Workday+Sana", "url": "https://joshbersin.com/2026/03/gloat-enters-the-crowded-war-for-ai-agents-in-hr/", "accessed": "2026-06-14", "relevance": "HCM/skills incumbents launching agentic HR layers"},
+        {"name": "OpenPR - LMS Market 2026 / SEC Skillsoft 8-K", "url": "https://www.openpr.com/news/4509287/learning-management-system-lms-market-to-reach-us-95-20", "accessed": "2026-06-14", "relevance": "Market consolidation (Coursera/Udemy, Skillsoft divestiture)"}
+      ],
+      "gaps": [
+        "No confirmed public statement of Microsoft/Google explicitly targeting the 'knowledge-to-learning-content' use case as a named product (Viva Learning Agent is adjacent but not identical).",
+        "Glean has not publicly announced an L&D/learning-content product, so its move into AgentHub's exact lane is inferred from trajectory, not announced.",
+        "No detailed read on whether HRIS incumbents will restrict third-party skills-layer data access (the key dependency-to-disruption pivot).",
+        "Probability ratings for category-establishment risk rely partly on Stage 1 summaries rather than fresh primary buyer data."
+      ]
+    }
+  },
+  "metadata": {
+    "search_queries_used": 10,
+    "sources_cited": 18,
+    "scenario_emphasis_applied": "new_product_launch: (Q10) deepened macro/agentic-AI and big-tech encroachment analysis - assessed Microsoft Copilot/Viva Learning Agent, Glean, and HCM-incumbent agentic moves (Workday+Sana, SAP Joule, Gloat) as the primary disruption vectors alongside AgentHub's own fall-2026 agent timeline and unproven category. (Q6) inferred AgentHub's likely pricing architecture (platform PEPM tier + AI-credit/consumption layer) by benchmarking LMS (PEPM ~$6-11), KM (~$8-30), skills, and AI-search (Glean ~$60+, Copilot $30 add-on) pricing, clearly labeling all AgentHub pricing as inferred since it is undisclosed. (Q7) mapped the dual-sided ecosystem: native knowledge/HRIS/CRM integrations as inputs and the MCP/AI-assistant ecosystem (Claude/Copilot/ChatGPT) as both distribution channel and platform-dependency risk."
+  }
+}

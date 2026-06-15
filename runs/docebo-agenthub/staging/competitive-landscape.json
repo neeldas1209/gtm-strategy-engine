@@ -1,0 +1,361 @@
+{
+  "agent": "competitive-landscape",
+  "company": "docebo-agenthub",
+  "scenario_type": "new_product_launch",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "condensed_summary": "AgentHub competes against no single direct rival because the 'learning + knowledge + skills with agentic AI closed loop' category is emerging; the competitive set is three converging cohorts: legacy enterprise LMS/talent suites (Cornerstone Galaxy, SAP SuccessFactors Learning, Workday Learning), enterprise AI search/agents (Glean ~$300M ARR/$7.2B valuation, Microsoft 365 Copilot), and standalone KM/skills tools (Guru, Bloomfire, Gloat, Eightfold). The most exploitable weaknesses are dated UIs and poor reporting in legacy LMS (SAP especially), and the fact that AI-search players (Glean, Copilot) surface knowledge but do NOT turn it into structured, trackable learning or close the skills loop - exactly AgentHub's wedge. The dominant incumbent GTM is sales-led/enterprise with land-and-expand off an install base (HCM suites, M365), while AI-search players add formal partner programs; Microsoft Copilot is the only true PLG/self-serve add-on motion and the single biggest disruption threat given its M365 distribution. The clearest positioning gap: no incumbent owns the full closed loop from enterprise knowledge to auto-generated learning content to skills measurement, and no learning vendor matches Copilot's distribution, so AgentHub must win on integration depth and the closed loop, not on raw AI search.",
+  "questions": {
+    "Q3": {
+      "question_id": "Q3",
+      "question_title": "Direct Competitors",
+      "confidence": "Medium",
+      "findings": {
+        "competitors": [
+          {
+            "name": "Cornerstone OnDemand (Cornerstone Galaxy)",
+            "website": "https://www.cornerstoneondemand.com",
+            "founded": "1999",
+            "headcount_estimate": "~3,000-7,000 (figures vary by source; ~3,000 commonly cited, 7,000 cited in a 2023 release)",
+            "funding": {
+              "total_raised": "Private; acquired by Clearlake Capital in Oct 2021 for ~$5.2B enterprise value",
+              "notable_rounds": "Was publicly traded (NASDAQ: CSOD) before the 2021 take-private; last reported revenue ~$740.9M",
+              "source": "https://en.wikipedia.org/wiki/Cornerstone_OnDemand ; https://clearlake.com/news/clearlake-capital-completes-acquisition-of-cornerstone-ondemand/"
+            },
+            "key_features": [
+              "Cornerstone Galaxy unified suite: learning, skills intelligence, performance, succession, recruiting",
+              "AI-powered Skills Graph aligning training to workforce goals",
+              "Purpose-built AI to curate/personalize learning paths",
+              "Native HRIS integrations (Workday, BambooHR, SAP); 76% of core LMS features out of the box"
+            ],
+            "pricing_model": "Opaque / quote-based; modular add-ons; criticized for lack of transparent pricing",
+            "target_market": "Global large enterprise; employee, customer and partner (extended enterprise) learning",
+            "strengths": [
+              { "strength": "Broad unified talent suite (learning + skills + performance + recruiting) already positioned as more than an LMS", "evidence": "https://www.d2l.com/blog/cornerstone-ondemand-competitors/ ; https://diginomica.com/cornerstone-much-more-than-an-lms-vendor" },
+              { "strength": "Mature AI Skills Graph and large enterprise install base for extended-enterprise learning", "evidence": "https://www.selecthub.com/p/lms-software/cornerstone-lms/" }
+            ],
+            "weaknesses": [
+              { "weakness": "No transparent pricing; modular add-on pricing makes AI/analytics/skills cost extra and total cost hard to predict", "evidence": "https://www.educate-me.co/blog/cornerstone-lms-pricing ; https://www.selecthub.com/p/lms-software/cornerstone-lms/" },
+              { "weakness": "Skills/AI features are talent-suite oriented; not built to ingest 20+ enterprise knowledge sources (Confluence, Slack, Teams) and auto-generate learning content the way AgentHub's Zive engine does", "evidence": "Feature gap vs AgentHub spec; https://www.d2l.com/blog/cornerstone-ondemand-competitors/ lists numerous competitors citing complexity/cost as switch drivers" }
+            ]
+          },
+          {
+            "name": "SAP SuccessFactors Learning",
+            "website": "https://www.sap.com/products/hcm/learning-management-system.html",
+            "founded": "SuccessFactors founded 2001; acquired by SAP 2012",
+            "headcount_estimate": "Part of SAP (>100,000 employees company-wide)",
+            "funding": {
+              "total_raised": "N/A - division of SAP SE (public, ETR/NYSE: SAP)",
+              "notable_rounds": "N/A",
+              "source": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning"
+            },
+            "key_features": [
+              "Compliance-grade LMS embedded in SAP SuccessFactors HCM suite",
+              "Deep functionality for regulated/complex enterprise learning",
+              "Tight integration with broader SAP HR/ERP stack"
+            ],
+            "pricing_model": "Enterprise quote-based, bundled within SuccessFactors HCM suite",
+            "target_market": "Large enterprises already on SAP HCM/ERP, compliance-heavy industries",
+            "strengths": [
+              { "strength": "Deep functionality and strong fit for organizations standardized on SAP HCM/ERP", "evidence": "https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday" },
+              { "strength": "Leader-tier mindshare in corporate LMS, compliance strength", "evidence": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning" }
+            ],
+            "weaknesses": [
+              { "weakness": "Outdated, less intuitive UI; complex customization requiring technical expertise", "evidence": "https://research.com/software/reviews/sap-successfactors-learning ; https://www.quora.com/What-do-those-of-you-who-are-using-SAP-SuccessFactors-Learning-LMS-like-dislike-about-this-LMS-system-Does-it-work-well-with-Workday" },
+              { "weakness": "Challenging reporting requiring advanced skills, poor third-party integration, weak mobile experience; declining mindshare (7.5%, down 8.5% YoY)", "evidence": "https://research.com/software/reviews/sap-successfactors-learning ; https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday" }
+            ]
+          },
+          {
+            "name": "Workday Learning",
+            "website": "https://www.workday.com/en-us/products/talent-management/learning.html",
+            "founded": "Workday founded 2005",
+            "headcount_estimate": "Part of Workday Inc. (~20,000+ employees company-wide)",
+            "funding": {
+              "total_raised": "N/A - public (NASDAQ: WDAY)",
+              "notable_rounds": "N/A",
+              "source": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning"
+            },
+            "key_features": [
+              "Learning embedded natively in Workday HCM",
+              "Microsoft Teams/Slack integration",
+              "Unified worker record across HR, talent and learning"
+            ],
+            "pricing_model": "Enterprise quote-based, bundled within Workday HCM",
+            "target_market": "Large enterprises on Workday HCM; talent/learning as part of the people platform",
+            "strengths": [
+              { "strength": "Strong HCM install-base loyalty and rising mindshare (18.3%, up ~18% YoY); reviewers prefer Workday's support and roadmap direction over SAP", "evidence": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning" },
+              { "strength": "Better usability than SAP per reviewers; Teams/Slack integration", "evidence": "https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday" }
+            ],
+            "weaknesses": [
+              { "weakness": "Learning is a feature of the HCM suite rather than a best-of-breed learning engine; not built to ingest 20+ knowledge sources and auto-generate content", "evidence": "Feature gap vs AgentHub spec; positioned as HCM-first per https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday" },
+              { "weakness": "Tied to Workday HCM adoption; limited appeal to enterprises not standardized on Workday", "evidence": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning" }
+            ]
+          },
+          {
+            "name": "Glean",
+            "website": "https://www.glean.com",
+            "founded": "2019",
+            "headcount_estimate": "~1,000+ (high-growth; scaling rapidly)",
+            "funding": {
+              "total_raised": "$650M+ cumulative; $150M Series F at $7.2B valuation (June 2025)",
+              "notable_rounds": "Series F led by Wellington Management; crossed ~$300M ARR by May 2026 (~$200M reported earlier)",
+              "source": "https://www.glean.com/press/glean-raises-150m-series-f-at-7-2b-valuation-to-accelerate-enterprise-ai-agent-innovation-globally ; https://sacra.com/c/glean/"
+            },
+            "key_features": [
+              "Permissions-aware enterprise knowledge graph across 100+ connectors",
+              "Agentic Engine and Canvas co-authoring UI; multiple LLM options",
+              "Enterprise AI search/assistant with no required professional services or fine-tuning"
+            ],
+            "pricing_model": "Enterprise quote-based; ~$45-50+/user/mo base search license + ~$15/user/mo Work AI add-on; ~$50-60K annual minimum (100+ seats); no public pricing or free tier",
+            "target_market": "Mid-to-large enterprise; knowledge workers, IT/engineering, broad horizontal deployment",
+            "strengths": [
+              { "strength": "Category-leading enterprise AI search with mature permissions-aware knowledge graph and 100+ connectors; strong funding and ARR momentum", "evidence": "https://futurumgroup.com/insights/glean-doubles-arr-to-200m-can-its-knowledge-graph-beat-copilot/ ; https://www.glean.com/press/glean-raises-150m-series-f-at-7-2b-valuation-to-accelerate-enterprise-ai-agent-innovation-globally" },
+              { "strength": "Agentic engine and broad connector coverage make it a strong horizontal knowledge layer", "evidence": "https://fritz.ai/glean-review/" }
+            ],
+            "weaknesses": [
+              { "weakness": "Surfaces/answers from knowledge but does NOT convert it into structured, trackable learning content or close a skills loop - no LMS, no completion tracking, no compliance/learning record", "evidence": "Feature gap vs AgentHub closed loop; Glean positioned as enterprise search/assistant per https://www.glean.com/perspectives/comparing-costs-scaling-ai-search-solutions-in-2026" },
+              { "weakness": "Expensive and high-friction to evaluate: no free tier/self-serve, paid POC up to ~$70K, fully-loaded annual spend often $350K-$480K", "evidence": "https://workativ.com/ai-agent/blog/glean-pricing ; https://www.gosearch.ai/faqs/glean-enterprise-search-pricing-explained-costs-tiers-hidden-fees-gosearch-comparison/" }
+            ]
+          },
+          {
+            "name": "Microsoft 365 Copilot (incl. Copilot Studio / Agent 365)",
+            "website": "https://www.microsoft.com/microsoft-365/copilot",
+            "founded": "Copilot launched 2023; Microsoft founded 1975",
+            "headcount_estimate": "Part of Microsoft (>220,000 employees company-wide)",
+            "funding": {
+              "total_raised": "N/A - public (NASDAQ: MSFT)",
+              "notable_rounds": "N/A",
+              "source": "https://www.epcgroup.net/blog/microsoft-365-copilot-pricing-licensing-enterprise-guide-2026"
+            },
+            "key_features": [
+              "AI assistant/agents grounded in M365 Graph (SharePoint, Teams, OneDrive, Outlook)",
+              "Copilot Studio to build custom agents (~$200/tenant/mo, 25,000 messages)",
+              "Agent 365 governance plane; bundled into new M365 E7 SKU ($99/user/mo)"
+            ],
+            "pricing_model": "PLG-style add-on: $30/user/mo Copilot on E3/E5 base; Copilot Studio $200/tenant/mo; E7 bundle $99/user/mo; 300-seat minimum removed; self-service trials in admin center",
+            "target_market": "Any M365 enterprise/SMB; horizontal across all knowledge workers",
+            "strengths": [
+              { "strength": "Unmatched distribution via M365 install base; self-serve add-on and removal of 300-seat minimum lower adoption friction", "evidence": "https://www.epcgroup.net/blog/microsoft-365-copilot-pricing-licensing-enterprise-guide-2026 ; https://www.techtarget.com/searchenterprisedesktop/tip/How-to-install-and-set-up-Copilot-for-Microsoft-365" },
+              { "strength": "Custom agent platform (Copilot Studio) + governance (Agent 365) make it a credible build-your-own enterprise knowledge agent stack", "evidence": "https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026" }
+            ],
+            "weaknesses": [
+              { "weakness": "Horizontal productivity assistant, not an L&D/learning system - no native learning content generation, skills intelligence, completion tracking or LMS; closing the learning loop requires build (Copilot Studio) or third parties", "evidence": "Feature gap vs AgentHub; Copilot positioned as productivity/agent platform per https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026" },
+              { "weakness": "Real cost escalates (E5 + $30 Copilot + Studio/Agent 365 / E7 at $99); strongest only inside the Microsoft ecosystem, weaker for non-Microsoft knowledge sources", "evidence": "https://checkthat.ai/brands/microsoft-copilot/pricing ; https://www.gosearch.ai/blog/microsoft-copilot-pricing/" }
+            ]
+          },
+          {
+            "name": "Standalone KM & skills tools (Guru, Bloomfire, Gloat, Eightfold)",
+            "website": "https://www.getguru.com ; https://bloomfire.com ; https://www.gloat.com ; https://eightfold.ai",
+            "founded": "Guru 2013; Bloomfire 2010; Gloat 2015; Eightfold 2016",
+            "headcount_estimate": "Each mid-size (Guru/Bloomfire hundreds; Gloat/Eightfold hundreds-to-~1,000)",
+            "funding": {
+              "total_raised": "Gloat and Eightfold each raised $300M+ (unicorn-tier talent intelligence); Guru and Bloomfire VC-backed",
+              "notable_rounds": "Eightfold and Gloat reached >$1B valuations in prior rounds (per market coverage)",
+              "source": "https://www.getapp.com/hr-employee-management-software/a/gloat/ ; https://aiproductivity.ai/vs/eightfold-vs-gloat/"
+            },
+            "key_features": [
+              "Guru: bite-sized knowledge cards in Slack/Teams/Chrome, 100+ integrations, Knowledge Agents (Enterprise tier)",
+              "Bloomfire: AI semantic search across 29 file types incl. audio/video transcription",
+              "Gloat: mature two-sided internal talent marketplace, skills-based AI matching (claims 2-3x mobility)",
+              "Eightfold: AI talent intelligence - matching, internal mobility, workforce planning"
+            ],
+            "pricing_model": "Guru ~$250/mo floor (10-seat min), Knowledge Agents Enterprise-only; Bloomfire ~$1,250/mo floor (50-user min); Gloat/Eightfold enterprise custom (Eightfold entry ~$650/mo, deployments far higher)",
+            "target_market": "KM tools (Guru/Bloomfire): cross-functional teams; Skills (Gloat/Eightfold): enterprise HR/talent",
+            "strengths": [
+              { "strength": "Each is best-of-breed in its niche: Guru workflow-embedded KM, Bloomfire multimedia search, Gloat marketplace depth, Eightfold AI matching", "evidence": "https://www.eesel.ai/blog/bloomfire-vs-guru ; https://aiproductivity.ai/vs/eightfold-vs-gloat/" },
+              { "strength": "Gloat/Eightfold are funded category leaders in skills/talent intelligence (the 365Talents/skills layer AgentHub competes with)", "evidence": "https://www.knowlee.ai/blog/ai-talent-intelligence ; https://www.gartner.com/reviews/market/internal-talent-marketplaces" }
+            ],
+            "weaknesses": [
+              { "weakness": "Point solutions: KM tools don't deliver structured learning/LMS or skills; skills platforms don't ingest knowledge or generate learning content - none close the full learning+knowledge+skills loop AgentHub targets", "evidence": "Category positioning per https://www.gartner.com/reviews/market/internal-talent-marketplaces ; KM positioning per https://www.eesel.ai/blog/guru-vs-bloomfire" },
+              { "weakness": "Best AI features gated to top tiers / high floors (Guru Knowledge Agents Enterprise-only with AI credit caps; Bloomfire 50-user floor + SSO behind Enterprise)", "evidence": "https://www.docsie.io/vs/bloomfire-vs-guru-pricing/ ; https://www.eesel.ai/blog/bloomfire-vs-guru" }
+            ]
+          }
+        ],
+        "competitive_density": "Moderate to crowded by cohort, but SPARSE for the exact converged offering. Each adjacent lane (legacy LMS, enterprise AI search, KM, skills intelligence) is crowded and well-funded, but no incumbent currently delivers the closed loop of enterprise knowledge -> auto-generated learning content -> skills measurement with agentic AI. The competition is convergence pressure from multiple directions rather than head-to-head feature parity.",
+        "market_positioning_gaps": "No vendor owns the full closed loop. Legacy LMS/HCM suites (Cornerstone, SAP, Workday) have learning + some skills but cannot turn 20+ live knowledge sources into learning content. Enterprise AI search (Glean, Copilot) surfaces knowledge brilliantly but stops short of structured, trackable learning and skills outcomes. KM tools (Guru/Bloomfire) and skills platforms (Gloat/Eightfold) each own one slice. The open position is exactly AgentHub's thesis: knowledge -> learning -> skills in one governed loop. Secondary gap: a credible EU-data-residency / DACH-native option (Zive's German roots) where Glean/Copilot governance and EU AI Act compliance are buyer concerns."
+      },
+      "sources": [
+        { "name": "D2L - Cornerstone competitors", "url": "https://www.d2l.com/blog/cornerstone-ondemand-competitors/", "accessed": "2026-06-14", "relevance": "Cornerstone Galaxy positioning and switch drivers" },
+        { "name": "SelectHub - Cornerstone LMS review", "url": "https://www.selecthub.com/p/lms-software/cornerstone-lms/", "accessed": "2026-06-14", "relevance": "Cornerstone features, AI Skills Graph, pricing opacity" },
+        { "name": "Educate-me - Cornerstone pricing", "url": "https://www.educate-me.co/blog/cornerstone-lms-pricing", "accessed": "2026-06-14", "relevance": "Cornerstone modular/opaque pricing weakness" },
+        { "name": "Wikipedia - Cornerstone OnDemand", "url": "https://en.wikipedia.org/wiki/Cornerstone_OnDemand", "accessed": "2026-06-14", "relevance": "Founding year, founders, revenue" },
+        { "name": "Clearlake - Cornerstone acquisition", "url": "https://clearlake.com/news/clearlake-capital-completes-acquisition-of-cornerstone-ondemand/", "accessed": "2026-06-14", "relevance": "$5.2B take-private, ownership" },
+        { "name": "Research.com - SAP SuccessFactors Learning", "url": "https://research.com/software/reviews/sap-successfactors-learning", "accessed": "2026-06-14", "relevance": "SAP weaknesses: UI, reporting, integration, mobile" },
+        { "name": "G2 - SAP vs Workday Learning", "url": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning", "accessed": "2026-06-14", "relevance": "Mindshare trends, support/roadmap preferences" },
+        { "name": "PeerSpot - SAP vs Workday", "url": "https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday", "accessed": "2026-06-14", "relevance": "Usability comparison, HCM-first positioning" },
+        { "name": "Glean Series F press release", "url": "https://www.glean.com/press/glean-raises-150m-series-f-at-7-2b-valuation-to-accelerate-enterprise-ai-agent-innovation-globally", "accessed": "2026-06-14", "relevance": "Funding, valuation, agent strategy" },
+        { "name": "Sacra - Glean", "url": "https://sacra.com/c/glean/", "accessed": "2026-06-14", "relevance": "Revenue/ARR and funding history" },
+        { "name": "Workativ - Glean pricing", "url": "https://workativ.com/ai-agent/blog/glean-pricing", "accessed": "2026-06-14", "relevance": "Glean fully-loaded TCO and POC cost" },
+        { "name": "EPC Group - M365 Copilot pricing 2026", "url": "https://www.epcgroup.net/blog/microsoft-365-copilot-pricing-licensing-enterprise-guide-2026", "accessed": "2026-06-14", "relevance": "Copilot pricing, add-on model, E7" },
+        { "name": "EPC Group - Copilot agents guide", "url": "https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026", "accessed": "2026-06-14", "relevance": "Copilot Studio, Agent 365 capabilities" },
+        { "name": "GetApp - Gloat", "url": "https://www.getapp.com/hr-employee-management-software/a/gloat/", "accessed": "2026-06-14", "relevance": "Gloat positioning and enterprise pricing" },
+        { "name": "AI:Productivity - Eightfold vs Gloat", "url": "https://aiproductivity.ai/vs/eightfold-vs-gloat/", "accessed": "2026-06-14", "relevance": "Skills platform differentiation and pricing" },
+        { "name": "Gartner - Internal Talent Marketplaces", "url": "https://www.gartner.com/reviews/market/internal-talent-marketplaces", "accessed": "2026-06-14", "relevance": "Skills/talent marketplace category leaders" },
+        { "name": "Docsie - Bloomfire vs Guru pricing", "url": "https://www.docsie.io/vs/bloomfire-vs-guru-pricing/", "accessed": "2026-06-14", "relevance": "Guru/Bloomfire pricing floors and tier gating" },
+        { "name": "eesel AI - Bloomfire vs Guru", "url": "https://www.eesel.ai/blog/bloomfire-vs-guru", "accessed": "2026-06-14", "relevance": "KM tool features and weaknesses" }
+      ],
+      "gaps": [
+        "Exact current Cornerstone and SAP/Workday Learning pricing not public (quote-based)",
+        "AgentHub pricing undisclosed, so direct price-positioning vs competitors cannot be quantified",
+        "Precise headcounts for division-level products (SAP/Workday Learning, Copilot) not separable from parent company",
+        "Gloat/Eightfold latest funding totals approximate; exact 2026 round data not confirmed in searches"
+      ]
+    },
+    "Q4": {
+      "question_id": "Q4",
+      "question_title": "Substitutes and Alternatives",
+      "confidence": "Medium",
+      "findings": {
+        "substitutes": [
+          {
+            "substitute": "Status quo: do nothing / keep knowledge in existing systems and let employees self-search",
+            "type": "Status quo / Do nothing",
+            "why_buyers_choose_it": "Zero new spend or procurement, no IT/security review, no change management. Many L&D teams accept that employees hunt across Confluence/SharePoint/Slack on their own and that onboarding is re-built ad hoc each cycle.",
+            "limitations": "Knowledge fragmentation costs (employees lose ~1.8-3.6 hrs/day across 5+ systems per Stage 1), no learning structure, no completion/skills tracking, inconsistent onboarding, no compliance record.",
+            "prevalence": "Very high - the default for most organizations that have not formalized knowledge-to-learning workflows."
+          },
+          {
+            "substitute": "Manual content creation in SharePoint / general-purpose docs + spreadsheets",
+            "type": "Manual process",
+            "why_buyers_choose_it": "Already-owned Microsoft 365 / SharePoint; L&D builds course libraries, document libraries and tracks enrollment/completion in lists or Excel; familiar and free of net-new licenses.",
+            "limitations": "Labor-intensive, content goes stale, weak analytics, no AI generation, poor at scale; companies report reinventing training for every new-hire batch and low engagement from inbox/spreadsheet-led processes. Evidence: https://elearningindustry.com/sharepoint-workflows-and-version-control-solve-ld-challenges-7-tips ; https://www.apps365.com/blog/build-a-learning-management-system-in-sharepoint/",
+            "prevalence": "High - widely documented pattern; SharePoint-as-LMS guides and case studies are common."
+          },
+          {
+            "substitute": "General-purpose AI assistants / enterprise search (Microsoft 365 Copilot, Glean, ChatGPT Enterprise) used to answer questions instead of building learning",
+            "type": "General-purpose tool",
+            "why_buyers_choose_it": "Often already licensed (Copilot via M365); instant answers grounded in company knowledge; no separate learning platform purchase; satisfies the 'just-in-time answer' need.",
+            "limitations": "Provides answers, not structured/trackable learning; no curriculum, skills mapping, completion records or compliance trail; does not close the learning loop or measure capability uplift. Evidence: https://www.epcgroup.net/blog/microsoft-365-copilot-pricing-licensing-enterprise-guide-2026 ; https://www.glean.com/perspectives/comparing-costs-scaling-ai-search-solutions-in-2026",
+            "prevalence": "Rising fast - Copilot's M365 distribution and Glean's ~$300M ARR make this an increasingly common 'good enough' substitute for knowledge access."
+          },
+          {
+            "substitute": "Microsoft Viva Learning / Viva Topics layered on SharePoint",
+            "type": "Adjacent product",
+            "why_buyers_choose_it": "Bundled or low-marginal-cost within the Microsoft estate; aggregates learning content into Teams; familiar admin and governance.",
+            "limitations": "Aggregation/surfacing layer rather than agentic content generation from 20+ sources; limited skills intelligence and closed-loop measurement. Evidence: https://siliconreef.co.uk/blog/improve-employee-training-viva-learning-sharepoint/",
+            "prevalence": "Moderate among Microsoft-centric enterprises."
+          },
+          {
+            "substitute": "Build-your-own agents on Copilot Studio / in-house RAG over enterprise knowledge",
+            "type": "In-house build",
+            "why_buyers_choose_it": "IT/AI teams can build custom agents (Copilot Studio ~$200/tenant/mo) tailored to internal knowledge; full control, no vendor lock-in to a learning suite.",
+            "limitations": "Requires engineering, governance (Agent 365), and ongoing maintenance; rarely produces structured learning, skills graphs or compliance reporting; high TCO and opportunity cost; not an L&D-owned tool. Evidence: https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026",
+            "prevalence": "Growing among AI-forward enterprises but resource-gated; most L&D teams lack the engineering capacity."
+          },
+          {
+            "substitute": "Training agencies / instructional-design consultancies / off-the-shelf content libraries",
+            "type": "Agency/consulting",
+            "why_buyers_choose_it": "Outsource course creation to experts or buy generic content; no platform build, predictable project scope, good for one-off curricula.",
+            "limitations": "Slow, expensive per asset, generic (not grounded in the company's own living knowledge), goes stale quickly, no real-time sync with internal sources or skills data.",
+            "prevalence": "High and long-established for formal/compliance courseware; complements rather than replaces dynamic knowledge-to-learning."
+          }
+        ]
+      },
+      "sources": [
+        { "name": "eLearning Industry - SharePoint for L&D", "url": "https://elearningindustry.com/sharepoint-workflows-and-version-control-solve-ld-challenges-7-tips", "accessed": "2026-06-14", "relevance": "Manual/SharePoint substitute pattern and pain points" },
+        { "name": "Apps365 - LMS in SharePoint", "url": "https://www.apps365.com/blog/build-a-learning-management-system-in-sharepoint/", "accessed": "2026-06-14", "relevance": "DIY SharePoint-as-LMS approach and limitations" },
+        { "name": "Silicon Reef - Viva Learning + SharePoint", "url": "https://siliconreef.co.uk/blog/improve-employee-training-viva-learning-sharepoint/", "accessed": "2026-06-14", "relevance": "Microsoft Viva Learning adjacent substitute" },
+        { "name": "EPC Group - Copilot agents guide", "url": "https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026", "accessed": "2026-06-14", "relevance": "In-house build via Copilot Studio as substitute" },
+        { "name": "Glean - scaling AI search costs 2026", "url": "https://www.glean.com/perspectives/comparing-costs-scaling-ai-search-solutions-in-2026", "accessed": "2026-06-14", "relevance": "Enterprise AI search as a knowledge-access substitute" }
+      ],
+      "gaps": [
+        "No primary buyer-survey data quantifying what share of target enterprises currently use each substitute",
+        "Reddit/community threads specific to L&D substitution behavior were not surfaced in this search budget"
+      ]
+    },
+    "Q5": {
+      "question_id": "Q5",
+      "question_title": "Incumbent GTM Patterns",
+      "confidence": "Medium",
+      "findings": {
+        "gtm_patterns": [
+          {
+            "competitor": "Cornerstone OnDemand (Galaxy)",
+            "primary_motion": "Sales-led / Enterprise with growing Channel/Partner",
+            "evidence": [
+              "No transparent/self-serve pricing - quote-based, criticized for lack of pricing transparency (https://www.educate-me.co/blog/cornerstone-lms-pricing)",
+              "Actively building a partner-led growth engine and alliances org (RVP Alliances roles), evolving partners from transactional to transformational and tracking sourced/influenced ARR (https://www.edtech.com/jobs/rvp-alliances-9659 ; https://www.d2l.com/blog/cornerstone-ondemand-competitors/)"
+            ],
+            "secondary_motions": ["Channel/Partner", "Inbound/Content"],
+            "notable_tactics": "Suite cross-sell (learning -> skills -> performance -> recruiting) and extended-enterprise (customer/partner) learning expansion; PE-owned (Clearlake) with efficiency/ARR focus."
+          },
+          {
+            "competitor": "SAP SuccessFactors Learning",
+            "primary_motion": "Sales-led / Enterprise (suite land-and-expand off SAP install base)",
+            "evidence": [
+              "Sold/bundled within the SAP SuccessFactors HCM suite to existing SAP ERP/HCM accounts; quote-based enterprise pricing, no self-serve (https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning)",
+              "Positioned for organizations already standardized on SAP, leveraging the ERP/HCM relationship and field/partner ecosystem (https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday)"
+            ],
+            "secondary_motions": ["Channel/Partner (SAP SI/implementation ecosystem)"],
+            "notable_tactics": "Install-base attach: learning sold as a module of HCM; heavy reliance on SI partners for implementation."
+          },
+          {
+            "competitor": "Workday Learning",
+            "primary_motion": "Sales-led / Enterprise (HCM install-base attach)",
+            "evidence": [
+              "Embedded in Workday HCM and sold to the existing HCM customer base; rising mindshare driven by install-base loyalty (https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning)",
+              "Enterprise quote-based, bundled within the people platform; no self-serve learning product (https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday)"
+            ],
+            "secondary_motions": ["Channel/Partner (Workday services/SI ecosystem)"],
+            "notable_tactics": "Land HCM, expand to learning/talent modules; lean on unified worker-record value to upsell."
+          },
+          {
+            "competitor": "Glean",
+            "primary_motion": "Sales-led / Outbound enterprise with formal Channel/Partner program",
+            "evidence": [
+              "No free tier, no self-serve trial, no public pricing page; sales demo required and paid POC (up to ~$70K) is the standard evaluation path (https://workativ.com/ai-agent/blog/glean-pricing ; https://www.gosearch.ai/faqs/glean-enterprise-search-pricing-explained-costs-tiers-hidden-fees-gosearch-comparison/)",
+              "Launched a formal Partner Portal/program with deal registration, enablement, certifications and co-marketing; hiring CSP/Partner Managers (https://www.glean.com/blog/glean-partner-portal-2025 ; https://www.glean.com/partners)"
+            ],
+            "secondary_motions": ["Channel/Partner", "Inbound/Content (heavy thought-leadership/perspectives content)"],
+            "notable_tactics": "Land on horizontal enterprise search, expand to Work AI/agents seat-by-seat; paid POC as a qualification gate; aggressive content/category marketing vs Copilot."
+          },
+          {
+            "competitor": "Microsoft 365 Copilot",
+            "primary_motion": "PLG / Self-serve add-on at scale (hybrid with enterprise field for large accounts)",
+            "evidence": [
+              "Self-serve add-on to existing M365 (E3/E5) at $30/user/mo, 300-seat minimum removed, self-service trials/purchases available in the admin center (https://www.epcgroup.net/blog/microsoft-365-copilot-pricing-licensing-enterprise-guide-2026 ; https://www.techtarget.com/searchenterprisedesktop/tip/How-to-install-and-set-up-Copilot-for-Microsoft-365)",
+              "Bundling/upsell strategy into E7 ($99/user/mo) plus Copilot Studio/Agent 365, and 'pilot 50-200 power users then expand' guidance - classic install-base land-and-expand (https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026)"
+            ],
+            "secondary_motions": ["Sales-led/Enterprise (large-account field + EA negotiations)", "Channel/Partner (Microsoft CSP ecosystem)"],
+            "notable_tactics": "Distribution-led: ride the M365 estate; pilot-with-power-users then expand; bundle into premium SKUs (E7) to drive Copilot attach."
+          },
+          {
+            "competitor": "Standalone KM & skills tools (Guru/Bloomfire vs Gloat/Eightfold)",
+            "primary_motion": "Split: KM tools = PLG/self-serve + sales-assist; Skills platforms = Sales-led/Enterprise",
+            "evidence": [
+              "Guru and Bloomfire publish transparent self-serve-style pricing with seat floors (Guru ~$250/mo 10-seat min; Bloomfire ~$1,250/mo 50-user min), indicating bottom-up PLG/sales-assist (https://www.docsie.io/vs/bloomfire-vs-guru-pricing/)",
+              "Gloat and Eightfold are enterprise-only with custom quotes and no public pricing - top-down sales-led motion (https://www.getapp.com/hr-employee-management-software/a/gloat/ ; https://aiproductivity.ai/vs/eightfold-vs-gloat/)"
+            ],
+            "secondary_motions": ["Inbound/Content", "Integrations-as-distribution (Guru's 100+ Slack/Teams integrations)"],
+            "notable_tactics": "KM tools gate AI features behind higher tiers to drive expansion; skills platforms run consultative enterprise sales tied to HR transformation initiatives."
+          }
+        ],
+        "dominant_pattern": "Sales-led / enterprise land-and-expand is dominant - especially install-base attach (SAP, Workday, Cornerstone) and consultative enterprise sales (Glean, Gloat, Eightfold). Channel/partner ecosystems are a strong, growing secondary motion across the LMS suites and Glean. The clear outlier is Microsoft 365 Copilot's PLG/self-serve add-on motion powered by M365 distribution.",
+        "pattern_gaps": "Almost no one runs a true product-led, self-serve motion for the converged learning+knowledge+skills offer (only Copilot does PLG, and only for horizontal productivity, not learning). For Docebo this implies: (1) a Microsoft-style 'attach to existing footprint' play is open in the learning world - AgentHub can land in Docebo's installed LMS base and expand into knowledge+skills the way Copilot attaches to M365; (2) a self-serve/free-trial or guided-POC motion (lighter than Glean's $70K POC) could differentiate on evaluation friction; (3) an EU-data-residency / DACH partner-led GTM (Zive roots) is open where Glean/Copilot face EU AI Act and residency scrutiny. Docebo, being publicly traded with an existing direct + partner sales org, is structurally aligned to the dominant sales-led motion but should weaponize land-and-expand off its own LMS base."
+      },
+      "sources": [
+        { "name": "Educate-me - Cornerstone pricing", "url": "https://www.educate-me.co/blog/cornerstone-lms-pricing", "accessed": "2026-06-14", "relevance": "Cornerstone quote-based, no self-serve" },
+        { "name": "EdTech jobs - Cornerstone RVP Alliances", "url": "https://www.edtech.com/jobs/rvp-alliances-9659", "accessed": "2026-06-14", "relevance": "Evidence of Cornerstone partner-led GTM build-out" },
+        { "name": "G2 - SAP vs Workday Learning", "url": "https://www.g2.com/compare/sap-successfactors-learning-vs-workday-learning", "accessed": "2026-06-14", "relevance": "Suite/install-base attach motion for SAP & Workday" },
+        { "name": "PeerSpot - SAP vs Workday", "url": "https://www.peerspot.com/products/comparisons/sap-successfactors-learning_vs_workday", "accessed": "2026-06-14", "relevance": "HCM-bundled enterprise sales positioning" },
+        { "name": "Workativ - Glean pricing", "url": "https://workativ.com/ai-agent/blog/glean-pricing", "accessed": "2026-06-14", "relevance": "No free tier, paid POC, sales-led evaluation" },
+        { "name": "Glean Partner Portal blog", "url": "https://www.glean.com/blog/glean-partner-portal-2025", "accessed": "2026-06-14", "relevance": "Formal partner program / channel motion" },
+        { "name": "Glean Partners page", "url": "https://www.glean.com/partners", "accessed": "2026-06-14", "relevance": "Channel program structure" },
+        { "name": "EPC Group - M365 Copilot pricing 2026", "url": "https://www.epcgroup.net/blog/microsoft-365-copilot-pricing-licensing-enterprise-guide-2026", "accessed": "2026-06-14", "relevance": "Self-serve add-on, removed seat minimum, E7 bundle" },
+        { "name": "TechTarget - enable Copilot in M365", "url": "https://www.techtarget.com/searchenterprisedesktop/tip/How-to-install-and-set-up-Copilot-for-Microsoft-365", "accessed": "2026-06-14", "relevance": "Self-service enablement / admin-center trials" },
+        { "name": "EPC Group - Copilot agents guide", "url": "https://www.epcgroup.net/blog/microsoft-copilot-agents-complete-enterprise-guide-2026", "accessed": "2026-06-14", "relevance": "Pilot-then-expand land-and-expand guidance" },
+        { "name": "Docsie - Bloomfire vs Guru pricing", "url": "https://www.docsie.io/vs/bloomfire-vs-guru-pricing/", "accessed": "2026-06-14", "relevance": "Transparent self-serve pricing = PLG signal for KM tools" },
+        { "name": "GetApp - Gloat", "url": "https://www.getapp.com/hr-employee-management-software/a/gloat/", "accessed": "2026-06-14", "relevance": "Skills platform enterprise-only quote-based motion" }
+      ],
+      "gaps": [
+        "Could not count exact open BDR/AE roles per competitor within search budget (LinkedIn job counts not retrieved)",
+        "One search result conflated 'Glean' (enterprise AI search) with a separate spend-intelligence/CFO product; that CFO/spend-management GTM claim was discarded as a mismatch and not used",
+        "Docebo's own AgentHub GTM (pricing model, sales vs PLG) is undisclosed; inferences about Docebo's recommended motion are strategic, not observed"
+      ]
+    }
+  },
+  "metadata": {
+    "search_queries_used": 10,
+    "sources_cited": 23,
+    "scenario_emphasis_applied": "new_product_launch: deepened competitor profiles and especially exploitable weaknesses for Cornerstone, SAP SuccessFactors Learning, Workday Learning, plus converged/adjacent threats Glean and Microsoft Copilot (and KM/skills players Guru/Bloomfire/Gloat/Eightfold). Q5 covers each incumbent's GTM motion (pricing model, sales motion, channel, land-and-expand) and identifies GTM pattern gaps for downstream Channel/Messaging agents to exploit."
+  }
+}

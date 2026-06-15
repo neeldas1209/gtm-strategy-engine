@@ -1,0 +1,237 @@
+{
+  "agent": "channel_strategy",
+  "company": "docebo-agenthub",
+  "scenario_type": "new_product_launch",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "section_a_gtm_motion": {
+    "recommended_motion": "Hybrid: dominant Sales-led land-and-expand off the existing Docebo LMS install base, with a lighter sales-assisted / guided-POC motion for AI-forward net-new accounts, and a partner/channel + MCP-ecosystem layer for distribution and EMEA/DACH reach. Confidence: High.",
+    "justification": {
+      "deal_size_factor": "Agent 1 Q9 benchmarks LMS deals at ~$72K average reaching well into six figures, and Agent 1 Q6 positions AgentHub in the premium AI-native tier (~$30-65 PEPM, above core LMS ~$6-11) with an inferred platform-base + AI-consumption architecture. A six-figure-leaning, premium, multi-product (learning + knowledge + skills) deal cannot be self-serve PLG - it needs a quota-carrying field motion to justify the ACV. Pure PLG (the Copilot outlier) only works for a $30/seat horizontal add-on, which AgentHub is not. The expansion layer (AI-credit/agentic-consumption usage) does support a usage-based expand motion AFTER the platform land, so the deal economics favor sales-led land + consumption-expand, not bottom-up self-serve.",
+      "committee_complexity": "Agent 1 Q9 / Agent 2 buying_committee document a ~11-person committee (CHRO/CFO decision makers, CLO/VP L&D champion, IT + LMS admin evaluators, CISO/DPO blocker, Procurement gatekeeper) on 6-12 month cycles, lengthening because an agentic system touching employee data across 20+ sources raises the IT/Security/governance bar. An 11-stakeholder consensus sale is structurally incompatible with PLG and demands consultative selling, executive alignment, and a security/compliance proof track - the defining signature of a sales-led enterprise motion. Agent 2 notes early-adopter deals can be champion-led (CLO + Head of AI co-sponsor compresses the committee), which is why a lighter guided-POC motion works for net-new AI-forward accounts but still sits inside a sales-assisted frame, not PLG.",
+      "market_maturity": "Agent 1 Q1/Q8/Q10 classify the converged 'learning + knowledge + skills + agentic AI' category as Emerging/unsized inside Growth-stage adjacent markets, with AgentHub's own agents not GA until fall 2026 and category-establishment risk rated High. Emerging categories require buyer education and hand-holding, not self-serve - buyers cannot self-onboard into a category they do not yet know exists. This argues for a high-touch, evangelist-led motion that sells the vision plus live proof points (MCP Server GA July 2026, Companion, AI Tutor, Skills Intelligence) to early adopters, then converts to proof-led selling for the mainstream in 2027+.",
+      "competitive_pattern": "Agent 1 Q5 finds the dominant incumbent motion is sales-led enterprise land-and-expand, especially install-base attach (SAP/Workday/Cornerstone attach learning to their HCM/suite base; Glean runs consultative enterprise sales with a paid ~$70K POC). The lone outlier is Microsoft 365 Copilot's PLG self-serve add-on riding M365 distribution - the single biggest distribution threat. Agent 1 Q5 pattern_gaps explicitly identifies the open lane: a Microsoft-style 'attach to existing footprint' play is available in the learning world - AgentHub should weaponize land-and-expand off its OWN installed LMS base (replicating Copilot's distribution advantage on Docebo's turf), and differentiate on evaluation friction with a guided POC lighter than Glean's $70K paid POC. Going against the market default with full PLG is unwise (AgentHub lacks M365-scale distribution and the deal is too complex), but the install-base-attach variant of the dominant motion is exactly where Docebo has a structural edge."
+    },
+    "buying_journey": [
+      {
+        "stage": "Awareness / Category framing",
+        "actions": "For existing LMS customers: CSM/AE flags AgentHub at QBRs and renewals; in-product and Community announcements. For net-new AI-forward NA accounts: triggered by a top-down AI mandate (new Head of AI/CAIO), knowledge-fragmentation pain, or an LMS-dissatisfaction event (Agent 2 behavioral_triggers). Buyer encounters Docebo via category-defining thought leadership and the MCP/agentic-AI story.",
+        "content_needed": "Category-defining content ('closed-loop knowledge -> learning -> skills with agentic AI'), the knowledge-fragmentation pain narrative (1.8-3.6 hrs/day lost), Josh Bersin-style analyst validation, and the MCP-native-in-Claude/Copilot/ChatGPT proof point. Inspire 2026 keynote / on-demand sessions for the warm base.",
+        "drop_off_risk": "Net-new buyers do not know Docebo beyond LMS (the explicit constraint) and may bucket it as 'just an LMS', or dismiss the category as vaporware because agents are not GA until fall 2026 (Agent 1 Q10 category-establishment risk)."
+      },
+      {
+        "stage": "Consideration / Champion business case",
+        "actions": "CLO/VP L&D champion (paired with Head of AI in AI-forward accounts) builds the internal case vs status quo, Glean/Copilot, and legacy LMS. Champion socializes ROI (time-to-productivity, content-creation efficiency, skills uplift) to CHRO/CFO. Vendor delivers tailored demo on the customer's own connector stack.",
+        "content_needed": "ROI calculator / business-case template, closed-loop differentiation one-pager vs Glean/Copilot (answers vs trackable learning), competitive battlecards, reference logos and customer case studies, packaging guidance to counter premium-price anchoring (Agent 1 Q6).",
+        "drop_off_risk": "CFO/CHRO ROI gate stalls without quantified proof (Agent 2: CLO 'cannot prove ROI'); price anchoring against ~$6-11 LMS PEPM (anti-ICP); champion cannot articulate a measurable business outcome (Agent 2 anti-ICP change-resistant orgs)."
+      },
+      {
+        "stage": "Technical & security evaluation / POC",
+        "actions": "Guided POC (lighter than Glean's ~$70K paid POC - Agent 1 Q5 open lane) proving 20+ connector ingestion (Confluence/SharePoint/Slack/Teams/Drive), HRIS/SSO integration, content-generation quality, reporting. IT/LMS-admin evaluate; CISO (and EMEA DPO/works council) run security/governance/AI-transparency review.",
+        "content_needed": "Solutions-engineer-led POC playbook, security/governance pack (SOC 2 in NA; GDPR/EU AI Act readiness, sub-processor lists, EU residency, BSI C5 for DACH), connector reliability docs, admin-burden/ease-of-use proof, sandbox/trial environment.",
+        "drop_off_risk": "CISO/DPO blocker kills or stalls on agentic-AI-touches-employee-data concerns; in DACH, missing BSI C5 / EU residency / works-council consultation is deal-fatal (Agent 1 Q2/Q9, Agent 2 blocker). Unconfirmed Zive EU-residency/BSI C5 status (Agent 2 gap) is a live risk for the EMEA path."
+      },
+      {
+        "stage": "Procurement / Legal / Negotiation",
+        "actions": "Procurement (decision-maker ~53% of the time - Agent 2) negotiates price, terms, DPA, sub-processors, data residency; Finance/CFO signs the ROI business case. For the warm base, co-term/renewal leverage compresses this step.",
+        "content_needed": "Transparent-enough packaging and PEPM + AI-consumption pricing logic, DPA/legal templates, security attestations, multi-year and co-term renewal offers, executive sponsorship for large deals.",
+        "drop_off_risk": "Premium pricing vs legacy-LMS anchor triggers margin pushback; opaque AgentHub pricing (Agent 1 Q6 gap) lengthens negotiation; bargain-shopper anti-ICP profiles churn out here."
+      },
+      {
+        "stage": "Onboarding & Expansion (land-and-expand)",
+        "actions": "Land on platform base (LMS + Enterprise Knowledge + Skills), drive adoption in flow of work (Teams/Slack/Salesforce), then expand via more connectors, more agentic-AI consumption, more business units. CSM/SE own the expansion number with sales.",
+        "content_needed": "Adoption/change-management enablement (77% of AI failures are change-mgmt, not tech - Agent 2), usage/value dashboards, expansion playbooks, skills-program rollout kits, reference/advocacy program to recruit case studies.",
+        "drop_off_risk": "Shelfware / pilot stall - 34% of AI projects abandoned pre-production (Agent 2 anti-ICP); shallow deployments that never expand (validated land-and-expand failure mode); CS/sales misalignment on who owns expansion."
+      }
+    ],
+    "team_structure": {
+      "required_roles": [
+        "Enterprise Account Executives (net-new acquisition for AI-forward NA accounts)",
+        "Account Managers / CSMs owning the install-base upsell-expand number (the #1 segment)",
+        "Solutions Engineers / pre-sales for connector + security POCs (critical given the agentic governance bar)",
+        "Partner / Alliances manager for SI, technology, and MCP/AI-assistant ecosystem partnerships",
+        "Product Marketing for category definition, battlecards, and ROI tooling",
+        "Demand Gen / Field Marketing for ABM and event motion",
+        "Content/Thought-leadership lead (leverage existing active content program)",
+        "Compliance/security enablement (or a security SE) for the EMEA/DACH and CISO/DPO track"
+      ],
+      "constraint_gaps": [
+        "Constraint: 'team is scaling but not unlimited.' Sequencing recommendation - Phase 1 (now): lean hardest on EXISTING assets that need no net hiring: the install-base CSM/AM motion, the existing content marketing program, Inspire, and the MCP proof point. This is the lowest-cost, highest-yield path to early reference logos and revenue.",
+        "Gap: a dedicated Solutions Engineering bench sized for agentic + security POCs may be thin; the CISO/DPO governance gate (Agent 2 blocker) is the most common stall point, so SE/security-SE capacity is the first incremental hire if POC throughput is the bottleneck.",
+        "Gap: a dedicated Partner/Alliances owner for the MCP and SI ecosystem - if not already staffed, this is a high-leverage hire because partnerships are how net-new reach scales without proportional AE headcount.",
+        "Modification if hiring is constrained: do NOT spin up a net-new outbound BDR army in Phase 1. Prioritize warm-base expansion (existing teams) and partner-sourced net-new pipeline over expensive cold outbound, and defer the heavy EMEA/DACH compliance-led build to 2027 (the EU AI Act deadline may defer to Dec 2027 per Agent 2, softening near-term urgency)."
+      ]
+    }
+  },
+  "section_b_channels": {
+    "primary_channels": [
+      {
+        "channel": "Install-base expansion via CSM/AM + in-product and Community-driven upsell to existing Docebo LMS customers (the warm land-and-expand engine)",
+        "why_this_icp": "Agent 2 ranks existing Docebo LMS customers as the #1 segment - warm, trusted, with renewal/contract leverage - and Agent 1 Q5 pattern_gaps identifies install-base attach (Copilot-style) as the single open, lowest-friction lane. These accounts already have the required technographics (multi-source knowledge sprawl, HRIS/SSO) and many carry an active AI mandate; targeting them by usage/fragmentation signals is the fastest path to early reference logos before agents are GA.",
+        "effort": { "time": "Med", "budget": "Low" },
+        "timeline_to_results": "Weeks to a few months (warm base; QBR/renewal-cycle dependent)",
+        "success_metrics": ["AgentHub attach rate within LMS base (% of accounts)", "Net revenue retention / expansion ARR", "Number of early-adopter reference logos secured", "Pipeline sourced from QBR/renewal motions"],
+        "content_strategy": "Account-specific value reviews tied to the customer's own knowledge stack and fragmentation cost; renewal/co-term upgrade offers; in-product and Docebo Community announcements; targeted webinars and Inspire on-demand sessions for existing customers; ROI business-case templates the CLO can take to the CFO.",
+        "phase": "immediate"
+      },
+      {
+        "channel": "Account-Based Marketing (ABM) + LinkedIn-led demand gen targeting CLO/VP L&D, Head of AI/CAIO, and CHRO at AI-forward NA enterprises (1,000-5,000+ employees, tech/fintech/prof. services)",
+        "why_this_icp": "Agent 2 segment #2 is AI-forward net-new NA enterprises with a Head of AI/CAIO actively buying agentic AI; the buying committee is senior and L&D/HR personas live on LinkedIn. The ~11-person committee and 6-12 month cycle (Agent 1 Q9) demand multi-stakeholder ABM, not single-lead capture. HR Tech performs well on LinkedIn ($150-250 CPL for enterprise/C-suite targeting per 2026 benchmarks), making it the right precision channel to reach a named-account list filtered by Agent 2 triggers (new Head of AI, AI-first L&D hiring, LMS dissatisfaction).",
+        "effort": { "time": "High", "budget": "High" },
+        "timeline_to_results": "Quarters (matches the 6-12 month enterprise cycle)",
+        "success_metrics": ["Target-account engagement / multi-thread coverage of the committee", "SQLs and pipeline from named accounts", "Cost per qualified opportunity (vs $150-250 enterprise CPL benchmark)", "POC-to-close conversion"],
+        "content_strategy": "LinkedIn: data-driven thought leadership (knowledge-fragmentation cost, agentic-AI-in-L&D) and customer stories for the CLO/CHRO persona; tactical 'closed loop vs AI search' framing for the Head of AI; sponsored content + Lead Gen Forms ($60-130 CPL range) for mid-funnel, retargeting for named accounts. Pair with executive-led posts and 1:few ABM landing pages per account cluster.",
+        "phase": "month_2_3"
+      },
+      {
+        "channel": "MCP / AI-assistant ecosystem distribution - listing Docebo as a knowledge connector inside Claude (Anthropic Connectors Directory / Partner Hub), Microsoft Copilot, and ChatGPT via the MCP Server",
+        "why_this_icp": "Agent 1 Q7 identifies the MCP Server (GA July 2026) as both a distribution channel and the emerging agentic interface layer - making Docebo a native knowledge source inside the exact AI assistants the AI-forward ICP already uses (Agent 2 complementary technographic: orgs already running Copilot/Glean/ChatGPT/Claude). Anthropic's Connectors Directory now carries 300+ third-party connectors used by millions daily and a Partner Hub directory visible to enterprise buyers - a credible, low-cost surface to reach AI-native buyers where they already work and to neutralize the 'we already have Copilot' objection by being inside it.",
+        "effort": { "time": "Med", "budget": "Low" },
+        "timeline_to_results": "Months (gated on MCP Server GA July 2026 and directory listing)",
+        "success_metrics": ["Connector installs / active MCP tenants", "MCP-sourced pipeline and account influence", "Directory placement and co-marketing impressions", "Assistant-driven engagement signals feeding sales"],
+        "content_strategy": "Connector listing copy and setup docs in the Anthropic Connectors Directory and Microsoft AppSource/Teams store; 'Docebo inside your AI assistant' demo content; joint/co-marketing assets; developer + admin enablement showing knowledge lookup, course recommendation, and certification checks from within Claude/Copilot/ChatGPT. Treat the MCP listing as a product-led top-of-funnel that feeds the sales-led motion.",
+        "phase": "month_2_3"
+      },
+      {
+        "channel": "Owned content + category-defining SEO/thought leadership (existing active content program), anchored to comparison and closed-loop topics",
+        "why_this_icp": "Agent 1 Q1/Q8/Q10 flag an Emerging, unsized category with High category-establishment risk - buyer education is required and SEO is the lowest-CPL channel (~$31 CPL per 2026 benchmarks). The ICP researches via analyst content (Josh Bersin reaches ~4M HR pros) and comparison searches against Glean/Copilot/Cornerstone/SAP. Docebo already runs an active content program (existing asset), so this is low net-new cost.",
+        "effort": { "time": "Med", "budget": "Low" },
+        "timeline_to_results": "Months to quarters (SEO compounding)",
+        "success_metrics": ["Organic traffic on category + comparison keywords", "Content-sourced/influenced pipeline", "Share of voice vs Glean/Copilot on closed-loop terms", "Analyst/Bersin citations"],
+        "content_strategy": "Blog/SEO: comparison pages ('AgentHub vs Glean/Copilot - answers vs trackable learning', 'beyond AI search: closing the skills loop'), category-defining pillar content, and data studies on knowledge fragmentation and onboarding cost; how-to guides for L&D-AI operating models (riding Bersin's 'dynamic enablement' narrative). Distribute through LinkedIn to the CLO/Head of AI personas and via the Docebo Community.",
+        "phase": "immediate"
+      },
+      {
+        "channel": "Field/event motion - Inspire 2026 (owned) + targeted presence at L&D/HR-tech events (ATD, DevLearn, UNLEASH; LEARNTEC for DACH)",
+        "why_this_icp": "Agent 1 Q9 shows DACH/EMEA buyers expect personal demos and trust-led, in-person evaluation; high-touch enterprise category creation rewards events. Inspire is an existing owned asset (April 2026, where AgentHub/MCP were announced) that concentrates the warm base; ATD (May 2026, LA), DevLearn (Nov 2026, Las Vegas), and UNLEASH reach the CLO/L&D/HR-tech committee, and LEARNTEC (May 2026, Karlsruhe) is the build-for-mainstream DACH beachhead.",
+        "effort": { "time": "Med", "budget": "Med" },
+        "timeline_to_results": "Months (event-cycle dependent; pipeline matures over the following quarter)",
+        "success_metrics": ["Qualified meetings/pipeline sourced per event", "Inspire attendee -> AgentHub opportunity conversion", "Reference-customer sessions secured", "Analyst/press coverage from event presence"],
+        "content_strategy": "Customer-proof case-study sessions and live closed-loop demos at Inspire; executive roundtables and analyst-anchored talks at ATD/DevLearn/UNLEASH; for LEARNTEC/DACH, lead with EU residency/governance proof (build-for-2027-mainstream). Capture reference logos and turn sessions into evergreen content for the SEO/LinkedIn channels.",
+        "phase": "immediate"
+      }
+    ],
+    "channels_to_avoid": [
+      {
+        "channel": "Pure self-serve / freemium PLG (public free tier, credit-card signup)",
+        "reason": "Agent 1 Q5 shows no one runs true self-serve for the converged learning+knowledge+skills offer (only Copilot does PLG, and only for a $30 horizontal add-on). With an ~11-person committee, 6-12 month cycles, a CISO/DPO security gate on agentic access to employee data (Agent 1 Q9, Agent 2 blocker), and premium six-figure-leaning ACV (Agent 1 Q6), a self-serve motion cannot navigate the consensus sale or justify the price, and would attract the sub-500/SMB and bargain anti-ICP segments Agent 2 explicitly excludes. AgentHub also lacks Copilot's M365-scale distribution that makes PLG viable."
+      },
+      {
+        "channel": "Broad/high-volume cold outbound SDR blasting and untargeted spray-and-pray email",
+        "reason": "The dual constraint (limited team) plus a senior, education-required, committee-driven buy makes generic cold outbound inefficient - net-new buyers do not yet know Docebo beyond LMS, so cold volume converts poorly against an Emerging category. Resources are far better spent on warm install-base expansion and partner/MCP-sourced pipeline. Forrester and land-and-expand research both flag generic messaging and over-relying on volume digital as classic expansion mistakes. Use precise ABM, not volume outbound."
+      },
+      {
+        "channel": "Broad-reach consumer/brand channels (programmatic display, mass paid social like Meta/Instagram/TikTok, generic Google Display Network)",
+        "reason": "The ICP is a narrow set of enterprise L&D/HR/AI committee members at 500+ employee firms (Agent 2 firmographics); mass-reach consumer channels waste budget on out-of-ICP impressions and cannot target the named-account committee. Given the 'not unlimited' budget constraint, spend belongs in precision LinkedIn ABM, SEO, and the warm base - not brand-awareness display."
+      },
+      {
+        "channel": "Near-term, heavy compliance-led paid acquisition push in EMEA/DACH",
+        "reason": "Agent 2 flags the EU AI Act high-risk HR-AI deadline may defer from Aug 2, 2026 to Dec 2, 2027 (Digital Omnibus), softening the near-term compliance trigger, and the Zive EU-residency/BSI C5 status is unconfirmed (Agent 2 gap). Pouring net-new budget into a compliance-urgency campaign now risks overspending against a softened trigger and an unverified capability. Build the residency/governance proof now via partners/events, harvest in 2027 - do not front-load paid acquisition there."
+      }
+    ]
+  },
+  "section_c_partnerships": {
+    "partnership_types": [
+      {
+        "category": "Technology / AI-assistant ecosystem (MCP) - Anthropic Claude Connectors Directory & Partner Hub, Microsoft Copilot, OpenAI ChatGPT",
+        "model": "Integration-only + co-marketing (list as a knowledge connector; pursue directory placement and joint content)",
+        "why": "Agent 1 Q7 makes the MCP Server (GA July 2026) the strategic distribution + agentic-interface layer, putting Docebo natively inside the AI assistants the AI-forward ICP already runs; Anthropic's directory carries 300+ connectors used by millions daily with a buyer-visible Partner Hub. This both reaches net-new AI-native buyers and counters the Microsoft-Copilot distribution threat (Agent 1 Q5/Q10) by being inside Copilot rather than only competing with it. Dependency risk (Agent 1 Q7: Microsoft/OpenAI are also competitors) means diversify across Claude/Copilot/ChatGPT rather than bet on one.",
+        "priority": "must_have"
+      },
+      {
+        "category": "Cloud / platform marketplace - Microsoft AppSource/commercial marketplace (+ Teams app store) and existing Salesforce AppExchange presence",
+        "why": "Agent 1 Q7 lists SharePoint/Teams and Salesforce as both ingestion sources and flow-of-work delivery surfaces; Microsoft's unified commercial marketplace draws ~6M monthly visitors with a dedicated AI category, and co-sell engages Microsoft's field + 500K partners. Marketplace listing + Microsoft co-sell turns the biggest competitive threat's own channel into a distribution surface and meets buyers where procurement increasingly transacts.",
+        "model": "Marketplace listing + co-sell (referral/co-sell with Microsoft field; transact via marketplace where buyers prefer)",
+        "priority": "nice_to_have"
+      },
+      {
+        "category": "Reseller / VAR channel - extend Docebo's existing reseller and Value-Added Reseller programs to AgentHub, weighted to EMEA/DACH",
+        "why": "Agent 1 Q5 shows channel/partner is a strong, growing secondary motion across LMS suites; Docebo already operates both a Channel Partner (reseller) and a dedicated VAR program (validated), and Agent 1 Q5 pattern_gaps + Q2 identify an EU-data-residency/DACH partner-led GTM via Zive as an open lane. Channel reach scales net-new acquisition (the dual-mandate constraint) without proportional AE hiring, and local DACH VARs supply the language/DPA/trust posture US-direct cannot. The compliance urgency softening (Agent 2) makes this a build-for-2027-mainstream channel, not a 2026 sprint.",
+        "model": "Revenue share / reseller margin + co-selling (deal registration, certification, co-marketing)",
+        "priority": "must_have"
+      },
+      {
+        "category": "SI / consulting & L&D-transformation partners (incl. Anthropic Claude Services Track firms and instructional-design consultancies)",
+        "why": "Agent 1 Q5 shows SAP/Workday lean heavily on SI ecosystems for implementation, and Agent 1 Q9/Agent 2 stress that 77% of AI failures are change-management/governance, not tech - implementation and change-management partners de-risk adoption and reduce the 34%-abandonment churn risk. Aligning with Claude Services Track / Partner Hub consultancies (newly formalized June 2026) and L&D-transformation consultancies (e.g., the type validated by Educe in the Docebo ecosystem) provides delivery capacity and trusted advisors who influence the committee.",
+        "model": "Co-selling + referral fees + services delivery (white-glove implementation by partner)",
+        "priority": "nice_to_have"
+      }
+    ],
+    "integration_priorities": [
+      {
+        "platform": "Docebo MCP Server connector in the Anthropic Claude Connectors Directory / Partner Hub (and parallel Copilot/ChatGPT MCP exposure)",
+        "reason": "Highest strategic leverage and already in beta (existing asset, GA July 2026): directly reaches the AI-forward ICP inside the assistants they already use (Agent 2 complementary technographic), is a distribution channel per Agent 1 Q7, and turns the Copilot threat into a surface. Diversify across Claude/Copilot/ChatGPT to manage the dependency risk Agent 1 Q7 flags.",
+        "effort": "Low"
+      },
+      {
+        "platform": "Microsoft SharePoint / Teams (ingestion + flow-of-work delivery) and Microsoft AppSource/Teams marketplace listing",
+        "reason": "Agent 1 Q7: SharePoint/Teams are top fragmented-knowledge sources AND the delivery surface; Teams in-flow-of-work delivery drives the adoption that fuels land-and-expand. Marketplace listing adds procurement-friendly distribution. Effort is higher because Microsoft controls Graph/Work IQ access terms and is a competitor.",
+        "effort": "Med"
+      },
+      {
+        "platform": "HRIS systems of record - Workday & SAP SuccessFactors (+ Okta/Entra SSO)",
+        "reason": "Agent 2 required technographic and Agent 1 Q7 platform dependency: Skills Intelligence (365Talents) and permissions-aware knowledge cannot function without the HRIS system-of-record and SSO; these are procurement-gating. Deepening/maintaining these is table stakes - but note Agent 1 Q7 risk that Workday/SAP are building competing agents and could restrict access.",
+        "effort": "High"
+      },
+      {
+        "platform": "Confluence, Slack, Google Drive connectors (the remaining core fragmentation sources)",
+        "reason": "Agent 1 Q7: these complete the 20+ knowledge-source ingestion that creates AgentHub's core value; required ICP technographic is '2+ of Confluence/SharePoint/Teams/Slack/Drive.' Native and largely existing, so lower incremental effort - prioritize reliability/coverage proof for POCs.",
+        "effort": "Low"
+      }
+    ],
+    "ecosystem_presence": [
+      "Docebo Inspire 2026 (owned conference, Fontainebleau Miami, April 20-22 2026 - where AgentHub/MCP were announced): the highest-yield concentration of the warm install base for upsell, reference-customer sessions, and category evangelization.",
+      "The Josh Bersin Company ecosystem (podcast/research reaching ~4M HR pros; 'dynamic enablement' / AI-replaces-learning narrative; Irresistible conference): the most influential analyst voice for the CLO/CHRO buyer - secure analyst briefings, align messaging to 'dynamic enablement', and pursue inclusion in his enterprise-learning research.",
+      "ATD International Conference & Expo (May 17-20 2026, Los Angeles) and DevLearn (Nov 4-6 2026, Las Vegas): the two largest US L&D practitioner/leader events for reaching the CLO/VP L&D/L&D-manager committee with live closed-loop demos and case studies.",
+      "UNLEASH World (HR-tech, people-strategy + skills + AI audience): reaches the CHRO/Head of AI + HR-tech buyer at the intersection of skills, analytics, and AI - the right room for the converged-category and skills-based-org narrative.",
+      "LEARNTEC (May 5-7 2026, Messe Karlsruhe, Germany - Europe's largest digital-education fair): the DACH/EMEA beachhead for the build-for-2027-mainstream compliance/residency play via Zive (lead with governance proof, not near-term urgency given the EU AI Act deferral).",
+      "Docebo Community HQ (owned online community) and the Anthropic Connectors/Partner Hub directory: always-on owned and ecosystem surfaces for warm-base expansion content and AI-native net-new discovery respectively."
+    ]
+  },
+  "upstream_references": [
+    {
+      "recommendation": "Install-base expansion as the #1, immediate channel (warm land-and-expand)",
+      "source_agent": "Agent 2 (segment_prioritization rank 1) + Agent 1 (Q5 pattern_gaps)",
+      "finding": "Existing Docebo LMS customers are the #1 segment - warm, trusted, renewal leverage; Agent 1 Q5 identifies a Microsoft-style 'attach to existing footprint' as the open, lowest-friction lane."
+    },
+    {
+      "recommendation": "ABM + LinkedIn demand gen to AI-forward NA enterprises",
+      "source_agent": "Agent 2 (segment #2 + buying_committee) + Agent 1 (Q2, Q9)",
+      "finding": "Segment #2 is AI-forward net-new NA enterprises with a Head of AI/CAIO; the ~11-person senior committee on 6-12 month cycles in NA (the commercial center, ~74% of Docebo revenue) requires multi-stakeholder ABM on LinkedIn."
+    },
+    {
+      "recommendation": "MCP / AI-assistant ecosystem as a distribution channel",
+      "source_agent": "Agent 1 (Q7) + Agent 2 (complementary technographic)",
+      "finding": "MCP Server (GA July 2026) makes Docebo a native knowledge source inside Claude/Copilot/ChatGPT - both a distribution channel and the agentic interface layer; the ICP already runs these assistants."
+    },
+    {
+      "recommendation": "Category-defining SEO/content + comparison pages",
+      "source_agent": "Agent 1 (Q1, Q3, Q8, Q10) + Agent 2 (gap technographics)",
+      "finding": "Converged category is Emerging/unsized with High category-establishment risk requiring buyer education; no vendor owns the closed loop - Glean/Copilot answer but don't track learning - the comparison wedge."
+    },
+    {
+      "recommendation": "Event/field motion incl. Inspire and DACH LEARNTEC",
+      "source_agent": "Agent 1 (Q2, Q9) + Agent 2 (segment #3) + assets-constraints",
+      "finding": "DACH/EMEA buyers expect personal demos and trust-led evaluation; Inspire is an existing owned asset; DACH is the defensible Zive wedge to build for 2027 mainstream."
+    },
+    {
+      "recommendation": "Reseller/VAR + SI partnerships and the choice of a sales-led-hybrid motion",
+      "source_agent": "Agent 1 (Q5, Q6, Q9) + assets-constraints",
+      "finding": "Dominant incumbent motion is sales-led land-and-expand; premium ~$30-65 PEPM tier; ~11-person committee / 6-12 month cycles; Docebo already has reseller+VAR programs and a 'not unlimited' team, so partners scale net-new reach."
+    },
+    {
+      "recommendation": "Avoid heavy near-term EMEA compliance-led paid acquisition",
+      "source_agent": "Agent 2 (segment #3 nuance + gaps)",
+      "finding": "EU AI Act high-risk HR-AI deadline may defer from Aug 2 2026 to Dec 2 2027 (Digital Omnibus), softening near-term urgency; Zive EU-residency/BSI C5 status unconfirmed."
+    },
+    {
+      "recommendation": "Avoid pure PLG self-serve",
+      "source_agent": "Agent 1 (Q5, Q6, Q9) + Agent 2 (anti-ICP)",
+      "finding": "Only Copilot runs PLG (horizontal $30 add-on); AgentHub's premium ACV, 11-person committee, CISO/DPO security gate, and SMB/bargain anti-ICP make self-serve a poor, high-churn fit."
+    }
+  ],
+  "metadata": {
+    "search_queries_used": 8,
+    "sources_cited": 12,
+    "scenario_emphasis_applied": "new_product_launch at STANDARD depth (no extra emphasis per orchestrator). Produced a complete standard-depth channel strategy that: (1) resolves the dual mandate by leading with warm install-base land-and-expand (lowest cost, fastest reference logos) while using ABM + partners + MCP for net-new acquisition; (2) selects a sales-led-dominant HYBRID motion justified against deal size, an 11-person committee, an Emerging category, and the incumbent sales-led pattern (Agent 1 Q5), explicitly rejecting PLG; (3) treats the MCP Server + integration ecosystem (Agent 1 Q7) as a genuine distribution channel and partnership; (4) maps the upsell-vs-net-new motion difference into the buying journey and team structure; and (5) respects the 'team not unlimited' and softened-EMEA-compliance constraints by deferring heavy outbound and DACH paid acquisition to a build-for-2027 posture. Validation sources: Docebo reseller/VAR program pages, Inspire 2026, 2026 B2B SaaS/HR-tech LinkedIn CPL benchmarks, land-and-expand mistake research, Anthropic Claude Connectors Directory/Partner Hub (300+ connectors), Microsoft unified commercial marketplace/co-sell, and the L&D event/analyst landscape (Josh Bersin, ATD, DevLearn, UNLEASH, LEARNTEC). Confidence: Section A High; Section B High; Section C Medium-High (MCP/partner specifics validated; SI partner roster and Zive EU-residency status remain gaps)."
+  }
+}
