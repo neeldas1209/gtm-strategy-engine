@@ -9,6 +9,13 @@ This repo is both the system (agents, skills, schemas) and a complete worked
 example: a full GTM strategy for **Docebo AgentHub**, an enterprise AI learning
 platform.
 
+> **Disclaimer:** The Docebo AgentHub run is an **independent, illustrative
+> analysis** produced by this engine from **publicly available information**, to
+> demonstrate the system on a real-world scenario. It is not affiliated with,
+> endorsed by, or commissioned by Docebo, and it does not use any confidential or
+> insider information. Market figures and recommendations are AI-generated and
+> should be independently verified before any real decision-making.
+
 ---
 
 ## Why this is interesting
